@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Football Manager rule files for CONCACAF v24.2</title>
+		<style>
+			html * {
+				font-size: 12px;
+				line-height: 1.625;
+				color: #2020131;
+				font-family: monospace;
+			}
+			
+			tr.excluded {
+				background: #FAA;
+			}
+			
+			img.flag {
+				vertical-align: middle;
+			}
+
+			span.unchanged {
+				color: #888;
+			}
+			
+			span.changed {
+				color: #05F;
+			}
+			
+			span.removed {
+				color: #F00;
+			}
+			
+			li.warning {
+				background-color: orange;
+			}
+			
+		
+		</style>
+	</head>
+	
+	<body>
+	
+		<h1>Football Manager rule files for CONCACAF v24.2</h1>
+		
+		<p>In this package, you will find rule files for CONCACAF Member Nations.</p>
+		<p>I did my best to use realistic formats for all the leagues that are included. The rule files contain:</p>
+		<ul>
+			<li>real divisions and cups with real formats from 2023</li>
+			<li>teams from the 2023 season</li>
+			<li>all nations have transfer windows, registration periods, tv dates, match rules, prize money - when I was able to find this in my online research</li>
+		</ul>
+
+		<h3>Compatibility</h3>
+		<ul>
+			<li>FM Database 24.3.0 (only)</li>
+		</ul>
+
+		<h3>License</h3>
+		<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
+			<span property="dct:title">Football Manager rule files for CONCACAF v24.2</span> by <span property="cc:attributionName">MasterIgor</span> is licensed under 
+			<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution-NonCommercial-NoDerivatives 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1"></a>
+		</p>
+
+		<p>The rule files are free, but every tip will greatly improve my motivation to provide updates and other federations, because I spent a great deal of free time researching and editing. So if you really enjoy the rule files, then every small contribution is greatly appreciated. 
+			<a HREF="https://www.buymeacoffee.com/MasterIgor">Support Me</a>.
+		</p>
+
+		<h3>Installation Guide</h3>
+		<p>Copy the .fmf files for the nations you want into the folder "&lt;My Documents&gt;\Sports Interactive\Football Manager 2024\editor data\".
+			The folder can be different if you have changed it in the FM24 preferences. The leagues should then appear the next time you start a new game in FM24 and chose advanced setup.<br/>
+			Make sure you have the checkbox "add players to playable teams" checked. This is recommended, otherwise you may end up with a lot of greyed-out players.
+		</p>
+
+		<h3>Testing and Research</h3>
+		<p>I would like to thank Nuno from Portugal for his assistance in research and testing, it helped improve the quality of the rule files. All rules files have been tested in the editor and in the game as well.<br/>
+		of course, it is always possible that there are issues and mistakes in the rule files. If you find an issue, you can contact me <a href="mailto:masterigor@online.de">by E-Mail</a>.</p>
+
+		<h3>Available rule files:</h3>
+		<table border="1">
+			<tr>
+				<th width="75">File</th>
+				<th width="225">Federation</th>
+				<th width="400">added/changed competitions</th>
+				<th width="*">comments</th>
+			</tr>
+			
+			<tr>
+				<td>AIA.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/ai.png"/> Anguilla</td>
+				<td>
+					[1] AFA Senior League<br/>
+					[Cup] AFA Presidents Cup<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+			
+			<tr>
+				<td>ARU.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/aw.png"/> Aruba</td>
+				<td>
+					[1] Division di Honor<br/>
+					[Cup] Copa Libertador Betico Croes<br/>
+				</td>
+				<td>
+					<ul>
+						<li>Division di Honor splits into Gold League for the title and Silver League against relegation (incl. 8 teams from the lower division). These 2 leagues are created as sub-competitions.</li>
+					</ul>
+				</td>
+			</tr>
+
+			<tr>
+				<td>ATG.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/ag.png"/> Antigua and Barbuda</td>
+				<td>
+					[1] Premier Division<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td>BAH.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/bs.png"/> Bahamas</td>
+				<td>
+					[1] BFA Senior League<br/>
+					[Cup] Bahamas FA Cup<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+			
+			<tr>
+				<td>BER.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/bm.png"/> Bermuda</td>
+				<td>
+					[1] Bermuda Premier Division<br/>
+					[2] Bermuda First Division<br/>
+					[Cup] FA Challenge Cup<br/>
+					[Cup] Friendship Trophy<br/>
+					[Cup] Dudley Eve Trophy<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td>BLZ.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/bz.png"/> Belize</td>
+				<td>
+					[1] Primera Division de Belice<br/>
+				</td>
+				<td>
+					<ul>
+						<li>Primera Division uses Apertura & Clausura</li>
+						<li class="warning">(!) see <a href="#Issue1">Issue #1 - Continental cup schedule problems</a></li>
+						<li class="warning">(!) see <a href="#Issue3">Issue #3 - Continental cup teams from wrong year</a></li>
+					</ul>
+				</td>
+			</tr>
+
+			<tr>
+				<td>BOE.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/bq.png"/> Bonaire</td>
+				<td>
+					[1] Kampionato Bonaire<br/>
+					[Cup] Kopa FFB<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td>BRB.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/bb.png"/> Barbados</td>
+				<td>
+					[1] BFA Premier Division<br/>
+				</td>
+				<td>
+					<ul>
+						<li>Premier Division transitions from 12 teams in 2023 to 10 teams from 2024 onwards.</li>
+					</ul>
+				</td>
+			</tr>
+
+			<tr>
+				<td>CAN.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/ca.png"/> Canada</td>
+				<td>
+					<span class="changed">[1] Canadian Premier League (*)</span></br>
+					[2] Canada League1<br/>
+					&nbsp;&nbsp;[2.1] League1 British Columbia<br/>
+					&nbsp;&nbsp;[2.2] League1 Ontario<br/>
+					&nbsp;&nbsp;[2.3] League1 Québec<br/>
+				</td>
+				<td>
+					<ul>
+						<li>No promotion/relegation between Premier League and League1 (like in real life). League1 teams can qualify for the Canadian Championship and therefore also for the CONCACAF Champions Cup</li>
+						<li>(*) Premier League has minor changes for qualification to continental cup</li>
+					</ul>
+				</td>
+			</tr>
+
+			<tr>
+				<td>CAY.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/ky.png"/> Cayman Islands</td>
+				<td>
+					[1] CIFA Premier Division<br/>
+					[Cup] CIFA FA Cup<br/>
+					[Cup] Charity Shield<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+			
+			<tr>
+				<td>CRC.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/cr.png"/> Costa Rica</td>
+				<td>
+					[1] Primera Division<br/>
+					[2] Liga de Ascenso<br/>
+					[Cup] Copa Costa Rica<br/>
+					[Cup] Supercopa<br/>
+				</td>
+				<td>
+					<ul>
+						<li>Primera Division uses Apertura & Clausura</li>
+						<li>Liga de Ascenso uses Apertura & Clausura</li>
+						<li class="warning">(!) see <a href="#Issue1">Issue #1 - Continental cup schedule problems</a></li>
+						<li class="warning">(!) see <a href="#Issue3">Issue #3 - Continental cup teams from wrong year</a></li>
+					</ul>
+				</td>
+			</tr>
+
+			<tr>
+				<td>CUB.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/cu.png"/> Cuba</td>
+				<td>
+					[1] Liga Nacional<br/>
+				</td>
+				<td>
+					<ul>
+						<li>Liga Nacional uses Apertura & Clausura (Clausura only with 6 best teams)</li>
+					</ul>
+				</td>
+			</tr>
+
+			<tr>
+				<td>CUW.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/cw.png"/> Curacao</td>
+				<td>
+					[1] Promé Divishon<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td>DMA.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/dm.png"/> Dominica</td>
+				<td>
+					[1] Premier League<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+			
+			<tr>
+				<td>DOM.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/do.png"/> Dominican Republic</td>
+				<td>
+					[1] Liga Dominicana de Futbol<br/>
+				</td>
+				<td>
+					<ul>
+						<li>Reputation of Liga Dominicana was increased (to use with my CONCACAF file which has dynamic ranking based on division reputation)</li>
+					</ul>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>GLP.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/gp.png"/> Guadeloupe</td>
+				<td>
+					[1] Régional 1<br/>
+					[2] Régional 2<br/>
+					&nbsp;&nbsp;[2.1] Poule A<br/>
+					&nbsp;&nbsp;[2.2] Poule B<br/>
+					[Cup] Coupe de France (Guadeloupe)<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+			
+			<tr>
+				<td>GRN.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/gd.png"/> Grenada</td>
+				<td>
+					[1] Premier Division<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+			
+			<tr>
+				<td>GUA.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/gt.png"/> Guatemala</td>
+				<td>
+					[1] Liga Nacional<br/>
+					[2] Primera Division de Ascenso<br/>
+				</td>
+				<td>
+					<ul>
+						<li>Liga Nacional uses Apertura & Clausura</li>
+						<li>Primera Division de Ascenso uses Apertura & Clausura</li>
+						<li class="warning">(!) see <a href="#Issue1">Issue #1 - Continental cup schedule problems</a></li>
+						<li class="warning">(!) see <a href="#Issue3">Issue #3 - Continental cup teams from wrong year</a></li>
+					</ul>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>GUF.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/gf.png"/> French Guiana</td>
+				<td>
+					[1] Régional 1<br/>
+					[Cup] Coupe de Guyane<br/>
+					[Cup] Coupe de France (Guyane)<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td>GUY.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/gy.png"/> Guyana</td>
+				<td>
+					[1] GFF Elite League<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+			
+			<tr>
+				<td>HAI.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/ht.png"/> Haiti</td>
+				<td>
+					[1] Championnat National D1<br/>
+				</td>
+				<td>
+					<ul>
+						<li>Championnat National D1 uses Apertura & Clausura</li>
+						<li>Even though there has been no football in Haiti since 2021, I created this file based on rules from that year. I reduced the reputation of the league to reflect this.</li>
+					</ul>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>HON.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/hn.png"/> Honduras</td>
+				<td>
+					[1] Liga Nacional de Futbol<br/>
+					[2] Liga de Ascenso<br/>
+				</td>
+				<td>
+					<ul>
+						<li>Liga Nacional uses Apertura & Clausura</li>
+						<li>Liga de Ascenso uses Apertura & Clausura</li>
+						<li class="warning">(!) see <a href="#Issue1">Issue #1 - Continental cup schedule problems</a></li>
+						<li class="warning">(!) see <a href="#Issue3">Issue #3 - Continental cup teams from wrong year</a></li>
+					</ul>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>JAM.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/jm.png"/> Jamaica</td>
+				<td>
+					[1] JFF Premier League<br/>
+					[Cup] Jamaica Cup<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+			
+			<tr>
+				<td>LCA.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/lc.png"/> St. Lucia</td>
+				<td>
+					[1] SLFA First Division<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td>MEX.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/mx.png"/> Mexico</td>
+				<td>
+					<span class="changed">[1] Liga MX (*)</span><br/>
+					<span class="changed">[2] Liga Expansion MX (*)</span><br/>
+					[3] Liga Premier Serie A<br/>
+					&nbsp;&nbsp;[3.1] Grupo 1</br>
+					&nbsp;&nbsp;[3.2] Grupo 2</br>
+					[4] Liga Premier Serie B<br/>
+					<span class="unchanged">[Cup] Mexican Champions Trophy</span><br/>
+					<span class="unchanged">[Cup] Liga Expansion MX Champions Trophy</span><br/>
+					<span class="changed">[U23] Mexican U23 League (**)</span><br/>
+					<span class="changed">[U18] Mexican U18 League (**)</span><br/>
+					[Cup] Copa Conecta<br/>
+				</td>
+				<td>
+					<ul>
+						<li>(*) Liga MX refactored, will start using relegation and no more fines from 2026.</li>
+						<li>(*) Liga Expansion MX refactored, will start using promotion & relegation from 2026.</li>
+						<li>Liga Premier Serie A will start promoting teams in 2026.</li>
+						<li>Promotion/Relegation between Liga Premier A and B starts when game starts in 2023.</li>
+						<li>(**) I had to remove registration for the U23 and U18 League. It was giving problems when I introduced promotion/relegation. I had no idea how to fix that so apologies, the promotion/relegation from 2026 onwards was more important for me.</li>
+					</ul>
+				</td>
+			</tr>
+
+			<tr class="excluded">
+				<td>-</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/ms.png"/> Montserrat</td>
+				<td>&nbsp;</td>
+				<td>No Rule File:
+					<ul>
+						<li>There has been little or no football since the volcanic eruption of Montserrat in 2004</li>
+					</ul>
+				</td>
+			</tr>
+
+			<tr>
+				<td>MTQ.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/mq.png"/> Martinique</td>
+				<td>
+					[1] Trophée Gerard Janvion - R1<br/>
+					[2] Trophée Daniel Charles-Alfred - R2<br/>
+					&nbsp;&nbsp;[2.1] Poule A<br/>
+					&nbsp;&nbsp;[2.2] Poule B<br/>
+					[Cup] Coupe de Martinique<br/>
+					[Cup] Coupe de France (Martinique)<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td>NCA.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/ni.png"/> Nicaragua</td>
+				<td>
+					[1] Liga Primera de Nicaragua<br/>
+					[2] Liga de Ascenso<br/>
+					[Cup] Copa Nicaragua<br/>
+				</td>
+				<td>
+					<ul>
+						<li>Liga Primera uses Apertura & Clausura</li>
+						<li>Liga de Ascenso uses Apertura & Clausura</li>
+						<li class="warning">(!) see <a href="#Issue1">Issue #1 - Continental cup schedule problems</a></li>
+						<li class="warning">(!) see <a href="#Issue3">Issue #3 - Continental cup teams from wrong year</a></li>
+					</ul>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>PAN.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/pa.png"/> Panama</td>
+				<td>
+					[1] Liga Panamena de Futbol<br/>
+					[2] Liga de Ascenso<br/>
+				</td>
+				<td>
+					<ul>
+						<li>Liga Panamena uses Apertura & Clausura</li>
+						<li>Liga de Ascenso uses Apertura & Clausura</li>
+						<li class="warning">(!) see <a href="#Issue1">Issue #1 - Continental cup schedule problems</a></li>
+						<li class="warning">(!) see <a href="#Issue2">Issue #2 - Continental cup teams wrong for Panama</a></li>
+						<li class="warning">(!) see <a href="#Issue3">Issue #3 - Continental cup teams from wrong year</a></li>
+					</ul>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>PUR.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/pr.png"/> Puerto Rico</td>
+				<td>
+					[1] Liga Puerto Rico<br/>
+				</td>
+				<td>
+					<ul>
+						<li>Liga Puerto Rico uses Apertura & Clausura</li>
+					</ul>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>SKN.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/kn.png"/> St. Kitts and Nevis</td>
+				<td>
+					[1] SKNFA Superliga<br/>
+					[2] Primera Division<br/>
+					[Cup] SKNFA Cup<br/>
+				</td>
+				<td>
+					<ul>
+						<li>Superliga transitions from 12 teams in 2023 to 10 teams in 2024</li>
+						<li>Primera Division transitions from 10 teams in 2023 to 12 teams in 2024</li>
+					</ul>
+				</td>
+			</tr>
+
+			<tr>
+				<td>SLV.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/sv.png"/> El Salvador</td>
+				<td>
+					[1] Primera Division<br/>
+					[2] Segunda Division<br/>
+				</td>
+				<td>
+					<ul>
+						<li>Primera Division uses Apertura & Clausura</li>
+						<li>Segunda Division uses Apertura & Clausura</li>
+						<li class="warning">(!) see <a href="#Issue1">Issue #1 - Continental cup schedule problems</a></li>
+						<li class="warning">(!) see <a href="#Issue3">Issue #3 - Continental cup teams from wrong year</a></li>
+					</ul>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>SMN.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/mf.png"/> Saint Martin</td>
+				<td>
+					[1] Ligue de Football de Saint Martin<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+			
+			<tr>
+				<td>SUR.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/sr.png"/> Suriname</td>
+				<td>
+					[1] SVB Eerste Divisie<br/>
+					[2] SVB Tweede Divisie<br/>
+					[Cup] SVB Beker van Suriname<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+			
+			<tr>
+				<td>SXM.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/sx.png"/> Sint Maarten</td>
+				<td>
+					[1] Sint Maarten Championship<br/>
+					[Cup] SXMFF League Cup<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+			
+			<tr>
+				<td>TCA.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/tc.png"/> Turks and Caicos Islands</td>
+				<td>
+					[1] Premier League<br/>
+				</td>
+				<td>
+					<ul>
+						<li>Premier League uses Apertura & Clausura</li>
+					</ul>
+				</td>			
+			</tr>
+			
+			<tr>
+				<td>TRI.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/tt.png"/> Trinidad and Tobago</td>
+				<td>
+					[1] TT Premier League - Tier 1<br/>
+					[2] TT Premier League - Tier 2<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+			
+			<tr>
+				<td>USA.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/us.png"/> U.S.A.</td>
+				<td>
+					<span class="changed">[1] Major League Soccer (*)</span><br/>
+					[2] USL Championship<br/>
+					[3] USL Division One<br/>
+					<span class="unchanged">[Cup] US Cup</span></br>
+					<span class="unchanged">[Cup] MLS All-Stars Game</span></br>
+				</td>
+				<td>
+					<ul>
+						<li>No promotion/relegation between any tiers. Teams from tier 2 and 3 can win the US Cup and qualify for the CONCACAF Champions Cup</li>
+						<li>USL Championship has Western and Eastern Conference</li>
+						<li>(*) MLS refactored, minor changes for continental cup qualification</li>
+					</ul>
+				</td>			
+			</tr>
+						
+			<tr>
+				<td>VCT.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/vc.png"/> St. Vincent and the Grenadines</td>
+				<td>
+					[1] SVG Premier League<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td>VGB.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/vg.png"/> British Virgin Islands</td>
+				<td>
+					[1] Premier League<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td>VIR.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/vi.png"/> U.S. Virgin Islands</td>
+				<td>
+					[1] US Virgin Islands Leagues<br/>
+					&nbsp;&nbsp;[1.1] St Thomas League<br/>
+					&nbsp;&nbsp;[1.2] St Croix League<br/>
+					[Cup] Club Association Championship<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+			
+			<tr>
+				<td>CONCACAF.fmf</td>
+				<td>CONCACAF Continental Competitions</td>
+				<td>
+					<span class="changed">[Cup] CONCACAF Champions League</span><br/>
+					<span class="changed">[Cup] CONCACAF Central American Cup</span><br/>
+					<span class="changed">[Cup] CONCACAF Caribbean Cup</span><br/>
+					[Cup] CONCACAF Caribbean Shield<br/>
+					<span class="unchanged">[Cup] Leagues Cup</span><br/>
+					<span class="unchanged">[Cup] Canadian Championship</span><br/>
+					<span class="unchanged">[Cup] Campeones</span><br/>
+				</td>
+				<td>
+					<ul>
+						<li>All Competitions modified use real 2023 and 2024 formats.</li>
+						<li>CONCACAF Caribbean Shield
+							<ul>
+								<li>All 30 nations from the Caribbean (CFU) participate with 1 team.</li>
+								<li>The host nation and 7 best leagues qualify directly to the group stage.</li>
+								<li>Other 22 nations play qualifiers in 2 rounds to determine the other 8 teams for the group stage.</li>
+								<li>Ranking of the nations is based on division reputation - it is possible to develop the nation to qualify directly to Group Stage in the future and even get more teams to qualify directly into the Caribbean Cup</li>
+								<li>Finalists qualify for CONCACAF Caribbean Cup of the same year</li>
+							</ul>
+						</li>
+						<li>CONCACAF Caribbean Cup
+							<ul>
+								<li>The top 3 Caribbean nations (CFU) qualify directly with 3, 3 and 2 teams respectively.</li>
+								<li>Ranking of the nations is based on division reputation - it is possible to develop the nation to get more teams to qualify directly</li>
+								<li>top 3 teams qualify for CONCACAF Champions Cup</li>
+							</ul>
+						</li>
+						<li>CONCACAF Central American Cup
+							<ul>
+								<li>The 2023 edition uses predefined teams from real life</li>
+								<li>There are 7 nations in Central America (UNCAF) which qualify with 4,4,3,3,3,2,1 teams respectively.</li>
+								<li>Ranking of the nations is based on division reputation - it is possible to develop the nation to get more teams to qualify directly</li>
+								<li>top 6 teams qualify for CONCACAF Champions Cup</li>
+							</ul>
+						</li>
+						<li>Leagues Cup is unchanged, except for qualification to refactored Champions Cup.</li>
+						<li>Canadian Championship is unchanged, except for qualification to refactored Champions Cup and picking teams from my Canada file.</li>
+						<li>CONCACAF Champions Cup
+							<ul>
+								<li>The 2023 edition uses predefined teams from real life.</li>
+								<li>added/refactored the 2024 format and qualification rules.</li>
+							</ul>
+						</li>
+						<li>Campeones Cup is unchanged (not in the rule file).</li>
+					</ul>
+				</td>
+			</tr>
+
+		</table>
+		
+		<h3>Known Issues in FM24</h3>
+		
+		<table border="1">
+		<tr>
+			<td><a id="Issue1"/>Issue #1 - Continental Cup Schedule Problems</td>
+			<td>In FM24, the Central American Cup uses a host nation from Caribbean Nations incorrectly.
+				This causes teams to "travel" to the cup for the entire group stage (the whole month of August). 
+				Teams participating in this cup will not play any domestic games during that month. This can seriously clog up the domestic schedule.<br/>
+				My advice is to use my CONCACAF continental cups file where I fixed this, and then those teams will play domestic league on saturday and continental cup on wednesday like they should.
+			</td>
+		</tr>
+		<tr>
+			<td><a id="Issue2"/>Issue #2 - Continental cup teams wrong for Panama</td>
+			<td>In FM24, the Central American Cup picks teams from Panama from the 2nd tier instead of the 1st tier (Liga Panamena).<br/>
+				My advice is to use my CONCACAF continental cups file where I fixed this, and then the correct teams from Panama will enter.
+			</td>
+		</tr>
+		<tr>
+			<td><a id="Issue3"/>Issue #3 - Continental cup teams from wrong year</td>
+			<td>In FM24, the Central American Cup picks qualified teams in December. While all the domestic leagues already finish in May/June.
+				This causes teams to participate in the Central American Cup 1 year later.<br/>
+				I advise to use my CONCACAF continental cup file for a better experience, the competition is set up in July and picks teams on that date when (most) competitions have finished.
+			</td>
+		</tr>
+		</table>
+		
+		<h3>Changelog</h3>
+
+		<table border="1">
+			<tr>
+				<td>v24.2</td>
+				<td>
+					<ul>
+						<li>All Nations & Continental Cups: Update to Database 24.3.0</li>
+						<li>Continental: Fixed match rules for continental cups (previously all had the Canadian rules limitations)</li>
+						<li>Continental: Leagues Cup now takes place every year (not every 2 years) - I changed update day for Continental Cups to Jun 30 to achieve this</li>
+						<li>All Nations: Fixed registration issue causing teams to register only youth players (happened for competitions with groups/subcompetitions)</li>
+						<li>Barbados (BRB): format for 2024 added: 2023 season transitions from 12 teams to 10 teams in 2024</li>
+						<li>Cayman Islands (CAY): changed update day to june 30 (was august 31). This fixes Cayman Islands qualification to continental cup in same year</li>
+						<li>Costa Rica (CRC): added tv money based on DaveTheEditors work</li>
+						<li>Honduras (HON): added tv money based on DaveTheEditors work</li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td>v24.1</td>
+				<td>
+					<ul>
+						<li>added reserve teams where missing, this reduces the size of the senior squad: AIA, ATG, BAH, BRB, CAN, CAY, CRC, DOM, GUY, LCA, PAN, SMN, SXM, TCA, TRI, VGB and VIR</li>
+						<li>Changed Panamu U-20 teams (in 2nd tier) type from B team to U20</li>
+						<li>CONCACAF Central American Cup: added real prize money</li>
+						<li>CONCACAF Champions Cup: prize money is set to increase 5 times, but details not available so I was creative and will update using the exact amounts when it is published</li>
+					</ul>
+				</td>
+			</tr>
+		</table>
+		
+	</body>
+	
+</html>
