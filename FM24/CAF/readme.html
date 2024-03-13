@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Football Manager rule files for CAF v24.0</title>
+		<style>
+			html * {
+				font-size: 12px;
+				line-height: 1.625;
+				color: #2020131;
+				font-family: monospace;
+			}
+			
+			tr.excluded {
+				background: #FAA;
+			}
+			
+			img.flag {
+				vertical-align: middle;
+			}
+
+			span.unchanged {
+				color: #888;
+			}
+			
+			span.changed {
+				color: #05F;
+			}
+			
+			span.removed {
+				color: #F00;
+			}
+			
+			li.warning {
+				background-color: orange;
+			}
+			
+		
+		</style>
+	</head>
+	
+	<body>
+	
+		<h1>Football Manager rule files for CAF v24.0</h1>
+		
+		<p>In this package, you will find rule files for CAF Member Nations.</p>
+		<p>I did my best to use realistic formats for all the leagues that are included. The rule files contain:</p>
+		<ul>
+			<li>real divisions and cups with real formats from 2023</li>
+			<li>teams from the 2023 season</li>
+			<li>all nations have transfer windows, registration periods, tv dates, match rules, prize money - when I was able to find this in my online research</li>
+			<li>I added Football Academies, based on DaveTheEditor's concept and with the support of Daveincid.</li>
+		</ul>
+
+		<h3>Compatibility</h3>
+		<ul>
+			<li>FM Database 24.3.0 (only)</li>
+		</ul>
+
+		<h3>License</h3>
+		<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
+			<span property="dct:title">Football Manager rule files for CAF v24.0</span> by <span property="cc:attributionName">MasterIgor</span> is licensed under 
+			<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution-NonCommercial-NoDerivatives 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1"></a>
+		</p>
+
+		<p>The rule files are free, but every tip will greatly improve my motivation to provide updates and other federations, because I spent a great deal of free time researching and editing. So if you really enjoy the rule files, then every small contribution is greatly appreciated. 
+			<a HREF="https://www.buymeacoffee.com/MasterIgor">Support Me</a>.
+		</p>
+
+		<h3>Installation Guide</h3>
+		<p>Copy the .fmf files for the nations you want into the folder "&lt;My Documents&gt;\Sports Interactive\Football Manager 2024\editor data\".
+			The folder can be different if you have changed it in the FM24 preferences. The leagues should then appear the next time you start a new game in FM24 and chose advanced setup.<br/>
+			Make sure you have the checkbox "add players to playable teams" checked. This is recommended, otherwise you may end up with a lot of greyed-out players.
+		</p>
+
+		<h3>Testing and Research</h3>
+		<p>All rules files have been tested in the editor and in the game as well.<br/>
+		of course, it is always possible that there are issues and mistakes in the rule files. If you find an issue, you can contact me <a href="mailto:masterigor@online.de">by E-Mail</a>.</p>
+
+		<h3>Credits and thank you's</h3>
+		<ul>
+			<li>Daveincid, for his support, advice and testing</li>
+			<li>Nuno from Portugal, for research and testing</li>
+			<li>Lars for testing</li>
+		</ul>
+		
+		<h3>Available rule files:</h3>
+		<table border="1">
+			<tr>
+				<th width="75">File</th>
+				<th width="225">Federation</th>
+				<th width="400">added/changed competitions</th>
+				<th width="*">comments</th>
+			</tr>
+			
+			<tr>
+				<td>ALG.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/dz.png"/> Algeria</td>
+				<td>
+					[1] Ligue 1 Professionnelle<br/>
+					[2] Ligue 2 Professionnelle<br/>
+					&nbsp;&nbsp;[2.1] Groupe West</br>
+					&nbsp;&nbsp;[2.2] Groupe East</br>
+					[Cup] Algerian Cup<br/>
+					[Cup] Algerian Super Cup<br/>
+					[Acd] Algerian Academies (3)<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+			
+			<tr>
+				<td>ANG.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/ao.png"/> Angola</td>
+				<td>
+					[1] Girabola<br/>
+					[Cup] Taça de Angola<br/>
+					[Cup] Super Taça<br/>
+					[Acd] Angolan Academies (4)<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td>BDI.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/bi.png"/> Burundi</td>
+				<td>
+					[1] Ligue A<br/>
+					[Cup] Coupe du Président<br/>
+					[Cup] Super Coupe<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td>BEN.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/bj.png"/> Benin</td>
+				<td>
+					[1] Ligue 1<br/>
+					[Acd] Beninese Academies (2)<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td>BFA.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/bf.png"/> Burkina Faso</td>
+				<td>
+					[1] Burkinabé D1<br/>
+					[2] Burkinabé D2<br/>
+					&nbsp;&nbsp;[2.1] Poule A<br/>
+					&nbsp;&nbsp;[2.2] Poule B<br/>
+					[Cup] Coupe du Faso<br/>
+					[Acd] Burkinabé Academies (5)<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td>BOT.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/bw.png"/> Botswana</td>
+				<td>
+					[1] Premier Division<br/>
+					[Cup] FA Cup<br/>
+				</td>
+				<td>	
+					<ul>
+						<li>The Premier Division transitions from 16 teams in 2023 to 14 in 2024 and 12 from 2025 onwards.</li>
+					</ul>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>CGO.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/cg.png"/> Congo</td>
+				<td>
+					[1] Championnat National<br/>
+					[Cup] Coupe du Congo<br/>
+					[Acd] Congolese Academies (2)<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td>CHA.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/td.png"/> Chad</td>
+				<td>
+					[1] Ligue Nationale<br/>
+					[Cup] Coupe du Tchad<br/>
+				</td>
+				<td>
+					<ul>
+						<li>Normally, the Chad national league is a single month tournament fed by 7 regional zones. Unfortunately, neither the 7 regional leagues nor the teams are in the FM24 database. On top of that, I did not find any reliable data for these regional leagues. I therefore implemented the Chad league as a one month league for the 12 teams that are in the database.</li>
+					</ul>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>CIV.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/ci.png"/> Côte d'Ivoire</td>
+				<td>
+					[1] Ligue 1<br/>
+					[2] Ligue 2<br/>
+					&nbsp;&nbsp;[2.1] Pool A<br/>
+					&nbsp;&nbsp;[2.2] Pool B<br/>
+					[Cup] Coupe Nationale<br/>
+					[Cup] Super Coupe Félix Houphouët-Boigny<br/>
+					[Acd] Ivorian Academies (6)<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td>CMR.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/cm.png"/> Cameroon</td>
+				<td>
+					[1] MTN Elite One<br/>
+					[2] Elite Two<br/>
+					[Cup] Coupe du Cameroun<br/>
+					[Cup] Super Coupe<br/>
+					[Acd] Cameroonian Academies (4)<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td>COD.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/cd.png"/> Congo DR</td>
+				<td>
+					[1] Ligue 1<br/>
+					[Cup] Coupe du Congo<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td>COM.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/km.png"/> The Comoros</td>
+				<td>
+					[1] Premier Division<br/>
+					&nbsp;&nbsp;[1.1] Mwali<br/>
+					&nbsp;&nbsp;[1.2] Ndzuani<br/>
+					&nbsp;&nbsp;[1.3] Ngazidja<br/>
+					[Cup] Coupe des Comores<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+			
+			<tr>
+				<td>CPV.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/cv.png"/> Cap Verde Islands</td>
+				<td>
+					[1] National Championship<br/>
+					&nbsp;&nbsp;[1.1] Boa Vista Premier<br/>
+					&nbsp;&nbsp;[1.2] Brava Premier<br/>
+					&nbsp;&nbsp;[1.3] Fogo Premier<br/>
+					&nbsp;&nbsp;[1.4] Maio Premier<br/>
+					&nbsp;&nbsp;[1.5] Sal Premier<br/>
+					&nbsp;&nbsp;[1.6] Santiago (North) Premier<br/>
+					&nbsp;&nbsp;[1.7] Santiago (South) Premier<br/>
+					&nbsp;&nbsp;[1.8] Santo Antão (North) Premier<br/>
+					&nbsp;&nbsp;[1.9] Santo Antão (South) Premier<br/>
+					&nbsp;&nbsp;[1.10] São Nicalau Premier<br/>
+					&nbsp;&nbsp;[1.11] São Vicente Premier<br/>
+					[Cup] Taça Nacional<br/>
+					[Cup] Supertaça de Cabo Verde<br/>
+				</td>
+				<td>
+					<ul>
+						<li>No relegation from each of the premier leagues, because neither lower leagues nor enough teams are in the FM database</li>
+						<li>The Taça (Cup) has a stage for each regional cup. The winner qualifies to the national cup stage</li>
+					</ul>
+				</td>
+			</tr>
+
+			<tr>
+				<td>CTA.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/cf.png"/> Central African Republic</td>
+				<td>
+					[1] Championnat National<br/>
+					[Cup] Coupe Nationale<br/>
+					[Acd] Central African Academies (1)<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td>DJI.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/dj.png"/> Djibouti</td>
+				<td>
+					[1] Première Division<br/>
+					[Cup] Coupe du Djibouti<br/>
+					[Cup] Super Coupe<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td>EGY.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/eg.png"/> Egypt</td>
+				<td>
+					[1] Premier League<br/>
+					[2] Second Division A<br/>
+					[3] Second Division B<br/>
+					&nbsp;&nbsp;[3.1] Group 1<br/>
+					&nbsp;&nbsp;[3.2] Group 2<br/>
+					&nbsp;&nbsp;[3.3] Group 3<br/>
+					&nbsp;&nbsp;[3.4] Group 4<br/>
+					&nbsp;&nbsp;[3.5] Group 5<br/>
+					&nbsp;&nbsp;[3.6] Group 6<br/>
+					[Cup] Egypt Cup<br/>
+					[Cup] League Cup<br/>
+					[Cup] Super Cup<br/>
+					[Acd] Egyptian Academies (1)<br/>
+				</td>
+				<td>
+					<ul>
+						<li>The Egyptian second division has changed in 2023 and the format will only be used in 2023. I could not implement the special promotion stage where even a B team could promote to the premier league directly. So I made the A division to promote the first 3 teams instead.</li>
+						<li>Second Division A transitions from 20 teams in 2023 to 18 teams in 2024 (2 more teams relegated in 2023)</li>
+						<li>The Super Cup uses 4 teams and the tournament takes place in Abu Dhabi (as it has been in real life the past 3 years)</li>
+					</ul>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>EQG.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/gq.png"/> Equatorial Guinea</td>
+				<td>
+					[1] Liga Nacional<br/>
+					&nbsp;&nbsp;[1.1] Region Insular<br/>
+					&nbsp;&nbsp;[1.2] Region Continental<br/>
+					[Cup] Copa de S.E. el Presidente<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+			
+			<tr class="excluded">
+				<td>-</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/er.png"/> Eritrea</td>
+				<td>&nbsp;</td>
+				<td>
+					<ul>
+						<li>Could not find any reliable information on Eritrean leagues</li>
+					</ul>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>ETH.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/et.png"/> Ethiopia</td>
+				<td>
+					[1] Premier Division<br/>
+					[2] Higher League<br/>
+					&nbsp;&nbsp;[2.1] Group A<br/>
+					&nbsp;&nbsp;[2.2] Group B<br/>
+					[Cup] FA Cup<br/>
+					[Cup] Super Cup<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+			
+			<tr>
+				<td>GAB.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/ga.png"/> Gabon</td>
+				<td>
+					[1] Super League<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+			
+			<tr>
+				<td>GAM.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/gm.png"/> The Gambia</td>
+				<td>
+					[1] GFA League One<br/>
+					[Cup] Gambian Cup<br/>
+					[Acd] Gambian Academies (2)<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td>GHA.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/gh.png"/> Ghana</td>
+				<td>
+					[1] Premier League<br/>
+					[2] Division One<br/>
+					&nbsp;&nbsp;[2.1] Zone 1A<br/>
+					&nbsp;&nbsp;[2.2] Zone 1B<br/>
+					&nbsp;&nbsp;[2.3] Zone 2<br/>
+					&nbsp;&nbsp;[2.4] Zone 3<br/>
+					[Cup] National Cup<br/>
+					[Cup] Super Cup<br/>
+					[Acd] Ghanaian Academies (6)<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+			
+			<tr>
+				<td>GNB.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/gw.png"/> Guinea-Bissau</td>
+				<td>
+					[1] Campeonato Nacional<br/>
+					[Cup] Taça da Guiné-Bissau<br/>
+					[Cup] Supertaça<br/>
+					[Acd] Bissau-Guinean Academies (4)<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+			
+			<tr>
+				<td>GUI.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/gn.png"/> Guinea</td>
+				<td>
+					[1] Ligue 1<br/>
+					[Cup] Coupe de la Ligue<br/>
+					[Acd] Guinean Academies (2)<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+			
+			<tr>
+				<td>KEN.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/ke.png"/> Kenya</td>
+				<td>
+					[1] Premier League<br/>
+					[2] National Super League<br/>
+					[Cup] Kenya Cup<br/>
+					[Cup] Super Cup<br/>
+					[Acd] Kenyan Academies (4)<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+			
+			<tr>
+				<td>LBR.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/lr.png"/> Liberia</td>
+				<td>
+					[1] National League<br/>
+					[2] Second Division<br/>
+					[Cup] Liberian FA Cup<br/>
+					[Cup] Super Cup<br/>
+					[Acd] Liberian Academies (1)<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td>LBY.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/ly.png"/> Libya</td>
+				<td>
+					[1] Libyan Premier League<br/>
+					[Cup] Libyan Cup<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td>LES.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/ls.png"/> Lesotho</td>
+				<td>
+					[1] Premier League<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td>MAD.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/mg.png"/> Madagascar</td>
+				<td>
+					[1] Orange Pro league<br/>
+					&nbsp;&nbsp;[1.1] Conference Nord<br/>
+					&nbsp;&nbsp;[1.2] Conference Sud<br/>
+					[Cup] Coupe de Madagascar<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+			
+			<tr>
+				<td>MAR.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/ma.png"/> Morocco</td>
+				<td>
+					[1] Botola Pro 1<br/>
+					[2] Botola Pro 2<br/>
+					[3] Ligue National de Football Amateur<br/>
+					[Cup] Coupe du Thrône<br/>
+					[Acd] Moroccon Academies (1)<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+			
+			<tr>
+				<td>MLI.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/ml.png"/> Mali</td>
+				<td>
+					[1] Mali Ligue 1<br/>
+					[Cup] Mali Cup<br/>
+					[Cup] Super Cup<br/>
+					[Acd] Malian Academies (3)<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+			
+			<tr>
+				<td>MOZ.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/mz.png"/> Mozambique</td>
+				<td>
+					[1] Mocambola<br/>
+					[Cup] Taça de Mocambique<br/>
+					[Cup] Supertaça<br/>
+					[Acd] Mozambican Academies (1)<br/>
+				</td>
+				<td>
+					<ul>
+						<li>Taça de Mocambique uses 11 regional qualifying stages</li>
+					</ul>
+				</td>
+			</tr>
+
+			<tr>
+				<td>MRI.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/mu.png"/> Mauritius</td>
+				<td>
+					[1] National Super League<br/>
+					[Cup] FA Cup<br/>
+					[Cup] Republic Cup<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+			
+			<tr>
+				<td>MTN.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/mr.png"/> Mauritania</td>
+				<td>
+					[1] Super D1<br/>
+					[Cup] Coupe du Président<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+			
+			<tr>
+				<td>MWI.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/mw.png"/> Malawi</td>
+				<td>
+					[1] Super League<br/>
+					[Cup] FMA Cup<br/>
+					[Cup] Top 8 Cup<br/>
+					[Cup] Super Cup<br/>
+					[Acd] Malawian Academies (1)<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+			
+			<tr>
+				<td>NAM.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/na.png"/> Namibia</td>
+				<td>
+					[1] Namibia Premiership<br/>
+					[Acd] Namibian Academies (2)<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+			
+			<tr>
+				<td>NGA.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/ng.png"/> Nigeria</td>
+				<td>
+					[1] Premier League<br/>
+					[2] National League<br/>
+					&nbsp;&nbsp;[2.1] Conference A<br/>
+					&nbsp;&nbsp;[2.2] Conference B<br/>
+					&nbsp;&nbsp;[2.3] Conference C<br/>
+					&nbsp;&nbsp;[2.4] Conference D<br/>
+					[Cup] Federation Challenge Cup<br/>
+					[Acd] Nigerian Academies (4)<br/>
+				</td>
+				<td>&nbsp;</td>			
+			</tr>
+			
+			<tr>
+				<td>NIG.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/ne.png"/> Niger</td>
+				<td>
+					[1] Super Ligue<br/>
+					[Cup] Coupe du Niger<br/>
+					[Acd] Nigerien Academies (2)<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+			
+			<tr>
+				<td>REU.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/re.png"/> La Réunion</td>
+				<td>
+					[1] Régionale D1<br/>
+					[Cup] Coupe de la Réunion<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+						
+			<tr>
+				<td>RSA.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/za.png"/> South Africa</td>
+				<td>
+					<span class="unchanged">[1] Premier Soccer League</span><br/>
+					<span class="unchanged">[2] National First Division Championship</span><br/>
+					<span class="unchanged">[Cup] FA Cup</span><br/>
+					<span class="unchanged">[Cup] Knockout Cup</span><br/>
+					<span class="unchanged">[Cup] Super-8 Cup</span><br/>
+					[Acd] South African Academies (5)<br/>
+				</td>
+				<td>
+					<ul>
+						<li>Only Academies were added. All other competitions are unchanged.</li>
+					</ul>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>RWA.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/rw.png"/> Rwanda</td>
+				<td>
+					[1] National League<br/>
+					[Cup] Amahoro Cup<br/>
+					[Cup] Super Cup<br/>
+					[Acd] Rwandan Academies (2)<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td>SDN.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/sd.png"/> Sudan</td>
+				<td>
+					[1] Premier League<br/>
+					[Cup] Sudan Cup<br/>
+				</td>
+				<td>
+					<ul>
+						<li>There has been no football in Sudan in 2023, so I used the 2022 format and competitions</li>
+					</ul>
+				</td>
+			</tr>
+
+			<tr>
+				<td>SEN.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/sn.png"/> Senegal</td>
+				<td>
+					[1] Ligue 1<br/>
+					[2] Ligue 2<br/>
+					[Cup] Coupe du Sénégal<br/>
+					[Cup] Coupe de la Ligue<br/>
+					[Acd] Senegalese Academies (4)<br/>
+				</td>
+				<td>
+					<ul>
+						<li>Ligue 1 transitions from 14 teams in 2023 to 16 teams from 2024 onwards.</li>
+					</ul>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>SEY.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/sc.png"/> Seychelles</td>
+				<td>
+					[1] Premier League<br/>
+					[Cup] SFF Cup<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+			
+			<tr>
+				<td>SLE.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/sl.png"/> Sierra Leone</td>
+				<td>
+					[1] Premier League<br/>
+					[Cup] Sierra Leone FA Cup<br/>
+					[Acd] Sierra Leonean Academies (2)<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+			
+			<tr>
+				<td>SOM.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/so.png"/> Somalia</td>
+				<td>
+					[1] Premier League<br/>
+					[Cup] General Da'ud Cup<br/>
+					[Cup] Super Cup<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td>SSD.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/ss.png"/> South Sudan</td>
+				<td>
+					[1] Premier League<br/>
+					[Cup] South Sudan Cup<br/>
+					[Cup] Super Cup<br/>
+				</td>
+				<td>
+					<ul>
+						<li>Normally there are 13 regional qualifiers that feed teams to the national league. The National league itself is played in a single month in May. Just like for Chad, the database does not hold by far enough teams to realistically create the league. Therefore I implemented the South Sudan National League only as the final tournament in May</li> 
+						<li>Also the cup normally uses regional qualifiers, instead I opted for a 16 team knockout cup due to the lack of teams in the database.</li>
+					</ul>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>STP.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/st.png"/> São Tomé and Príncipe</td>
+				<td>
+					[1] National Championship<br/>
+					&nbsp;&nbsp;[1.1] São Tomé Championship<br/>
+					&nbsp;&nbsp;[1.2] Príncipe Championship<br/>
+					[Cup] Taça Nacional<br/>
+					[Cup] Supertaça<br/>
+					[Acd] São Toméan Academies (2)<br/>
+				</td>
+				<td>
+					<ul>
+						<li>Winners of the 2 Island Championships play the National Championship</li>
+						<li>The Taça (Cup) has regional stages for the 2 islands and a grand final</li>
+					</ul>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>SWZ.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/sz.png"/> Eswatini</td>
+				<td>
+					[1] Premier League<br/>
+					[Cup] Ingwenyama Cup<br/>
+				</td>
+				<td>
+					<ul>
+						<li>I used the Eswatini Cup in the database for the Ingwenyama Cup. In that way I did not have to add a DB record. The Ingwenyama cup is the only cup still being played in the past 4 years.</li>
+					</ul>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>TAN.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/tz.png"/> Tanzania</td>
+				<td>
+					[1] Premier League<br/>
+					[2] Championship<br/>
+					[Cup] Tanzanian Federation Cup<br/>
+					[Cup] Community Shield<br/>
+					[Acd] Tanzanian Academies (6)<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+			
+			<tr>
+				<td>TOG.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/tg.png"/> Togo</td>
+				<td>
+					[1] Ligue 1<br/>
+					[2] Ligue 2<br/>
+					[Cup] Coupe Nationale<br/>
+					[Cup] Coupe de l'Independence<br/>
+					[Acd] Togolese Academies (6)<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+			
+			<tr>
+				<td>TUN.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/tn.png"/> Tunisia</td>
+				<td>
+					[1] Ligue 1 Professionnelle<br/>
+					[2] Ligue 2 Professionnelle<br/>
+					[Cup] Coupe de Tunisie<br/>
+					[Cup] Super Coupe<br/>
+					[Acd] Tunisian Academies (2)<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+			
+			<tr>
+				<td>UGA.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/ug.png"/> Uganda</td>
+				<td>
+					[1] Uganda Premier League<br/>
+					[Cup] Ugandan Cup<br/>
+					[Cup] FUFA Top 8 Cup<br/>
+					[Acd] Ugandan Academies (1)<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+					
+			<tr>
+				<td>ZAM.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/zm.png"/> Zambia</td>
+				<td>
+					[1] Super League<br/>
+					[2] National Division One<br/>
+					[Cup] ABSA Cup<br/>
+					[Cup] Charity Shield<br/>
+					[Acd] Zambian Academies (2)<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td>ZAN.fmf</td>
+				<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Zanzibar</td>
+				<td>
+					[1] Premier League<br/>
+					[Cup] Zanzibar Cup<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+			
+			<tr>
+				<td>ZIM.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/zw.png"/> Zimbabwe</td>
+				<td>
+					[1] Premier League<br/>
+					[Cup] Chibuku Cup<br/>
+					[Cup] Challenge Cup (Super Cup)<br/>
+					[Acd] Zimbabwean Academies (2)<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+		</table>
+		
+		<!--
+		<h3>Known Issues in FM24</h3>
+		
+		<table border="1">
+		<tr>
+			<td><a id="Issue1"/>Issue #1 - Continental Cup Schedule Problems</td>
+			<td>In FM24, the Central American Cup uses a host nation from Caribbean Nations incorrectly.
+				This causes teams to "travel" to the cup for the entire group stage (the whole month of August). 
+				Teams participating in this cup will not play any domestic games during that month. This can seriously clog up the domestic schedule.<br/>
+				My advice is to use my CONCACAF continental cups file where I fixed this, and then those teams will play domestic league on saturday and continental cup on wednesday like they should.
+			</td>
+		</tr>
+		<tr>
+			<td><a id="Issue2"/>Issue #2 - Continental cup teams wrong for Panama</td>
+			<td>In FM24, the Central American Cup picks teams from Panama from the 2nd tier instead of the 1st tier (Liga Panamena).<br/>
+				My advice is to use my CONCACAF continental cups file where I fixed this, and then the correct teams from Panama will enter.
+			</td>
+		</tr>
+		<tr>
+			<td><a id="Issue3"/>Issue #3 - Continental cup teams from wrong year</td>
+			<td>In FM24, the Central American Cup picks qualified teams in December. While all the domestic leagues already finish in May/June.
+				This causes teams to participate in the Central American Cup 1 year later.<br/>
+				I advise to use my CONCACAF continental cup file for a better experience, the competition is set up in July and picks teams on that date when (most) competitions have finished.
+			</td>
+		</tr>
+		</table>
+		-->
+
+		<!--
+		<h3>Changelog</h3>
+
+		<table border="1">
+			<tr>
+				<td>v24.1</td>
+				<td>
+					<ul>
+						<li>added reserve teams where missing, this reduces the size of the senior squad: AIA, ATG, BAH, BRB, CAN, CAY, CRC, DOM, GUY, LCA, PAN, SMN, SXM, TCA, TRI, VGB and VIR</li>
+						<li>Changed Panamu U-20 teams (in 2nd tier) type from B team to U20</li>
+						<li>CONCACAF Central American Cup: added real prize money</li>
+						<li>CONCACAF Champions Cup: prize money is set to increase 5 times, but details not available so I was creative and will update using the exact amounts when it is published</li>
+					</ul>
+				</td>
+			</tr>
+		</table>
+		-->
+		
+	</body>
+	
+</html>
