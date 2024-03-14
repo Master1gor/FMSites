@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Football Manager rule files for CONMEBOL v24.0</title>
+		<style>
+			html * {
+				font-size: 12px;
+				line-height: 1.625;
+				color: #2020131;
+				font-family: monospace;
+			}
+			
+			tr.excluded {
+				background: #FAA;
+			}
+			
+			img.flag {
+				vertical-align: middle;
+			}
+
+			span.unchanged {
+				color: #888;
+			}
+			
+			span.changed {
+				color: #05F;
+			}
+			
+			span.removed {
+				color: #F00;
+			}
+		
+		</style>
+	</head>
+	
+	<body>
+	
+		<h1>Football Manager rule files for CONMEBOL v24.0</h1>
+		
+		<p>In this package, you will find rule files for CONMEBOL Member Nations.</p>
+		<p>I did my best to use realistic formats for all the leagues that are included. The rule files contain:</p>
+		<ul>
+			<li>real divisions and cups with real formats from 2023</li>
+			<li>teams from the 2023 season</li>
+			<li>all nations have transfer windows, registration periods, tv dates, match rules, prize money - when I was able to find this in my online research</li>
+		</ul>
+
+		<h3>Compatibility</h3>
+		<ul>
+			<li>FM Database 24.0.0</li>
+		</ul>
+
+		<h3>License</h3>
+		<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
+			<span property="dct:title">Football Manager rule files for CONMEBOL v24.0</span> by <span property="cc:attributionName">MasterIgor</span> is licensed under 
+			<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution-NonCommercial-NoDerivatives 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1"></a>
+		</p>
+
+		<p>The rule files are free, but every tip will greatly improve my motivation to provide updates and other federations, because I spent a great deal of free time researching and editing. So if you really enjoy the rule files, then every small contribution is greatly appreciated. 
+			<a HREF="https://www.buymeacoffee.com/MasterIgor">Support Me</a>.
+		</p>
+
+		<h3>Installation Guide</h3>
+		<p>Copy the .fmf files for the nations you want into the folder "&lt;My Documents&gt;\Sports Interactive\Football Manager 2024\editor data\".
+			The folder can be different if you have changed it in the FM24 preferences. The leagues should then appear the next time you start a new game in FM24 and chose advanced setup.
+		</p>
+
+		<h3>Testing</h3>
+		<p>all rules files have been tested by me in the editor and the game as well.<br/>
+		of course, it is always possible that there are issues and mistakes in the rule files. If you find an issue, you can contact me <a href="mailto:masterigor@online.de">by E-Mail</a>.</p>
+
+		<h3>Available rule files:</h3>
+		<table border="1">
+			<tr>
+				<th width="75">File</th>
+				<th width="225">Federation</th>
+				<th width="400">added/changed competitions</th>
+				<th width="*">comments</th>
+			</tr>
+			
+			<tr>
+				<td>ARG.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/ar.png"/> Argentina</td>
+				<td>
+					<span class="unchanged">[1] Argentina Primera Division</span><br/>
+					<span class="changed">[2] Argentina Segunda Division (*)</span><br/>
+					[3] Argentina 3rd Division<br/>
+					&nbsp;&nbsp;[3.1] Torneo Federal A<br/>
+					&nbsp;&nbsp;[3.2] Metropolitan Zone B<br/>
+					<span class="changed">[Cup] Copa Argentina (**)</span><br/>
+					<span class="unchanged">[Cup] Supercopa</span><br/>
+					<span class="unchanged">[Cup] Supercopa Internacional</span><br/>
+					<span class="changed">[Cup] Trofeo de Campeones (***)</span><br/>
+				</td>
+				<td>
+					<ul>
+						<li>3rd tier was added. (in case the number of teams in a sub competition drops below a certain number, which can happen when promotions > relegations from tier 2, then there will be no more promotions until there are again enough teams. But this should not happen often)</li>
+						<li>(*) Segunda Division refactored, will transition from 37 teams in 2023 to 38 teams in 2024</li>
+						<li>(**) Copa Argentina teams were refactored to enable 3rd tier teams to qualify for this tournament instead of being randomly picked (10 from Torneo Federal A and 5 from Metropolitan B)</li>
+						<li>(***)Trofeo de Campeones refactored to real format, and will run every year (in game was only in 2023)</li>
+					</ul>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>BOL.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/bo.png"/> Bolivia</td>
+				<td>
+					[1] Bolivia Primera Division<br/>
+					[Cup] Copa de la Liga Professional<br/>
+				</td>
+				<td>
+					<ul>
+						<li>final ranking (continental cup qualification and relegation spots) is done by average points gained in the league table and the group stage of the Copa (as in real life)</li>
+					</ul>
+				</td>				
+			</tr>
+
+			<tr class="excluded">
+				<td>-</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/br.png"/> Brazil</td>
+				<td>
+				</td>
+				<td>No rule file:
+					<ul>
+						<li>Brazil 4th tier is not a real league but more a cup with teams qualifying from the state championships. In order to properly do this, I would need to do also the state leagues (5th tier). I therefore opted not to create this at this time, because the effort is too high.
+					</ul>
+				</td>
+			</tr>
+
+			<tr>
+				<td>CHL.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/cl.png"/> Chile</td>
+				<td>
+					<span class="unchanged">[1] Primera Division</span><br/>
+					<span class="unchanged">[2] Primera Division B</span><br/>
+					[3] Segunda Division<br/>
+					[4] Tercera Division A<br/>
+					<span class="changed">[Cup] Copa Chile (*)</span></br>
+					<span class="unchanged">[Cup] Supercopa</span></br>				
+				</td>
+				<td>
+					<ul>
+						<li>(*) refactored Copa Chile to 2023 format (incl. preliminary round for 4th tier teams)</li>
+						<li>All other competitions from FM24 unchanged</li>
+					</ul>
+				</td>
+			</tr>
+
+			<tr class="excluded">
+				<td>-</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/co.png"/> Colombia</td>
+				<td>&nbsp;</td>
+				<td>No rule file:
+					<ul>
+						<li>3rd tier in Colombia is complex with 166 teams. The effort was too high (and there are no promotions to 2nd tier)</li>
+					</ul>
+				</td>
+			</tr>
+
+			<tr>
+				<td>ECU.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/ec.png"/> Ecuador</td>
+				<td>
+					[1] Ecuador Serie A<br/>
+					[2] Ecuador Serie B<br/>
+					[Cup] Copa Ecuador<br/>
+					[Cup] Super Copa
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td>PAR.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/py.png"/> Paraguay</td>
+				<td>
+					[1] Primera Division<br/>
+					[2] Division Intermedia<br/>
+					[Cup] Copa Paraguay<br/>
+					[Cup] Super Copa<br/>
+				</td>
+				<td>
+					<ul>
+						<li>All Paraguayan divisions use average points of the last 3 seasons to determine relegation. (Points from the last 2 seasons were added to the database)</li>
+						<li>Primera Division uses Apertura & Clausura</li>
+					</ul>
+				</td>
+			</tr>
+
+			<tr>
+				<td>PER.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/pe.png"/> Peru</td>
+				<td>
+					<span class="unchanged">[1] Peru Liga 1</span><br/>
+					[2] Peru Liga 2<br/>
+				</td>
+				<td>
+					<ul>
+						<li>Peru Liga 2 transitions from 14 teams in 2023 to 18 teams in 2024 onwards</li>
+						<li>All other competitions from FM24 unchanged (except some match rule updates)</li>
+					</ul>
+				</td>
+			</tr>
+
+			<tr>
+				<td>URU.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/uy.png"/> Uruguay</td>
+				<td>
+					<span class="unchanged">[1] Primera Division</span><br/>
+					<span class="changed">[2] Segunda Division (*)</span><br/>
+					[3] Primera Division Amateur<br/>
+					<span class="changed">[Cup] Copa Uruguay (**)</span><br/>
+					<span class="unchanged">[Cup] Supercopa</span><br/>
+				</td>
+				<td>
+					<ul>
+						<li>(*) Segunda Division was refactored to 2023 format (2 direct relegations to Amateur Division)</li>
+						<li>(**) Copa Uruguay refactored to 2023 format</li>
+					</ul>
+				</td>
+			</tr>
+
+			<tr>
+				<td>VEN.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/ve.png"/> Venezuela</td>
+				<td>
+					[1] Primera Division<br/>
+					[2] Segunda Division<br/>
+				</td>
+				<td>
+					<ul>
+						<li>Segunda Division uses Apertura & Clausura</li>
+					</ul>
+				</td>
+			</tr>
+			
+		</table>
+	</body>
+	
+</html>

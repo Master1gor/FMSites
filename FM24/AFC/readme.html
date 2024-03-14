@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Football Manager rule files for AFC v24.4</title>
+		<style>
+			html * {
+				font-size: 12px;
+				line-height: 1.625;
+				color: #2020131;
+				font-family: monospace;
+			}
+			
+			tr.excluded {
+				background: #FAA;
+			}
+			
+			img.flag {
+				vertical-align: middle;
+			}
+
+			span.unchanged {
+				color: #888;
+			}
+			
+			span.changed {
+				color: #05F;
+			}
+			
+			span.removed {
+				color: #F00;
+			}
+		
+		</style>
+	</head>
+	
+	<body>
+	
+		<h1>Football Manager rule files for AFC v24.4</h1>
+		
+		<p>In this package, you will find rule files for AFC Member Nations.</p>
+		<p>I did my best to use realistic formats for all the leagues that are included. The rule files contain:</p>
+		<ul>
+			<li>real divisions and cups with real formats from 2023</li>
+			<li>teams from the 2023 season</li>
+			<li>all nations have transfer windows, registration periods, tv dates, match rules, prize money - when I was able to find this in my online research</li>
+		</ul>
+
+		<h3>Compatibility</h3>
+		<ul>
+			<li>FM Database 24.0.0</li>
+		</ul>
+
+		<h3>License</h3>
+		<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
+			<span property="dct:title">Football Manager rule files for AFC v24.4</span> by <span property="cc:attributionName">MasterIgor</span> is licensed under 
+			<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution-NonCommercial-NoDerivatives 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1"></a>
+		</p>
+
+		<p>The rule files are free, but every tip will greatly improve my motivation to provide updates and other federations, because I spent a great deal of free time researching and editing. So if you really enjoy the rule files, then every small contribution is greatly appreciated. 
+			<a HREF="https://www.buymeacoffee.com/MasterIgor">Support Me</a>.
+		</p>
+
+		<h3>Installation Guide</h3>
+		<p>Copy the .fmf files for the nations you want into the folder "&lt;My Documents&gt;\Sports Interactive\Football Manager 2024\editor data\".
+			The folder can be different if you have changed it in the FM24 preferences. The leagues should then appear the next time you start a new game in FM24 and chose advanced setup.<br/>
+			Make sure you have the checkbox "add players to playable teams" checked. This is recommended, otherwise you may end up with a lot of greyed-out players.
+		</p>
+
+		<h3>Testing</h3>
+		<p>all rules files have been tested by me in the editor and the game as well.<br/>
+		of course, it is always possible that there are issues and mistakes in the rule files. If you find an issue, you can contact me <a href="mailto:masterigor@online.de">by E-Mail</a>.</p>
+
+		<h3>Available rule files:</h3>
+		<table border="1">
+			<tr>
+				<th width="75">File</th>
+				<th width="225">Federation</th>
+				<th width="400">added/changed competitions</th>
+				<th width="*">comments</th>
+			</tr>
+			
+			<tr>
+				<td>AFG.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/af.png"/> Afghanistan</td>
+				<td>
+					[1] Afghanistan Champions League
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+			
+			<tr>
+				<td>AUS.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/au.png"/> Australia</td>
+				<td>
+					<span class="changed">[1] ISUZU A-League (***)</span><br/>
+					[2] National Premier leagues<br/>
+					&nbsp;&nbsp;[2.1] NPL ACT<br/>
+					&nbsp;&nbsp;[2.2] NPL New South Wales<br/>
+					&nbsp;&nbsp;[2.3] NPL North New South Wales<br/>
+					&nbsp;&nbsp;[2.4] NPL Queensland<br/>
+					&nbsp;&nbsp;[2.5] NPL Victoria<br/>
+					&nbsp;&nbsp;[2.6] NPL Southern Australia<br/>
+					&nbsp;&nbsp;[2.7] NPL Western Australia<br/>
+					&nbsp;&nbsp;[2.8] NPL Tasmania<br/>
+					<span class="changed">[Cup] Australia Cup (***)</span><br/>
+					<span class="unchanged">[Cup] Super Cup</span><br/>
+				</td>
+				<td>
+					<ul>
+						<li>There is no promotion from the NPL to the A-League (like in real life)</li>
+						<li>(***) I had to refactor the Australia Cup and A-League to accomodate the NPL Teams qualification for the cup</li>
+						<li>Other competitions originally in FM24 are unchanged</li>
+					</ul>
+				</td>				
+			</tr>
+
+			<tr>
+				<td>BAN.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/bd.png"/> Bangladesh</td>
+				<td>
+					[1] Bangladeshi Premier League<br/>
+					[Cup] Federation Cup<br/>
+					[Cup] Independence Cup
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td>BHR.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/bh.png"/> Bahrain</td>
+				<td>
+					[1] Bahrain Premier League<br/>
+					[2] Bahrain Second Division<br/>
+					[Cup] King's Cup<br/>
+					[Cup] FA Cup<br/>
+					[Cup] Super Cup
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td>BHU.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/bt.png"/> Bhutan</td>
+				<td>
+					[1] Bhutan Premier League<br/>
+					[Cup] Bhutan Premier League Qualifiers
+				</td>
+				<td>
+					<ul>
+						<li>The Bhutan Premier League has a qualifier tournament with 8 teams. Technically I assigned all teams to the BPL (14 teams) and set the last team of the qualifiers to relegate and be replaced by another team in the qualifiers, to have some variation at least..</li>
+					</ul>
+				</td>
+			</tr>
+
+			<tr>
+				<td>BRU.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/bn.png"/> Brunei Darussalam</td>
+				<td>
+					[1] Brunei Super League<br/>
+					[Cup] FA Cup
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td>CAM.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/kh.png"/> Cambodia</td>
+				<td>
+					[1] Cambodian Premier League<br/>
+					[2] Cambodian First Division<br/>
+					[Cup] Hun Sen Cup<br/>
+					[Cup] League cup<br/>
+					[Cup] Super Cup<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td>CHN.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/cn.png"/> China</td>
+				<td>
+					<span class="unchanged">[1] China Super League</span><br/>
+					<span class="unchanged">[2] China First Division</span><br/>
+					[3] China Second Division<br/>
+					&nbsp;&nbsp;[3.1] Northern Group<br/>
+					&nbsp;&nbsp;[3.2] Southern Group<br/>
+					<span class="unchanged">[Cup] Chinese FA Cup</span><br/>
+					<span class="unchanged">[Cup] Super Cup</span><br/>
+				</td>
+				<td>
+					<ul>
+						<li>Chinese Second Division transits from 16 teams in 2023 to 20 teams from 2024 onwards</li>
+						<li>All original competitions in FM24 are unchanged</li>
+					</ul>
+				</td>
+			</tr>
+
+			<tr>
+				<td>GUM.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/gu.png"/> Guam</td>
+				<td>
+					[1] Guamese Soccer League
+				</td>
+				<td>
+					<ul>
+						<li>Guamese Soccer League with 5 teams in 2023 transitions to 15 teams in 2024</li>
+					</ul>
+				</td>
+			</tr>
+
+			<tr>
+				<td>HKG.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/hk.png"/> Hong Kong</td>
+				<td>
+					<span class="unchanged">[1] Hong Kong Premier League</span><br/>
+					[2] Hong Kong First Division<br/>
+					[3] Hong Kong Second Division<br/>
+					<span class="unchanged">[Cup] FA Cup</span><br/>
+					<span class="unchanged">[Cup] Senior Challenge Shield</span><br/>
+					<span class="unchanged">[Cup] Sapling Cup</span><br/>
+					<span class="unchanged">[Cup] Hong Kong-Canton Interport Cup</span><br/>
+				</td>
+				<td>
+					<ul>
+						<li>All original competitions in FM24 are unchanged</li>
+					</ul>
+				</td>
+			</tr>
+
+			<tr>
+				<td>IDN.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/id.png"/> Indonesia</td>
+				<td>
+					<span class="changed">[1] Indonesia League One (***)</span><br/>
+					<span class="changed">[2] Indonesia League Two (***)</span><br/>
+					<span class="unchanged">[Cup] Indonesian Cup</span><br/>
+					<span class="unchanged">[Cup] Super Cup</span><br/>
+					<span class="unchanged">[Cup] Piala Presiden Indonesia</span><br/>
+				</td>
+				<td>
+					<ul>
+						<li>(***) Refactored League 1 and 2 to the 2023 format</li>
+						<li>Other original competitions in FM24 are unchanged</li>
+					</ul>
+				</td>
+			</tr>
+
+			<tr>
+				<td>IND.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/in.png"/> India</td>
+				<td>
+					[1] Indian Super League<br/>
+					[2] I-League<br/>
+					[3] I-League 2<br/>
+					[Cup] Durand Cup<br/>
+					[Cup] Super Cup<br/>
+				</td>
+				<td>
+					<ul>
+						<li>(!) This completely replaces the original India of FM24 to the real format (original game had I-League on top level and no Super League)</li>
+						<li>I-League 2 has been updated to use real life teams from 2023/2024 season</li>
+					</ul>
+				</td>
+			</tr>
+
+			<tr>
+				<td>IRN.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/ir.png"/> Iran</td>
+				<td>
+					[1] Persian Gulf Pro League<br/>
+					[2] Azadegan League<br/>
+					[3] Iranian League 2<br/>
+					&nbsp;&nbsp;[3.1] Group A<br/>
+					&nbsp;&nbsp;[3.2] Group B<br/>
+					[Cup] Hafzi Cup<br/>
+					[Cup] Super Cup<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td>IRQ.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/iq.png"/> Iraq</td>
+				<td>
+					[1] Iraqi Stars League<br/>
+					[2] Iraqi First Division<br/>
+					&nbsp;&nbsp;[2.1] Group A<br/>
+					&nbsp;&nbsp;[2.2] Group B<br/>
+					[Cup] FA Cup<br/>
+					[Cup] Super Cup
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td>JOR.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/jo.png"/> Jordan</td>
+				<td>
+					[1] Jordanian Professional League<br/>
+					[2] Jordanian First Division<br/>
+					[Cup] Jordan Cup<br/>
+					[Cup] Jordanian Shield<br/>
+					[Cup] Super Cup<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td>JPN.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/jp.png"/> Japan</td>
+				<td>
+					[1] J League 1<br/>
+					[2] J League 2<br/>
+					[3] J League 3<br/>
+					[4] Japan Football League<br/>
+					[Cup] JFA Emperor's Cup<br/>
+					&nbsp;&nbsp;[Cup.*] 47 Prefectural Qualifiers<br/>
+					[Cup] JFA League Cup<br/>
+					[Cup] Super Cup<br/>
+				</td>
+				<td>
+					<ul>
+						<li>(!) This completely replaces the original Japan of FM24 (because Japan cannot be extended in the editor - when I created this file)</li>
+						<li>(!) You must delete the following files in the game folder "C:\Program Files (x86)\Steam\steamapps\common\Football Manager 2024\data\database\db\2400\dbc\permanent\"</li>
+						<ul>
+							<li>japan.dbc</li>
+							<li>japan_loans.dbc</li>
+							<li>1_japan_removed_clubs.dbc</li>
+							<li>japan_fake.dbc</li>
+						</ul>
+						<li>(!) You must delete the following files in the game folder "C:\Program Files (x86)\Steam\steamapps\common\Football Manager 2024\data\database\db\2400\lnc\all\"</li>
+						<ul>
+							<li>fake.lnc</li>
+						</ul>
+						<li>There are qualifer tournaments for each of the 47 prefectures to the Emperor's Cup. Like in real life, all teams from J3 and below must qualify themselves.</li>
+					</ul>
+				</td>
+			</tr>
+
+			<tr>
+				<td>KGZ.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/kg.png"/> Kyrgyz Republic</td>
+				<td>
+					[1] Kyrgyzstani Premier League<br/>
+					[2] Kyrgyzstani National League<br/>
+					&nbsp;&nbsp;[2.1] Group A<br/>
+					&nbsp;&nbsp;[2.2] Group B<br/>
+					[Cup] Kyrgyzstani Cup<br/>
+					[Cup] Super Cup
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td>KOR.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/kr.png"/> Republic of Korea</td>
+				<td>
+					<span class="unchanged">[1] K1 League</span><br/>
+					<span class="unchanged">[2] K2 League</span><br/>
+					[3] K3 League<br/>
+					[4] K4 League<br/>
+					<span class="unchanged">[Cup] FA Cup</span><br/>
+				</td>
+				<td>
+					<ul>
+						<li>There is no promotion between K2 and K3 league (like in real life)</li>
+						<li>K3 transitions from 15 teams in 2023 to 16 teams in 2024</li>
+						<li>K4 transitions from 17 teams in 2023 to 16 teams in 2024</li>
+						<li>Other original competitions in FM24 are unchanged</li>
+					</ul>
+				</td>
+			</tr>
+
+			<tr>
+				<td>KSA.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/sa.png"/> Saudi Arabia</td>
+				<td>
+					[1] Saudi Professional League<br/>
+					[2] Saudi First Division<br/>
+					[3] Saudi Second Division<br/>
+					&nbsp;&nbsp;[3.1] Group A<br/>
+					&nbsp;&nbsp;[3.2] Group B<br/>
+					[4] Saudi Third Division<br/>
+					&nbsp;&nbsp;[4.1] Group A<br/>
+					&nbsp;&nbsp;[4.2] Group B<br/>
+					&nbsp;&nbsp;[4.3] Group C<br/>
+					&nbsp;&nbsp;[4.4] Group D<br/>
+					[Cup] Kings Cup<br/>
+					[Cup] Super Cup<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td>KUW.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/kw.png"/> Kuwait</td>
+				<td>
+					[1] Kuwait Premier League<br/>
+					[Cup] Amir Cup<br/>
+					[Cup] Crown Prince Cup<br/>
+					[Cup] Federation Cup<br/>
+					[Cup] Super Cup<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td>LAO.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/la.png"/> Laos</td>
+				<td>
+					[1] Lao League 1<br/>
+					[Cup] Football Federation Cup<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td>LBN.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/lb.png"/> Lebanon</td>
+				<td>
+					[1] Lebanese Premier League<br/>
+					[2] Lebanese Second Division<br/>
+					[Cup] FA Cup<br/>
+					[Cup] Federation Cup<br/>
+					[Cup] Super Cup<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td>MAC.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/mo.png"/> Macau</td>
+				<td>
+					[1] Macanese First Division<br/>
+					[2] Macanese Second Division<br/>
+					[Cup] Macau FA Cup<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td>MAS.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/my.png"/> Malaysia</td>
+				<td>
+					<span class="changed">[1] Malaysian Super League (***)</span><br/>
+					<span class="changed">[2] M3 League (***)</span><br/>
+					[3] M4 League<br/>
+					&nbsp;&nbsp;[3.1] Central/South<br/>
+					&nbsp;&nbsp;[3.2] East Coast<br/>
+					&nbsp;&nbsp;[3.3] Borneo<br/>
+					<span class="unchanged">[Cup] FA Cup</span><br/>
+					<span class="unchanged">[Cup] Malaysian Cup</span><br/>
+					<span class="unchanged">[Cup] Challenge Cup</span><br/>
+					<span class="unchanged">[Cup] Charity Cup</span><br/>
+				</td>
+				<td>
+					<ul>
+						<li>(***) Refactored Super League and M3 League to the 2023 format (using promotion/relegation playoffs)</li>
+						<li>Other original competitions in FM24 are unchanged</li>
+					</ul>
+				</td>
+			</tr>
+
+			<tr>
+				<td>MDV.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/mv.png"/> Maldives</td>
+				<td>
+					[1] Dhivehi Premier League<br/>
+					[Cup] FA Cup<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td>MNG.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/mn.png"/> Mongolia</td>
+				<td>
+					[1] Mongolian National Premier League<br/>
+					[Cup] Mongolian Cup<br/>
+					[Cup] Super Cup<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td>MYA.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/mm.png"/> Myanmar</td>
+				<td>
+					[1] Myanmar National League<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td>NEP.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/np.png"/> Nepal</td>
+				<td>
+					[1] Nepali A-League<br/>
+					[2] Nepali B-League<br/>
+				</td>
+				<td>
+					<ul>
+						<li>I did not included the franchise Nepal Super League, because I did not find how I could implement them drafting players from the other leagues. And also, qualification from the continental cups is from the A-League</li>
+					</ul>
+				</td>
+			</tr>
+
+			<tr>
+				<td>MNP.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/mp.png"/> N. Mariana Islands</td>
+				<td>
+					[1] Northern Mariana Division A<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td>OMA.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/om.png"/> Oman</td>
+				<td>
+					[1] Omani Professional League<br/>
+					[2] Omani First Division<br/>
+					&nbsp;&nbsp;[2.1] Group A<br/>
+					&nbsp;&nbsp;[2.2] Group B<br/>
+					[Cup] Sultan Qaboos Cup<br/>
+					[Cup] Super Cup<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td>PAK.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/pk.png"/> Pakistan</td>
+				<td>
+					[1] Pakistani Premier League<br/>
+				</td>
+				<td>
+					<ul>
+						<li>Even though there has been no football league in Pakistan since 2021, I implemented rules based on the last active season</li>
+					</ul>
+				</td>
+			</tr>
+
+			<tr>
+				<td>PHI.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/ph.png"/> Philippines</td>
+				<td>
+					[1] Philippines Football League<br/>
+					[Cup] Philippines Football League Cup<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td>PLE.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/ps.png"/> Palestine</td>
+				<td>
+					[1] Palestine Premier Leagues<br/>
+					&nbsp;&nbsp;[1.1] West Bank Premier League<br/>
+					&nbsp;&nbsp;[1.2] Gaza Strip Premier League<br/>
+					[2] Palestine First Leagues<br/>
+					&nbsp;&nbsp;[2.1] West Bank First League<br/>
+					&nbsp;&nbsp;[2.2] Gaza Strip First League<br/>
+					[Cup] West Bank Cup<br/>
+					[Cup] Gaza Strip Cup<br/>
+					[Cup] Palestine Cup<br/>
+				</td>
+				<td>
+					<ul>
+						<li>There are 2 top level leagues, and qualification to Continental Cups is only through the West Bank Premier League (if my research was correct)</li>
+					</ul>
+				</td>
+			</tr>
+
+			<tr>
+				<td>PRK.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/kp.png"/> DPR Korea</td>
+				<td>
+					[1] DPR Premier Football League<br/>
+				</td>
+				<td>
+					<ul>
+						<li>I could not find any source on the current league system, so I used a simple league system what seems to have been used in the past</li>
+					</ul>
+				</td>
+			</tr>
+
+			<tr>
+				<td>QAT.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/qa.png"/> Qatar</td>
+				<td>
+					[1] Qatar Stars League<br/>
+					[2] Qatar Second Division<br/>
+					[Cup] Amir of Qatar Cup<br/>
+					[Cup] Qatar FA Cup<br/>
+					[Cup] Qatar Cup<br/>
+					[Cup] Qatar Stars Cup<br/>
+					[Cup] Qatar 2nd Division Cup<br/>
+					[Cup] Sheikh Jassem Super Cup
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td>SGP.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/sg.png"/> Singapore</td>
+				<td>
+					<span class="unchanged">[1] Singaporian Premier League</span><br/>
+					[2] Football League Division One<br/>
+					[3] Football League Division Two<br/>
+					<span class="unchanged">[Cup] Singapore Cup</span><br/>
+					<span class="unchanged">[Cup] Community Shield</span>
+				</td>
+				<td>
+					<ul>
+						<li>There is no promotion between the Football League Division One and the Premier League (just like in real life)</li>
+						<li>Other original competitions in FM24 are unchanged</li>
+					</ul>
+				</td>
+			</tr>
+
+			<tr>
+				<td>SRI.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/lk.png"/> Sri Lanka</td>
+				<td>
+					[1] Sri Lankan Super League
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td>SYR.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/sy.png"/> Syria</td>
+				<td>
+					[1] Syrian Premier League<br/>
+					[Cup] Syrian Cup
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td>THA.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/th.png"/> Thailand</td>
+				<td>
+					[1] Thai League 1<br/>
+					[2] Thai League 2<br/>
+					[3] Thai League 3<br/>
+					&nbsp;&nbsp;[3.1] North<br/>
+					&nbsp;&nbsp;[3.2] Northeast<br/>
+					&nbsp;&nbsp;[3.3] East<br/>
+					&nbsp;&nbsp;[3.4] West<br/>
+					&nbsp;&nbsp;[3.5] Bangkok Perimeter<br/>
+					&nbsp;&nbsp;[3.6] South<br/>
+					[Cup] FA Cup<br/>
+					[Cup] League Cup<br/>
+					[Cup] League 3 Cup<br/>
+					[Cup] Champions Cup
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td>TJK.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/tj.png"/> Tajikistan</td>
+				<td>
+					[1] Tajikistan High League<br/>
+					[2] Tajikistan First Division<br/>
+					[Cup] Tajikistan Cup<br/>
+					[Cup] Super Cup
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td>TKM.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/tm.png"/> Turkmenistan</td>
+				<td>
+					[1] Turkmenistan High League<br/>
+					[Cup] Turkmenistan Cup<br/>
+					[Cup] Super Cup
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td>TLS.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/tl.png"/> Timor-Leste</td>
+				<td>
+					[1] East Timorese Premier League<br/>
+					[Cup] Taca 12 de Novembro
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td>TPE.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/tw.png"/> Chinese Taipei</td>
+				<td>
+					[1] Chinese Taipei Premier League<br/>
+					[2] Chinese Taipei Second Division
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td>UAE.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/ae.png"/> United Arab Emirates</td>
+				<td>
+					[1] UAE Professional League<br/>
+					[2] UAE First Division<br/>
+					[3] UAE Second Division<br/>
+					[4] UAE Third Division<br/>
+					[Cup] President's Cup<br/>
+					[Cup] League Cup<br/>
+					[Cup] Super Cup
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td>UZB.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/uz.png"/> Uzbekistan</td>
+				<td>
+					[1] Uzbekistan Super League<br/>
+					[2] Uzbekistan Pro League<br/>
+					[3] Uzbek Birinchi League<br/>
+					[Cup] Uzbek Cup<br/>
+					[Cup] Super Cup
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td>VIE.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/vn.png"/> Vietnam</td>
+				<td>
+					[1] V.League 1<br/>
+					[2] V.League 2<br/>
+					[3] Vietnamese Second Division<br/>
+					&nbsp;&nbsp;[3.1] Group A<br/>
+					&nbsp;&nbsp;[3.2] Group B<br/>
+					[Cup] National Cup<br/>
+					[Cup] Super Cup
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td>YEM.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/ye.png"/> Yemen</td>
+				<td>
+					[1] Yemeni Football League
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+			
+		</table>
+				
+		<h3>Changelog</h3>
+		
+		<table border="1">
+			<tr>
+				<td width="100">v24.5</td>
+				<td>
+					<ul>
+						<li>All Nations: Update to Database 24.3.0</li>
+						<li>All Nations: Fixed registration issue causing teams to register only youth players (happened for competitions with groups/subcompetitions)</li>
+						<li>All Nations: minor improvements (from things I learned while doing other league packs)</li>
+						<li>Guam (GUM): format for 2024 added: 2023 season transitions from 5 teams to 15 teams in 2024</li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td width="100">v24.4</td>
+				<td>
+					<ul>
+						<li>Corrected Vietnam qualification to AFC Cups by delaying qualification until the stage is finished</li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td width="100">v24.3</td>
+				<td>
+					<ul>
+						<li>Corrected number of rounds in Vietnam - V.League 1 from 1 to 2</li>
+						<li>Corrected dates of Vietnam National Cup, so that it now starts correctly in November</li>
+						<li>Now using all real life teams in Indian I-League 2 by adding the promoted teams from I-League 3: Sporting Goa, Dempo and Sporting Bengaluru</li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td>v24.2</td>
+				<td>
+					<ul>
+						<li>changed match rules for Indonesia Liga 1 to: 5 + 1 ASEAN</li>
+						<li>added Indian I-League 2</li>
+						<li>changed Indian Youth reserve league from U18 to U21</li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<td>v24.1</td>
+				<td>
+					<ul>
+						<li>added rule file for Macau</li>
+						<li>added rule file for Northern Mariana Islands</li>
+					</ul>
+				</td>
+			</tr>
+		</table>
+		
+	</body>
+	
+</html>
