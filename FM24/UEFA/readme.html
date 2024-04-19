@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Football Manager rule files for UEFA v24.0</title>
+		<style>
+			html * {
+				font-size: 12px;
+				line-height: 1.625;
+				color: #2020131;
+				font-family: monospace;
+			}
+			
+			tr.excluded {
+				background: #FAA;
+			}
+			
+			img.flag {
+				vertical-align: middle;
+			}
+
+			span.unchanged {
+				color: #888;
+			}
+			
+			span.changed {
+				color: #05F;
+			}
+			
+			span.removed {
+				color: #F00;
+			}
+			
+			li.warning {
+				background-color: orange;
+			}
+			
+		
+		</style>
+	</head>
+	
+	<body>
+	
+		<h1>Football Manager rule files for UEFA v24.0</h1>
+		
+		<p>In this package, you will find rule files for UEFA Member Nations.</p>
+		<p>I did my best to use realistic formats for all the leagues that are included. The rule files contain:</p>
+		<ul>
+			<li>real divisions and cups with real formats from 2023</li>
+			<li>teams from the 2023 season</li>
+			<li>all nations have transfer windows, registration periods, tv dates, match rules, prize money - when I was able to find this in my online research</li>
+		</ul>
+
+		<h3>Compatibility</h3>
+		<ul>
+			<li>FM Database 24.3.0 (only)</li>
+		</ul>
+
+		<h3>License</h3>
+		<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
+			<span property="dct:title">Football Manager rule files for UEFA v24.0</span> by <span property="cc:attributionName">MasterIgor</span> is licensed under 
+			<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution-NonCommercial-NoDerivatives 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1"></a>
+		</p>
+
+		<p>The rule files are free, but every tip will greatly improve my motivation to provide updates and other federations, because I spent a great deal of free time researching and editing. So if you really enjoy the rule files, then every small contribution is greatly appreciated. 
+			<a HREF="https://www.buymeacoffee.com/MasterIgor">Support Me</a>.
+		</p>
+
+		<h3>Installation Guide</h3>
+		<p>Copy the .fmf files for the nations you want into the folder "&lt;My Documents&gt;\Sports Interactive\Football Manager 2024\editor data\".
+			The folder can be different if you have changed it in the FM24 preferences. The leagues should then appear the next time you start a new game in FM24 and chose advanced setup.<br/>
+			Make sure you have the checkbox "add players to playable teams" checked. This is recommended, otherwise you may end up with a lot of greyed-out players.
+		</p>
+
+		<h3>Testing and Research</h3>
+		<p>All rules files have been tested in the editor and in the game as well.<br/>
+		of course, it is always possible that there are issues and mistakes in the rule files. If you find an issue, you can contact me <a href="mailto:masterigor@online.de">by E-Mail</a>.</p>
+
+		<h3>Credits and thank you's</h3>
+		<ul>
+			<li>Daveincid, for his support, advice and testing</li>
+			<li>Nuno from Portugal, for research and testing</li>
+			<li>Lars for testing</li>
+		</ul>
+		
+		<h3>Available rule files:</h3>
+		<table border="1">
+			<tr>
+				<th width="75">File</th>
+				<th width="225">Federation</th>
+				<th width="400">added/changed competitions</th>
+				<th width="*">comments</th>
+			</tr>
+			
+			<tr>
+				<td>ALB.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/al.png"/> Albania</td>
+				<td>
+					[1] Kategoria Superiore<br/>
+					[2] Kategoria e Parë<br/>
+					[3] Kategoria e Dytë<br/>
+					&nbsp;&nbsp;[3.1] Group A (North)</br>
+					&nbsp;&nbsp;[3.2] Group B (South)</br>
+					[Cup] Albanian Cup<br/>
+					[Cup] Albanian Super Cup<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+			
+			<tr>
+				<td>AND.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/ad.png"/> Andorra</td>
+				<td>
+					[1] Primera Divisió<br/>
+					[Cup] Copa Constitució<br/>
+					[Cup] Supercopa de Andorra<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td>ARM.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/am.png"/> Armenia</td>
+				<td>
+					[1] Premier League<br/>
+					[Cup] Armenian Cup<br/>
+					[Cup] Armenian Super Cup<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+
+			<tr class="excluded">
+				<td>-</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/at.png"/> Austria</td>
+				<td>&nbsp;</td>
+				<td>No Rule File: Austria is already in the game</td>
+			</tr>
+
+			<tr>
+				<td>AZE.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/az.png"/> Azerbaijan</td>
+				<td>
+					[1] Premier League<br/>
+					[2] First Division<br/>
+					[Cup] Azerbaijan Cup<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+
+			<tr class="excluded">
+				<td>-</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/be.png"/> Belgium</td>
+				<td>&nbsp;</td>
+				<td>No Rule File: Belgium is already in the game</td>
+			</tr>
+
+			<tr>
+				<td>BIH.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/ba.png"/> Bosnia &amp; Herzegovina</td>
+				<td>
+					[1] Premijer liga Bosne i Hercegovine<br/>
+					[2] Prva liga<br/>
+					&nbsp;&nbsp;[2.1] Prva liga Federacije Bosne i Hercegovine<br/>
+					&nbsp;&nbsp;[2.2] Prva liga Republike Srpske<br/>
+					[Cup] Kup Bosne i Hercegovine<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+
+			<tr class="excluded">
+				<td>-</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/by.png"/> Belarus</td>
+				<td>&nbsp;</td>
+				<td>No Rule File: Belarus is already in the game</td>
+			</tr>
+
+			<tr class="excluded">
+				<td>-</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/bg.png"/> Bulgaria</td>
+				<td>&nbsp;</td>
+				<td>No Rule File: Bulgaria is already in the game</td>
+			</tr>
+
+			<tr class="excluded">
+				<td>-</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/hr.png"/> Croatia</td>
+				<td>&nbsp;</td>
+				<td>No Rule File: Croatia is already in the game</td>
+			</tr>
+
+			<tr>
+				<td>CYP.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/cy.png"/> Cyprus</td>
+				<td>
+					[1] First Division<br/>
+					[2] Second Division<br/>
+					[3] Third Division<br/>
+					[Cup] Cypriot Cup<br/>
+					[Cup] Cypriot 3rd Class Cup<br/>
+					[Cup] Cypriot Super Cup<br/>
+				</td>
+				<td>
+					<ul>
+						<li>Cypriot 3rd Class Cup is a knock-out cup for teams on 3rd tier and lower divisions</li>
+					</ul>
+				</td>
+			</tr>
+
+			<tr class="excluded">
+				<td>-</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/cz.png"/> Czech Republic</td>
+				<td>&nbsp;</td>
+				<td>No Rule File: Czech Republic is already in the game</td>
+			</tr>
+
+			<tr class="excluded">
+				<td>-</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/dk.png"/> Denmark</td>
+				<td>&nbsp;</td>
+				<td>No Rule File: Denmark is already in the game</td>
+			</tr>
+
+			<tr class="excluded">
+				<td>-</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/gb-eng.png"/> England</td>
+				<td>&nbsp;</td>
+				<td>No Rule File: England is already in the game</td>
+			</tr>
+			
+			<tr class="excluded">
+				<td>-</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/es.png"/> Spain</td>
+				<td>&nbsp;</td>
+				<td>No Rule File: Spain is already in the game</td>
+			</tr>
+			
+			<tr>
+				<td>EST.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/ee.png"/> Estonia</td>
+				<td>
+					[1] Meistriliiga<br/>
+					[2] Esiliiga A<br/>
+					[Cup] Estonian Cup<br/>
+					[Cup] Estonian Super Cup<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+
+			<tr class="excluded">
+				<td>-</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/fi.png"/> Finland</td>
+				<td>&nbsp;</td>
+				<td>No Rule File: Finland is already in the game</td>
+			</tr>
+			
+			<tr class="excluded">
+				<td>-</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/fr.png"/> France</td>
+				<td>&nbsp;</td>
+				<td>No Rule File: France is already in the game</td>
+			</tr>
+			
+			<tr>
+				<td>FRO.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/fo.png"/> Faroe Islands</td>
+				<td>
+					[1] Betri Deildin<br/>
+					[Cup] Faroese Cup<br/>
+					[Cup] Faroese Super Cup<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td>GEO.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/ge.png"/> Georgia</td>
+				<td>
+					[1] Erovnuli Liga<br/>
+					[2] Erovnuli Liga 2<br/>
+					[Cup] Georgian Cup<br/>
+					[Cup] Georgian Super Cup<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+
+			<tr class="excluded">
+				<td>-</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/de.png"/> Germany</td>
+				<td>&nbsp;</td>
+				<td>No Rule File: Germany is already in the game</td>
+			</tr>
+
+			<tr class="excluded">
+				<td>-</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/gi.png"/> Gibraltar</td>
+				<td>&nbsp;</td>
+				<td>No Rule File: Gibraltar is already in the game</td>
+			</tr>
+
+			<tr class="excluded">
+				<td>-</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/gr.png"/> Greece</td>
+				<td>&nbsp;</td>
+				<td>No Rule File: Greece is already in the game</td>
+			</tr>
+
+			<tr class="excluded">
+				<td>-</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/hu.png"/> Hungary</td>
+				<td>&nbsp;</td>
+				<td>No Rule File: Hungary is already in the game</td>
+			</tr>
+
+			<tr class="excluded">
+				<td>-</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/ie.png"/> Ireland</td>
+				<td>&nbsp;</td>
+				<td>No Rule File: Ireland is already in the game</td>
+			</tr>
+			
+			<tr class="excluded">
+				<td>-</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/is.png"/> Iceland</td>
+				<td>&nbsp;</td>
+				<td>No Rule File: Iceland is already in the game</td>
+			</tr>
+			
+			<tr class="excluded">
+				<td>-</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/il.png"/> Israel</td>
+				<td>&nbsp;</td>
+				<td>No Rule File: Israel is already in the game</td>
+			</tr>
+
+			<tr class="excluded">
+				<td>-</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/it.png"/> Italy</td>
+				<td>&nbsp;</td>
+				<td>No Rule File: Italy is already in the game</td>
+			</tr>			
+			
+			<tr>
+				<td>KAZ.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/kz.png"/> Kazakhstan</td>
+				<td>
+					[1] Premier Ligasy<br/>
+					[2] Birinchi Ligasy<br/>
+					[Cup] Kazakh Cup<br/>
+					[Cup] Kazakh Super Cup<br/>
+				</td>
+				<td>
+					<ul>
+						<li>Kazakh Birinchi Ligasy transitions from 15 teams in 2023 to 16 teams from 2024 onwards</li>
+					</ul>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>KOS.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/xk.png"/> Kosovo</td>
+				<td>
+					[1] Kosovar Super League<br/>
+					[2] Kosover First League<br/>
+					&nbsp;&nbsp;[2.1] Group A (West)<br/>
+					&nbsp;&nbsp;[2.2] Group B (East)<br/>
+					[Cup] Kosovar Cup<br/>
+					[Cup] Kosovar Super Cup<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+
+			<tr class="excluded">
+				<td>-</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/li.png"/> Liechtenstein</td>
+				<td>&nbsp;</td>
+				<td>No Rule File: There are no leagues in Liechtenstein. Teams play in the Swiss league.</td>
+			</tr>			
+			
+			<tr>
+				<td>LTU.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/lt.png"/> Lithuania</td>
+				<td>
+					[1] A Lyga<br/>
+					[2] I Lyga<br/>
+					[Cup] Lithuanian Cup<br/>
+					[Cup] Lithuanian Super Cup<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+
+			<tr>
+				<td>LUX.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/lu.png"/> Luxembourg</td>
+				<td>
+					[1] Nationaldivision<br/>
+					[2] Éierepromotioun<br/>
+					[Cup] Coupe de Luxembourg<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+			
+			<tr class="excluded">
+				<td>-</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/lv.png"/> Latvia</td>
+				<td>&nbsp;</td>
+				<td>No Rule File: Latvia is already in the game</td>
+			</tr>			
+	
+			<tr>
+				<td>MDA.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/md.png"/> Moldova</td>
+				<td>
+					[1] Super Liga<br/>
+					[2] Liga I<br/>
+					[Cup] Cupa Moldovei<br/>
+					[Cup] Supercupa Moldovei<br/>
+				</td>
+				<td>
+					<ul>
+						<li>Supercupa does not take place if the winner of the Super Liga and Cupa Moldovei are the same</li>
+					</ul>
+				</td>
+			</tr>
+			
+			<tr>
+				<td>MKD.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/mk.png"/> North Macedonia</td>
+				<td>
+					[1] Prva Liga<br/>
+					[2] Vtora Liga<br/>
+					[Cup] Kup na Makedonija<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+			
+			<tr>
+				<td>MLT.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/mt.png"/> Malta</td>
+				<td>
+					[1] Maltese Premier League<br/>
+					[2] Maltese Challenge League<br/>
+					[Cup] Maltese Cup<br/>
+					[Cup] Maltese Super Cup<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+			
+			<tr>
+				<td>MNE.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/me.png"/> Montenegro</td>
+				<td>
+					[1] Prva CFL<br/>
+					[2] Druga CFL<br/>
+					[Cup] Kup Crne Gore<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+
+			<tr class="excluded">
+				<td>-</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/nl.png"/> Netherlands</td>
+				<td>&nbsp;</td>
+				<td>No Rule File: Netherlands is already in the game</td>
+			</tr>			
+
+			<tr class="excluded">
+				<td>-</td>
+				<td><img class="flag" src=""/> Northern Ireland</td>
+				<td>&nbsp;</td>
+				<td>No Rule File: Northern Ireland is already in the game</td>
+			</tr>			
+
+			<tr class="excluded">
+				<td>-</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/no.png"/> Norway</td>
+				<td>&nbsp;</td>
+				<td>No Rule File: Norway is already in the game</td>
+			</tr>			
+			
+			<tr class="excluded">
+				<td>-</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/pl.png"/> Poland</td>
+				<td>&nbsp;</td>
+				<td>No Rule File: Poland is already in the game</td>
+			</tr>
+
+			<tr class="excluded">
+				<td>-</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/pt.png"/> Portugal</td>
+				<td>&nbsp;</td>
+				<td>No Rule File: Portugal is already in the game</td>
+			</tr>
+
+			<tr class="excluded">
+				<td>-</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/ro.png"/> Romania</td>
+				<td>&nbsp;</td>
+				<td>No Rule File: Romania is already in the game</td>
+			</tr>	
+
+			<tr class="excluded">
+				<td>-</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/ru.png"/> Russia</td>
+				<td>&nbsp;</td>
+				<td>No Rule File: Russia is already in the game</td>
+			</tr>
+
+			<tr class="excluded">
+				<td>-</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/gb-sct.png"/> Scotland</td>
+				<td>&nbsp;</td>
+				<td>No Rule File: Scotland is already in the game</td>
+			</tr>	
+
+			<tr>
+				<td>SMR.fmf</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/sm.png"/> San Marino</td>
+				<td>
+					[1] Campionato Sanmarinese di Calcio<br/>
+					[Cup] Coppa Titano<br/>
+					[Cup] Super Coppa Sanmarinese<br/>
+				</td>
+				<td>&nbsp;</td>
+			</tr>
+			
+			<tr class="excluded">
+				<td>-</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/rs.png"/> Serbia</td>
+				<td>&nbsp;</td>
+				<td>No Rule File: Serbia is already in the game</td>
+			</tr>	
+
+			<tr class="excluded">
+				<td>-</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/ch.png"/> Switzerland</td>
+				<td>&nbsp;</td>
+				<td>No Rule File: Switzerland is already in the game</td>
+			</tr>	
+
+			<tr class="excluded">
+				<td>-</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/sk.png"/> Slovakia</td>
+				<td>&nbsp;</td>
+				<td>No Rule File: Slovakia is already in the game</td>
+			</tr>	
+
+			<tr class="excluded">
+				<td>-</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/si.png"/> Slovenia</td>
+				<td>&nbsp;</td>
+				<td>No Rule File: Slovenia is already in the game</td>
+			</tr>	
+
+			<tr class="excluded">
+				<td>-</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/se.png"/> Sweden</td>
+				<td>&nbsp;</td>
+				<td>No Rule File: Sweden is already in the game</td>
+			</tr>	
+			
+			<tr class="excluded">
+				<td>-</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/tr.png"/> Turkey</td>
+				<td>&nbsp;</td>
+				<td>No Rule File: Turkey is already in the game</td>
+			</tr>	
+
+			<tr class="excluded">
+				<td>-</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/ua.png"/> Ukraine</td>
+				<td>&nbsp;</td>
+				<td>No Rule File: Ukraine is already in the game</td>
+			</tr>	
+
+			<tr class="excluded">
+				<td>-</td>
+				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/gb-wls.png"/> Wales</td>
+				<td>&nbsp;</td>
+				<td>No Rule File: Wales is already in the game</td>
+			</tr>				
+			
+		</table>
+		
+		<!--
+		<h3>Known Issues in FM24</h3>
+		
+		<table border="1">
+		<tr>
+			<td><a id="Issue1"/>Issue #1 - Continental Cup Schedule Problems</td>
+			<td>In FM24, the Central American Cup uses a host nation from Caribbean Nations incorrectly.
+				This causes teams to "travel" to the cup for the entire group stage (the whole month of August). 
+				Teams participating in this cup will not play any domestic games during that month. This can seriously clog up the domestic schedule.<br/>
+				My advice is to use my CONCACAF continental cups file where I fixed this, and then those teams will play domestic league on saturday and continental cup on wednesday like they should.
+			</td>
+		</tr>
+		<tr>
+			<td><a id="Issue2"/>Issue #2 - Continental cup teams wrong for Panama</td>
+			<td>In FM24, the Central American Cup picks teams from Panama from the 2nd tier instead of the 1st tier (Liga Panamena).<br/>
+				My advice is to use my CONCACAF continental cups file where I fixed this, and then the correct teams from Panama will enter.
+			</td>
+		</tr>
+		<tr>
+			<td><a id="Issue3"/>Issue #3 - Continental cup teams from wrong year</td>
+			<td>In FM24, the Central American Cup picks qualified teams in December. While all the domestic leagues already finish in May/June.
+				This causes teams to participate in the Central American Cup 1 year later.<br/>
+				I advise to use my CONCACAF continental cup file for a better experience, the competition is set up in July and picks teams on that date when (most) competitions have finished.
+			</td>
+		</tr>
+		</table>
+		-->
+
+		<!--
+		<h3>Changelog</h3>
+
+		<table border="1">
+			<tr>
+				<td>v24.1</td>
+				<td>
+					<ul>
+						<li>added reserve teams where missing, this reduces the size of the senior squad: AIA, ATG, BAH, BRB, CAN, CAY, CRC, DOM, GUY, LCA, PAN, SMN, SXM, TCA, TRI, VGB and VIR</li>
+						<li>Changed Panamu U-20 teams (in 2nd tier) type from B team to U20</li>
+						<li>CONCACAF Central American Cup: added real prize money</li>
+						<li>CONCACAF Champions Cup: prize money is set to increase 5 times, but details not available so I was creative and will update using the exact amounts when it is published</li>
+					</ul>
+				</td>
+			</tr>
+		</table>
+		-->
+		
+	</body>
+	
+</html>
