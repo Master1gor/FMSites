@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Football Manager rule files for CONCACAF v24.4</title>
+		<title>Football Manager rule files for CONCACAF v24.5</title>
 		<style>
 			html * {
 				font-size: 12px;
@@ -40,7 +40,7 @@
 	
 	<body>
 	
-		<h1>Football Manager rule files for CONCACAF v24.4</h1>
+		<h1>Football Manager rule files for CONCACAF v24.5</h1>
 		
 		<p>In this package, you will find rule files for CONCACAF Member Nations.</p>
 		<p>I did my best to use realistic formats for all the leagues that are included. The rule files contain:</p>
@@ -57,7 +57,7 @@
 
 		<h3>License</h3>
 		<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
-			<span property="dct:title">Football Manager rule files for CONCACAF v24.4</span> by <span property="cc:attributionName">MasterIgor</span> is licensed under 
+			<span property="dct:title">Football Manager rule files for CONCACAF v24.5</span> by <span property="cc:attributionName">MasterIgor</span> is licensed under 
 			<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution-NonCommercial-NoDerivatives 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1"></a>
 		</p>
 
@@ -616,7 +616,8 @@
 			</tr>
 			
 			<tr>
-				<td>CONCACAF.fmf</td>
+				<td>CONCACAF.fmf<br/>
+				CONCACAF_NoCoefficients.fmf</td>
 				<td>CONCACAF Continental Competitions</td>
 				<td>
 					<span class="changed">[Cup] CONCACAF Champions League</span><br/>
@@ -633,16 +634,16 @@
 						<li>CONCACAF Caribbean Shield
 							<ul>
 								<li>All 30 nations from the Caribbean (CFU) participate with 1 team.</li>
-								<li>The host nation and 7 best leagues qualify directly to the group stage.</li>
+								<li>The host nation and 7 best nations qualify directly to the group stage.</li>
 								<li>Other 22 nations play qualifiers in 2 rounds to determine the other 8 teams for the group stage.</li>
-								<li>Ranking of the nations is based on division reputation - it is possible to develop the nation to qualify directly to Group Stage in the future and even get more teams to qualify directly into the Caribbean Cup</li>
+								<li>Ranking of the nations after the 3rd year is based on coefficients - it is possible for nations that perform well to develop and qualify directly to Group Stage in the future and even get more teams to qualify directly into the Caribbean Cup</li>
 								<li>Finalists qualify for CONCACAF Caribbean Cup of the same year</li>
 							</ul>
 						</li>
 						<li>CONCACAF Caribbean Cup
 							<ul>
 								<li>The top 3 Caribbean nations (CFU) qualify directly with 3, 3 and 2 teams respectively.</li>
-								<li>Ranking of the nations is based on division reputation - it is possible to develop the nation to get more teams to qualify directly</li>
+								<li>Ranking of the nations after the 3rd year is based on coefficients - it is possible for nations that perform well to develop and get more teams to qualify directly</li>
 								<li>top 3 teams qualify for CONCACAF Champions Cup</li>
 							</ul>
 						</li>
@@ -650,7 +651,7 @@
 							<ul>
 								<li>The 2023 edition uses predefined teams from real life</li>
 								<li>There are 7 nations in Central America (UNCAF) which qualify with 4,4,3,3,3,2,1 teams respectively.</li>
-								<li>Ranking of the nations is based on division reputation - it is possible to develop the nation to get more teams to qualify directly</li>
+								<li>Ranking of the nations is based on coefficients - it is possible for nations that perform well to develop and get more teams to qualify</li>
 								<li>top 6 teams qualify for CONCACAF Champions Cup</li>
 							</ul>
 						</li>
@@ -659,10 +660,12 @@
 						<li>CONCACAF Champions Cup
 							<ul>
 								<li>The 2023 edition uses predefined teams from real life.</li>
+								<li>Canada, Mexico and USA do not use coefficients but always have the same starting slots</li>
 								<li>added/refactored the 2024 format and qualification rules.</li>
 							</ul>
 						</li>
 						<li>Campeones Cup is unchanged (not in the rule file).</li>
+						<li class="warning">The coefficients should be for the last 5 years but can not be viewed in the game (I tried, but I couldn't find a setting to enable that page for North America). Through very long observations I verified that the coefficients are working but they are somewhat shifted (by approximately a year and a month). Because they are invisible it can be very hard to verify, but you can notice correct changes to the qualifications if teams perform really well or very bad. If you don't want coefficients or don't trust it, then please use the CONCACAF_NoCoefficients.fmf instead.</li>
 					</ul>
 				</td>
 			</tr>
@@ -695,9 +698,46 @@
 		</tr>
 		</table>
 		
+		<h3>Coefficients</h3>
+		<p>
+		Unfortunately, the coefficients cannot be viewed in the game. I was unable to activate that page, which is there for e.g. Europe.
+		So, Because it is invisible it is totally intransparent what the rankings for the countries are.
+		<br/>
+		The coefficienta are averages based on the number of teams in continental competitions.
+		Basically, nations get points for each team from that country.:<br/>
+		<ul>
+			<li>2p for each match win</li>
+			<li>1p for each match draw (a game that goes to penalties is concidered a draw)</li>
+		</ul>
+		Things I added:<br/>
+		<ul>
+		<li>4p for first place in Central American Group Stage</li>
+		<li>2p for second place in Central American Group Stage</li>
+		<li>4p for first place in Caribbean Cup Group Stage</li>
+		<li>3p for second place in Caribbean Cup Group Stage</li>
+		<li>2p for all other places in Caribbean Cup Group Stage</li>
+		<li>2p for first place in Caribbean Shield Group Stage</li>
+		</ul>
+		</p>
+		
 		<h3>Changelog</h3>
 
 		<table border="1">
+			<tr>
+				<td>v24.5</td>
+				<td>
+					<ul>
+						<li>Added Coefficients to the continental competitions for Central America and Caribbean</li>
+						<li>Canada (CAN): fixed registrations in League1</li>
+						<li>USA: fixed history of USL Championship and USL Division 1</li>
+						<li>Bermuda: fixed match rules for old/young players</li>
+						<li>Aruba (ARU): fixed missing history and views of Gold/Silver League</li>
+						<li>Mexico (MEX): fixed registration and dates for Liga Premier A</li>
+						<li>US Virgin Islands (VIR): refactored to enable more than 2 teams qualifying for continental cups. Fixed missing history.</li>
+						<li>Nicaragua (NCA): hide stage used for ranking (no impact on actual league format)</li>
+					</ul>
+				</td>
+			</tr>		
 			<tr>
 				<td>v24.4</td>
 				<td>

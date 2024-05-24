@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Football Manager rule files for OFC v24.2</title>
+		<title>Football Manager rule files for OFC v24.3</title>
 		<style>
 			html * {
 				font-size: 12px;
@@ -38,7 +38,7 @@
 	
 	<body>
 	
-		<h1>Football Manager rule files for OFC v24.2</h1>
+		<h1>Football Manager rule files for OFC v24.3</h1>
 		
 		<p>In this package, you will find rule files for OFC Member Nations.</p>
 		<p>I did my best to use realistic formats for all the leagues that are included. The rule files contain:</p>
@@ -55,7 +55,7 @@
 
 		<h3>License</h3>
 		<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
-			<span property="dct:title">Football Manager rule files for OFC v24.2</span> by <span property="cc:attributionName">MasterIgor</span> is licensed under 
+			<span property="dct:title">Football Manager rule files for OFC v24.3</span> by <span property="cc:attributionName">MasterIgor</span> is licensed under 
 			<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution-NonCommercial-NoDerivatives 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1"></a>
 		</p>
 
@@ -122,7 +122,7 @@
 				</td>
 				<td>
 					<ul>
-						<li>Note, Kiribati teams do not qualify for the OFC Champions League (unless you use my OFC_ALL file)</li>
+						<li>Note, Kiribati teams do not qualify for the OFC Champions League (unless you use one of my OFC_ALL files)</li>
 					</ul>
 				</td>
 			</tr>
@@ -138,7 +138,7 @@
 			</tr>
 
 			<tr>
-				<td>NZL_0.fmf<br/>NZL_1.fmf<br/>NZL_2.fmf</td>
+				<td>NZL.fmf</td>
 				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/nz.png"/> New Zealand</td>
 				<td>
 					[1] National League<br/>
@@ -151,16 +151,6 @@
 					&nbsp;&nbsp;[2.3] Central Federation League<br/>
 					&nbsp;&nbsp;[2.4] Mainland Premiership<br/>
 					&nbsp;&nbsp;[2.5] Southern Premiership<br/>
-					[3] Federation Leagues - Tier 2<br/>
-					&nbsp;&nbsp;[3.1] NRFL Conference<br/>
-					&nbsp;&nbsp;[3.2] Capital Division One<br/>
-					&nbsp;&nbsp;[3.3] Horizons Premiership<br/>
-					&nbsp;&nbsp;[3.4] Pacific Premiership<br/>
-					&nbsp;&nbsp;[3.5] Taranaki Premiership<br/>
-					&nbsp;&nbsp;[3.6] Mainland Championship<br/>
-					&nbsp;&nbsp;[3.7] Southland Premier<br/>
-					&nbsp;&nbsp;[3.8] Otago Division One<br/>
-					&nbsp;&nbsp;[3.9] South Canterbury Division One<br/>
 					[Cup] Chatham Cup<br/>
 					[Cup] Central Federation Cup<br/>
 					[Cup] English Cup<br/>
@@ -168,16 +158,7 @@
 				</td>
 				<td>
 					<ul>
-						<li>In reality, promotion from tier 3 to tier 2 does not happen often, but the rules state that if teams are eligible, they can promote. I therefore assumed, all teams want to promote if they can.</li>
-						<li>I did not do the Eastern Division One on tier 3 because I could not find a clear statement on which level exactly it is situated (3 or 4), and there are only 2 teams in the database from that area. So I assigned those 2 teams (Gisborne) to the Pacific region.</li>
-						<li class="warning">Please read carefully: From my analysis when not all tiers were selected in the game, the promotions/relegations were not working in the same way and can screw up the league structure. So I made the following solution:
-							<ul>
-								<li>NZL_0.fmf - use this file if you only want to play the National League (without relegation)</li>
-								<li>NZL_1.fmf - use this file if you want to play the National League plus Federation Leagues - Tier 1.</li>
-								<li>NZL_2.fmf - use this file if you want to play with all 3 tiers active</li>
-							</ul>
-							Make sure you use only 1 rule file, and select all the tiers which are in the file. Do not leave a tier inactive.
-						</li>
+						<li>I have removed the 3rd tier because I can not guarantee it will work. The reason is that theoretically, a league could get depleted if all teams promote to a higher division. There are not enough teams, B teams, etc. to fill up the gap. After thinking about this for a long time, I decided to cut off the 3rd tier and I refactored New Zealand into 1 reliable file.</li>
 					</ul>
 				</td>
 			</tr>
@@ -238,7 +219,7 @@
 				</td>
 				<td>
 					<ul>
-						<li>Note, Tuvaluan teams do not qualify for the OFC Champions League (unless you use my OFC_ALL file)</li>
+						<li>Note, Tuvaluan teams do not qualify for the OFC Champions League (unless you use one of my OFC_ALL files)</li>
 					</ul>
 				</td>
 			</tr>
@@ -247,8 +228,8 @@
 				<td>VAN.fmf</td>
 				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/vu.png"/> Vanuatu</td>
 				<td>
-					[1] Port Vila Premier Division<br/>
-					[Cup] VFF National Soccer League
+					[1] VFF National Soccer League<br/>
+					&nbsp;&nbsp;[1.1] Port Vila Premier Division
 				</td>
 				<td>
 					<ul>
@@ -260,37 +241,61 @@
 			</tr>
 
 			<tr>
-				<td>OFC.fmf</td>
+				<td>OFC.fmf<br/>
+				OFC_ALL.fmf<br/>
+				OFC_NoCoefficients.fmf<br/>
+				OFC_ALL_NoCoefficients.fmf<br/></td>
 				<td>Oceania Football Confederation</td>
 				<td>
 					[Cup] OFC Champions League<br/>
 				</td>
 				<td>
 					<ul>
-						<li>OFC Champions League implemented in 2023 format</li>
+						<li class="warning">(!) Please use only 1 file for OFC Champions league.</li>
+						<li>OFC.fmf : OFC Champions League implemented in 2023 format using coefficients. AFter 3 years (from 2026 onwards), the ranking based on coefficients will be used so that there are no big shifts right after the game starts.</li>
+						<li>OFC_ALL.fmf : OFC Champions League implemented in 2023 format using coefficients and including teams from Tuvalu and Kiribati. AFter 3 years (from 2026 onwards), the ranking based on coefficients will be used so that there are no big shifts right after the game starts.</li>
+						<li>OFC_NoCoefficients.fmf : OFC Champions League implemented in 2023 format. No coefficients are used, the nation ranking is static.</li>
+						<li>OFC_ALL_NoCoefficients.fmf : OFC Champions League implemented in 2023 format including teams from Tuvalu and Kiribati. No Coefficients are used, the nation ranking is static.</li>
 					</ul>
 				</td>
 			</tr>
-
-			<tr>
-				<td>OFC_ALL.fmf</td>
-				<td>Oceania Football Confederation (incl. 2 more nations)</td>
-				<td>
-					[Cup] OFC Champions League<br/>
-				</td>
-				<td>
-					<ul>
-						<li>OFC Champions League implemented in 2023 format, and including 1 team from Tuvalu and Kiribati each. The preliminary group therefore increases from 4 to 6 teams and 1 team qualifies to the group stage.</li>
-						<li>please use only 1 file for the OFC Champions League. Both at the same time will not work</li>
-					</ul>
-				</td>
-			</tr>
-			
+		
 		</table>
+		
+		<h3>Coefficients</h3>
+		<p>
+		I added coefficients for the OFC Champions League. Unfortunately, the coefficients cannot be viewed in the game. I was unable to activate that page, which is there for e.g. Europe.
+		So, Because it is invisible it is totally intransparent what the rankings for the countries are.
+		<br/>
+		The coefficienta are averages based on the number of teams in continental competitions (e.g. if New Zealand has 2 teams in the competition then the points gained by those teams is divided by 2)
+		Basically, nations get points for each team from that country:<br/>
+		<ul>
+		<li>2p for each match win</li>
+		<li>1p for each match draw (a game that goes to penalties is concidered a draw)</li>
+		</ul>
+		Things I added:<br/>
+		<ul>
+		<li>3p for all teams that start in the Qualifying Round (5p if you use the file which also adds Tuvalu and Kiribati)</li>
+		<li>4p for 1st place in Group Stage</li>
+		<li>2p for 2nd place in Group Stage</li>
+		<li>1p for reaching the Final</li>
+		</ul>
+		</p>
 		
 		<h3>Changelog</h3>
 	
 		<table border="1">
+			<tr>
+				<td>v24.3</td>
+				<td>
+					<ul>
+						<li>OFC Continental: added coefficients for a dynamic allocation of slots per nation.</li>
+						<li>Vanuatu (VAN): minor improvements to layout of national league</li>
+						<li>New Zealand (NZL): Refactored into a single file. Removed tier 3 because it cannot work without more teams. Tier 0 and 1 both work correctly with this file.</li>
+						<li>Tuvalu (TUV): Fixed qualification from groups in the independence cup. (was unsorted before)</li>
+					</ul>
+				</td>
+			</tr>
 			<tr>
 				<td>v24.2</td>
 				<td>
