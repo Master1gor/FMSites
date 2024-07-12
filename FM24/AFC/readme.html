@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Football Manager rule files for AFC v24.7</title>
+		<title>Football Manager rule files for AFC v24.8</title>
 		<style>
 			html * {
 				font-size: 12px;
@@ -29,13 +29,16 @@
 			span.removed {
 				color: #F00;
 			}
-		
+			
+			li.warning {
+				background-color: orange;
+			}
 		</style>
 	</head>
 	
 	<body>
 	
-		<h1>Football Manager rule files for AFC v24.7</h1>
+		<h1>Football Manager rule files for AFC v24.8</h1>
 		
 		<p>In this package, you will find rule files for AFC Member Nations.</p>
 		<p>I did my best to use realistic formats for all the leagues that are included. The rule files contain:</p>
@@ -52,7 +55,7 @@
 
 		<h3>License</h3>
 		<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
-			<span property="dct:title">Football Manager rule files for AFC v24.7</span> by <span property="cc:attributionName">MasterIgor</span> is licensed under 
+			<span property="dct:title">Football Manager rule files for AFC v24.8</span> by <span property="cc:attributionName">MasterIgor</span> is licensed under 
 			<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution-NonCommercial-NoDerivatives 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1"></a>
 		</p>
 
@@ -92,7 +95,7 @@
 				<td>AUS.fmf</td>
 				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/au.png"/> Australia</td>
 				<td>
-					<span class="changed">[1] ISUZU A-League (***)</span><br/>
+					<span class="changed">[1] ISUZU A-League (*)</span><br/>
 					[2] National Premier leagues<br/>
 					&nbsp;&nbsp;[2.1] NPL ACT<br/>
 					&nbsp;&nbsp;[2.2] NPL New South Wales<br/>
@@ -102,13 +105,14 @@
 					&nbsp;&nbsp;[2.6] NPL Southern Australia<br/>
 					&nbsp;&nbsp;[2.7] NPL Western Australia<br/>
 					&nbsp;&nbsp;[2.8] NPL Tasmania<br/>
-					<span class="changed">[Cup] Australia Cup (***)</span><br/>
+					<span class="changed">[Cup] Australia Cup (**)</span><br/>
 					<span class="unchanged">[Cup] Super Cup</span><br/>
 				</td>
 				<td>
 					<ul>
-						<li>There is no promotion from the NPL to the A-League (like in real life)</li>
-						<li>(***) I had to refactor the Australia Cup and A-League to accomodate the NPL Teams qualification for the cup</li>
+						<li>There is no promotion/relegation between A-League and NPL (like in real life)</li>
+						<li>(*) A-League transitions from 12 teams in 2023 to 13 teams from 2024 onwards. (Auckland FC is added)</li>
+						<li>(**) Australia Cup refactored to accomodate the NPL Teams qualification for the cup</li>
 						<li>Other competitions originally in FM24 are unchanged</li>
 					</ul>
 				</td>				
@@ -231,15 +235,15 @@
 				<td>IDN.fmf</td>
 				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/id.png"/> Indonesia</td>
 				<td>
-					<span class="changed">[1] Indonesia League One (***)</span><br/>
-					<span class="changed">[2] Indonesia League Two (***)</span><br/>
+					<span class="changed">[1] Indonesia League One (*)</span><br/>
+					<span class="changed">[2] Indonesia League Two (*)</span><br/>
 					<span class="unchanged">[Cup] Indonesian Cup</span><br/>
 					<span class="unchanged">[Cup] Super Cup</span><br/>
 					<span class="unchanged">[Cup] Piala Presiden Indonesia</span><br/>
 				</td>
 				<td>
 					<ul>
-						<li>(***) Refactored League 1 and 2 to the 2023 format</li>
+						<li>(*) Refactored League 1 and 2 to the 2023 format</li>
 						<li>Other original competitions in FM24 are unchanged</li>
 					</ul>
 				</td>
@@ -260,7 +264,7 @@
 						<li>(!) This completely replaces the original India of FM24 to the real format (original game had I-League on top level and no Super League)</li>
 						<li>The Super League transitions from 12 teams in 2023 to 13 teams in 2024 to 14 teams in 2025 onwards</li>
 						<li>The I-League transitions from 13 teams in 2023 to 12 teams in 2024 to 11 teams in 2025 to 14 teams in 2026 onwards</li>
-						<li>The I-League 2 transitions from 8 teams in 2023-2025 to 12 teams in 2026</li>
+						<li>The I-League 2 transitions from 8 teams in 2023-2025 to 12 teams in 2026 onwards</li>
 					</ul>
 				</td>
 			</tr>
@@ -550,7 +554,11 @@
 					[1] Philippines Football League<br/>
 					[Cup] Philippines Football League Cup<br/>
 				</td>
-				<td>&nbsp;</td>
+				<td>
+					<ul>
+						<li>The League expands from 7 teams in 2023 to 15 teams from 2024 onwards. (8 fixed real life teams are added to the league)</li>
+					</ul>
+				</td>
 			</tr>
 
 			<tr>
@@ -757,11 +765,81 @@
 				<td>&nbsp;</td>
 			</tr>
 			
+			<tr>
+				<td>AFC.fmf</td>
+				<td>&nbsp;</td>
+				<td>
+					[Cup] AFC Champions League Elite<br/>
+					[Cup] AFC Champions League Two<br/>
+					[Cup] AFC Challenge League
+				</td>
+				<td>
+					<ul>
+						<li>All competitions use real-life formats based on current information.</li>
+						<li>The 2023 edition of the Asian Champions League & AFC Cup use real 2023 format and real life teams</li>
+						<li>Starting from 2024, Qualification for these cups is based on <a href="https://assets.the-afc.com/ACLE_2024-25/AFC-Club-Competitions_2024-25_Slot-Allocation.pdf">Official AFC Slot Allocation</a>.</li>
+						<li>AFC Champions League Elite (ACLE)</li>
+						<ul>
+							<li>27 teams play in this competition: 13 teams from both West and East according to slot allocation, and last years Winner</li>
+							<li>Losers of preliminary rounds enter the group stage of Champions League 2</li>
+							<li>in the League Phase, Teams from East/West play 8 random teams from their region</li>
+							<li>Top 8 from West and East enter the KO Round</li>
+							<li>Quarter Final, Semi Final and Final are in a central location selected from a participating country</li>
+							<li>uses officially communicated schedule and prize money</li>
+						</ul>
+						<li>AFC Champions League Two (ACL2)</li>
+						<ul>
+							<li>35 teams play in this competition: 16 teams from both West and East according to slot allocation plus 3 losers of preliminary rounds of ACLE</li>
+							<li>Losers of preliminary rounds enter the group stage of the Challenge League</li>
+							<li>32 teams enter the group stage divided into 4 groups from West and 4 groups from East</li>
+							<li>Best 2 teams of each group enter the KO Round</li>
+							<li>KO round is home and away, final is in a central location picked from participating countries</li>
+							<li>uses officially communicated schedule and prize money</li>
+						</ul>
+						<li>AFC Challenge League (ACGL)</li>
+						<ul>
+							<li>30 teams play in this competition: 15 teams from West, 12 teams from East according to slot allocation plus 3 losers of preliminary rounds of ACL2</li>
+							<li>20 teams enter the group stage divided into 3 groups from West and 2 groups from East (each group has 4 teams)</li>
+							<li>Best teams of each West group enter the KO Round</li>
+							<li>Best 2 teams of each East group enter the KO Round</li>
+							<li>Best second placed team of West groups enters the KO Round</li>
+							<li>KO round is home and away, final is in a central location picked from participating countries</li>
+							<li>uses officially communicated schedule and prize money</li>
+						</ul>
+						<li>Coefficients</li>
+						<ul>
+							<li>Slot allocation is based on 5 year coefficients</li>
+							<li class="warning">(!) AFC basically uses a list for West and East, but this is not possible in the editor. So I had to use a few tricks to achieve the East/West separation.
+							Coefficients are very complex in the editor and their behaviour is not always clear. It refused to take averages so I had to adjust the coefficient system a little to keep it more or less in the same range.
+							But there is a working coefficient system in place.
+							For the year 2020 all coefficients are 0 (Covid) and the game sets all coefficients in 2022 to 0. This means that in the early years the coefficients are based on 3 years instead of 5 because 2 years are zeroes. 
+							From my observations, this can cause some movements in the ranking, but they normalize after a couple of years.</li>
+							<li class="warning">(!) The slot allocation page for Asia in the game cannot be changed from the old format to the new format. So you should ignore that page and instead focus on the coefficient ranking page: top 6 nations from West and East will enter ACLE, and so on. Slot allocation is based on real AFC (see above).
+						</ul>
+					</ul>
+				</td>
+			</tr>
+			
 		</table>
 				
 		<h3>Changelog</h3>
 		
 		<table border="1">
+			<tr>
+				<td width="100">v24.8</td>
+				<td>
+					<ul>
+						<li>added continental cup formats with coefficients: AFC Champions League Elite, AFC Champions League 2 and AFC Challenge League</li>
+						<li>Australia (AUS): A-League increases to 13 teams in 2024 (Auckland FC is added)</li>
+						<li>Iraq (IRQ): fixed qualification for continental cup</li>
+						<li>Laos (LAO): fixed qualification for continental cup</li>
+						<li>Korea DPR (PRK): refactored schedule because it broke continental qualification. new schedule is feb -> oct</li>
+						<li>Philippines (PHI): added format for 2024 with 8 more teams</li>
+						<li>Singapore (SGP): fixed season windows, contract dates</li>
+						<li>Yemen (YEM): fixed qualification for continental cup</li>
+					</ul>
+				</td>
+			</tr>
 			<tr>
 				<td width="100">v24.7</td>
 				<td>
