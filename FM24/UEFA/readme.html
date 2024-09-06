@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Football Manager rule files for UEFA v24.3</title>
+		<title>Football Manager rule files for UEFA v24.4</title>
 		<style>
 			html * {
 				font-size: 12px;
@@ -40,7 +40,7 @@
 	
 	<body>
 	
-		<h1>Football Manager rule files for UEFA v24.3</h1>
+		<h1>Football Manager rule files for UEFA v24.4</h1>
 		
 		<p>In this package, you will find rule files for UEFA Member Nations.</p>
 		<p>I did my best to use realistic formats for all the leagues that are included. The rule files contain:</p>
@@ -57,7 +57,7 @@
 
 		<h3>License</h3>
 		<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
-			<span property="dct:title">Football Manager rule files for UEFA v24.3</span> by <span property="cc:attributionName">MasterIgor</span> is licensed under 
+			<span property="dct:title">Football Manager rule files for UEFA v24.4</span> by <span property="cc:attributionName">MasterIgor</span> is licensed under 
 			<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution-NonCommercial-NoDerivatives 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1"></a>
 		</p>
 
@@ -122,17 +122,32 @@
 				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/am.png"/> Armenia</td>
 				<td>
 					[1] Premier League<br/>
+					[2] First League<br/>
 					[Cup] Armenian Cup<br/>
 					[Cup] Armenian Super Cup<br/>
 				</td>
 				<td>&nbsp;</td>
 			</tr>
 
-			<tr class="excluded">
-				<td>-</td>
+			<tr>
+				<td>AUT.fmf</td>
 				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/at.png"/> Austria</td>
-				<td>&nbsp;</td>
-				<td>No Rule File: Austria is already in the game</td>
+				<td>
+					<span class="unchanged">[1] Bundesliga<br/></span>
+					<span class="unchanged">[2] 2. Liga<br/></span>
+					[3] Regionalliga<br/>
+					&nbsp;&nbsp;[3.1] East<br/>
+					&nbsp;&nbsp;[3.2] West<br/>
+					&nbsp;&nbsp;[3.3] Central<br/>
+					<span class="unchanged">[Cup] ÖFB Cup<br/></span>
+					<span class="unchanged">[Cup] Super Cup<br/></span>
+				</td>
+				<td>
+					<ul>
+						<li>added Regionalliga</li>
+						<li>All other competitions unchanged</li>
+					</ul>
+				</td>
 			</tr>
 
 			<tr>
@@ -146,11 +161,32 @@
 				<td>&nbsp;</td>
 			</tr>
 
-			<tr class="excluded">
-				<td>-</td>
+			<tr>
+				<td>BEL.fmf</td>
 				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/be.png"/> Belgium</td>
-				<td>&nbsp;</td>
-				<td>No Rule File: Belgium is already in the game</td>
+				<td>
+					<span class="unchanged">[1] Jupiler Pro League<br/></span>
+					<span class="unchanged">[2] Challenger Pro League<br/></span>
+					<span class="changed">[3] First Amateur Division (*)<br/></span>
+					&nbsp;&nbsp;[3.1] VV<br/>
+					&nbsp;&nbsp;[3.2] ACFF<br/>
+					[4] Second Amateur Division<br/>
+					&nbsp;&nbsp;[4.1] VV A<br/>
+					&nbsp;&nbsp;[4.2] VV B<br/>
+					&nbsp;&nbsp;[4.3] ACFF C<br/>
+					<span class="changed">[Cup] Belgian Cup (**)<br/></span>
+					<span class="unchanged">[Cup] Super Cup<br/></span>
+				</td>
+				<td>
+					<ul>
+						<li>added Second Amateur Division</li>
+						<li>(*) First Amateur Division completely refactored becaue it splits into VV and ACFF from 2024 onwards increasing to 28 teams (previously 18)</li>
+						<li>Relegation from First Amateur Division in 2023 is somewhat specific. ACFF team will relegate only when it is in last position. The VV team will relegate only when it is position 16 or lower</li>
+						<li>Second Amateur Division VV A and VV B transition from 18 teams in 2023 to 16 teams in 2024 onwards</li>
+						<li>Because the new format is not entirely certain yet, there can be some variations in e.g. number of relegated teams compared to reality</li>
+						<li>(**) Belgian Cup modified to include teams from Third Amateur (5th tier)</li>
+					</ul>
+				</td>
 			</tr>
 
 			<tr>
@@ -163,28 +199,67 @@
 					&nbsp;&nbsp;[2.2] Prva liga Republike Srpske<br/>
 					[Cup] Kup Bosne i Hercegovine<br/>
 				</td>
-				<td>&nbsp;</td>
+				<td>
+					<ul>
+						<li>Premijer liga transitions from 12 to 10 teams in 2025</li>
+						<li>From Prva liga, the best 8 teams qualify for the Bosnian Cup of the following year</li> 
+					</ul>
+				</td>
 			</tr>
 
 			<tr class="excluded">
 				<td>-</td>
 				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/by.png"/> Belarus</td>
 				<td>&nbsp;</td>
-				<td>No Rule File: Belarus is already in the game</td>
+				<td>No Rule File: Belarus already has 2 tiers in the game</td>
 			</tr>
 
-			<tr class="excluded">
-				<td>-</td>
+			<tr>
+				<td>BUL.fmf</td>
 				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/bg.png"/> Bulgaria</td>
-				<td>&nbsp;</td>
-				<td>No Rule File: Bulgaria is already in the game</td>
+				<td>
+					<span class="unchanged">[1] Parva Liga<br/></span>
+					<span class="unchanged">[2] Vtora Liga<br/></span>
+					[3] Treta Liga<br/>
+					&nbsp;&nbsp;[3.1] North-West<br/>
+					&nbsp;&nbsp;[3.2] North-East<br/>
+					&nbsp;&nbsp;[3.3] South-West<br/>
+					&nbsp;&nbsp;[3.4] South-East<br/>
+					<span class="changed">[Cup] Kupa na Bulgaria (*)<br/></span>
+					<span class="unchanged">[Cup] Super Kupa<br/></span>
+				</td>
+				<td>
+					<ul>
+						<li>Treta Liga added</li>
+						<li>(*) Bulgarian cup changed to include regional qualifying of 3rd tier teams</li>
+						<li>All other competitions unchanged</li>
+					</ul>
+				</td>
 			</tr>
 
-			<tr class="excluded">
-				<td>-</td>
+			<tr>
+				<td>CRO.fmf</td>
 				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/hr.png"/> Croatia</td>
-				<td>&nbsp;</td>
-				<td>No Rule File: Croatia is already in the game</td>
+				<td>
+					<span class="unchanged">[1] HNL<br/></span>
+					<span class="unchanged">[2] 1. NL<br/></span>
+					[3] 2. NL<br/>
+					[4] 3. NL<br/>
+					&nbsp;&nbsp;[4.1] North<br/>
+					&nbsp;&nbsp;[4.2] West<br/>
+					&nbsp;&nbsp;[4.3] Central<br/>
+					&nbsp;&nbsp;[4.4] East<br/>
+					&nbsp;&nbsp;[4.5] South<br/>
+					<span class="unchanged">[Cup] Croatian Football Cup<br/></span>
+					<span class="unchanged">[Cup] Super Cup<br/></span>
+				</td>
+				<td>
+					<ul>
+						<li>2. NL added</li>
+						<li>3. NL added</li>
+						<li>All other competitions unchanged</li>
+					</ul>
+				</td>
 			</tr>
 
 			<tr>
@@ -205,32 +280,46 @@
 				</td>
 			</tr>
 
-			<tr class="excluded">
-				<td>-</td>
+			<tr>
+				<td>CZE.fmf</td>
 				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/cz.png"/> Czech Republic</td>
-				<td>&nbsp;</td>
-				<td>No Rule File: Czech Republic is already in the game</td>
+				<td>
+					<span class="unchanged">[1] First League<br/></span>
+					<span class="unchanged">[2] Second League<br/></span>
+					[3] Third League<br/>
+					&nbsp;&nbsp;[3.1] ČFL A<br/>
+					&nbsp;&nbsp;[3.2] ČFL B<br/>					
+					&nbsp;&nbsp;[3.3] MSFL<br/>
+					<span class="unchanged">[Cup] Czech FA Cup<br/></span>
+					<span class="unchanged">[Cup] Czech Super Cup<br/></span>
+				</td>
+				<td>
+					<ul>
+						<li>Third League added</li>
+						<li>All other competitions unchanged</li>
+					</ul>
+				</td>
 			</tr>
 
 			<tr class="excluded">
 				<td>-</td>
 				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/dk.png"/> Denmark</td>
 				<td>&nbsp;</td>
-				<td>No Rule File: Denmark is already in the game</td>
+				<td>No Rule File: Denmark already has 4 tiers in the game</td>
 			</tr>
 
 			<tr class="excluded">
 				<td>-</td>
 				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/gb-eng.png"/> England</td>
 				<td>&nbsp;</td>
-				<td>No Rule File: England is already in the game</td>
+				<td>No Rule File: England already has 6 tiers in the game</td>
 			</tr>
 			
 			<tr class="excluded">
 				<td>-</td>
 				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/es.png"/> Spain</td>
 				<td>&nbsp;</td>
-				<td>No Rule File: Spain is already in the game</td>
+				<td>No Rule File: Spain already has 4 tiers in the game</td>
 			</tr>
 			
 			<tr>
@@ -249,14 +338,14 @@
 				<td>-</td>
 				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/fi.png"/> Finland</td>
 				<td>&nbsp;</td>
-				<td>No Rule File: Finland is already in the game</td>
+				<td>No Rule File: Finland already has 3 tiers in the game (2nd tier splits in 2nd and 3rd tier in 2024)</td>
 			</tr>
 			
 			<tr class="excluded">
 				<td>-</td>
 				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/fr.png"/> France</td>
 				<td>&nbsp;</td>
-				<td>No Rule File: France is already in the game</td>
+				<td>No Rule File: France already has 4 tiers in the game</td>
 			</tr>
 			
 			<tr>
@@ -282,11 +371,32 @@
 				<td>&nbsp;</td>
 			</tr>
 
-			<tr class="excluded">
-				<td>-</td>
+			<tr>
+				<td>GER.fmf</td>
 				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/de.png"/> Germany</td>
-				<td>&nbsp;</td>
-				<td>No Rule File: Germany is already in the game</td>
+				<td>
+					<span class="unchanged">[1] Bundesliga<br/></span>
+					<span class="unchanged">[2] 2. Bundesliga<br/></span>
+					<span class="unchanged">[3] 3. Liga<br/></span>
+					[4] Regionalliga<br/>
+					&nbsp;&nbsp;[4.1] Nord<br/>
+					&nbsp;&nbsp;[4.2] Nordost<br/>					
+					&nbsp;&nbsp;[4.3] West<br/>
+					&nbsp;&nbsp;[4.4] Südwest<br/>
+					&nbsp;&nbsp;[4.5] Bayern<br/>
+					<span class="changed">[Cup] DFB Pokal (*)<br/></span>
+					<span class="unchanged">[Cup] Super Cup<br/></span>
+					[Cup] Verbandspokale<br/>
+					&nbsp;&nbsp;[Cup.*] 21 regional cups<br/>
+				</td>
+				<td>
+					<ul>
+						<li>added Regionalliga</li>
+						<li>added Verbandspokale: 21 regional cups. Winners qualify for the DFB Pokal of the following year.</li>
+						<li>(*) DFB Pokal modified to use qualified teams from Verbandspokale</li>
+						<li>All other competitions unchanged</li>
+					</ul>
+				</td>
 			</tr>
 
 			<tr class="excluded">
@@ -296,46 +406,140 @@
 				<td>No Rule File: Gibraltar is already in the game</td>
 			</tr>
 
-			<tr class="excluded">
-				<td>-</td>
+			<tr>
+				<td>GRE.fmf</td>
 				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/gr.png"/> Greece</td>
-				<td>&nbsp;</td>
-				<td>No Rule File: Greece is already in the game</td>
+				<td>
+					<span class="unchanged">[1] Super League<br/></span>
+					<span class="changed">[2] Super League 2 (*)<br/></span>
+					[3] Gamma Ethniki<br/>
+					&nbsp;&nbsp;[3.1] Group 1<br/>
+					&nbsp;&nbsp;[3.2] Group 2<br/>					
+					&nbsp;&nbsp;[3.3] Group 3<br/>
+					&nbsp;&nbsp;[3.4] Group 4<br/>
+					<span class="changed">[Cup] Greek Cup (**)<br/></span>
+					<span class="unchanged">[Cup] Super Cup<br/></span>
+					[Cup] Greek Amateur Cup<br/>
+					&nbsp;&nbsp;[Cup.*] 52 regional cups<br/>					
+				</td>
+				<td>
+					<ul>
+						<li>added Gamma Ethniki</li>
+						<li>added 52 regional Greek Amateur Cups for teams in Gamma Ethniki and lower divisions. Winners qualify for the Greek Cup of the following year</li>
+						<li>(*) Super League 2 was refactored to correct mistakes in original FM format for 2023</li>
+						<li>(**) Greek Cup was refactored to enable qualifications from the Amateur Cups</li>
+						<li>All other competitions unchanged</li>
+					</ul>
+				</td>
 			</tr>
 
-			<tr class="excluded">
-				<td>-</td>
+			<tr>
+				<td>HUN.fmf</td>
 				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/hu.png"/> Hungary</td>
-				<td>&nbsp;</td>
-				<td>No Rule File: Hungary is already in the game</td>
+				<td>
+					<span class="unchanged">[1] Nemzeti Bajnokság I<br/></span>
+					<span class="unchanged">[2] Nemzeti Bajnokság II<br/></span>
+					[3] Nemzeti Bajnokság III<br/>
+					&nbsp;&nbsp;[3.1] Northwest<br/>
+					&nbsp;&nbsp;[3.2] Northeast<br/>
+					&nbsp;&nbsp;[3.3] Southwest<br/>
+					&nbsp;&nbsp;[3.4] Southeast<br/>
+					<span class="unchanged">[Cup] Magyar Kupa<br/></span>
+					<span class="unchanged">[Cup] Szuperkupa<br/></span>
+				</td>
+				<td>
+					<ul>
+						<li>added Nemzeti Bajnokság III</li>
+						<li>All other competitions unchanged</li>
+					</ul>
+				</td>
 			</tr>
 
 			<tr class="excluded">
 				<td>-</td>
 				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/ie.png"/> Ireland</td>
 				<td>&nbsp;</td>
-				<td>No Rule File: Ireland is already in the game</td>
+				<td>No Rule File: Ireland already has 2 tiers in the game</td>
 			</tr>
 			
-			<tr class="excluded">
-				<td>-</td>
+			<tr>
+				<td>ISL.fmf</td>
 				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/is.png"/> Iceland</td>
-				<td>&nbsp;</td>
-				<td>No Rule File: Iceland is already in the game</td>
+				<td>
+					<span class="unchanged">[1] Urveilsdeild<br/></span>
+					<span class="unchanged">[2] 1. Deild Karla<br/></span>
+					[3] 2. Deild Karla<br/>
+					[4] 3. Deild Karla<br/>
+					<span class="unchanged">[Cup] Icelandic Cup<br/></span>
+					<span class="unchanged">[Cup] Super Cup<br/></span>
+					<span class="unchanged">[Cup] League Cup A<br/></span>
+					[Cup] League Cup B<br/>
+				</td>
+				<td>
+					<ul>
+						<li>added 2. and 3. Deild Karla</li>
+						<li>added League Cup B (a cup for teams on tier 3 and 4)</li>
+						<li>All other competitions unchanged</li>
+					</ul>
+				</td>
 			</tr>
 			
-			<tr class="excluded">
-				<td>-</td>
+			<tr>
+				<td>ISR.fmf</td>
 				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/il.png"/> Israel</td>
-				<td>&nbsp;</td>
-				<td>No Rule File: Israel is already in the game</td>
+				<td>
+					<span class="unchanged">[1] Liga Ha'AI<br/></span>
+					<span class="unchanged">[2] Liga Leumit<br/></span>
+					[3] Liga Alef<br/>
+					&nbsp;&nbsp;[3.1] North<br/>
+					&nbsp;&nbsp;[3.2] South<br/>
+					<span class="changed">[Cup] Israel State Cup (*)<br/></span>
+					<span class="unchanged">[Cup] Super Cup<br/></span>
+				</td>
+				<td>
+					<ul>
+						<li>added Liga Alef</li>
+						<li>Note: Access to the Israel FA Website was blocked, so I could not research match rules. I copied foreigner rules etc. from the Liga Leumit. If someone has accurate information, please notify me.</li>
+						<li>Includes Daveincid's fix for expired contracts</li>
+						<li>(*) Israel State Cup extended to start at 5th round where Liga Alef teams enter the cup</li>
+						<li>All other competitions unchanged</li>
+					</ul>
+				</td>
 			</tr>
 
-			<tr class="excluded">
-				<td>-</td>
+			<tr>
+				<td>ITA.fmf</td>
 				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/it.png"/> Italy</td>
-				<td>&nbsp;</td>
-				<td>No Rule File: Italy is already in the game</td>
+				<td>
+					<span class="unchanged">[1] Lega Serie A<br/></span>
+					<span class="unchanged">[2] Lega Serie B<br/></span>
+					<span class="unchanged">[3] Lega Pro<br/></span>
+					<span class="unchanged">&nbsp;&nbsp;[3.1] Girona A<br/></span>
+					<span class="unchanged">&nbsp;&nbsp;[3.2] Girona B<br/></span>
+					<span class="unchanged">&nbsp;&nbsp;[3.3] Girona C<br/></span>
+					[4] Lega Nazionale Dilettanti<br/>
+					&nbsp;&nbsp;[4.1] Girona A<br/>
+					&nbsp;&nbsp;[4.2] Girona B<br/>
+					&nbsp;&nbsp;[4.3] Girona C<br/>
+					&nbsp;&nbsp;[4.4] Girona D<br/>
+					&nbsp;&nbsp;[4.5] Girona E<br/>
+					&nbsp;&nbsp;[4.6] Girona F<br/>
+					&nbsp;&nbsp;[4.7] Girona G<br/>
+					&nbsp;&nbsp;[4.8] Girona H<br/>
+					&nbsp;&nbsp;[4.9] Girona I<br/>
+					<span class="unchanged">[Cup] Coppa Italia<br/></span>
+					<span class="unchanged">[Cup] Supercoppa Italiana<br/></span>
+					<span class="unchanged">[Cup] Coppa Italia Serie C<br/></span>
+					<span class="unchanged">[Cup] Supercoppa di Serie C<br/></span>
+					[Cup] Coppa Italia Serie D<br/>
+				</td>
+				<td>
+					<ul>
+						<li>added Serie D</li>
+						<li>added Coppa Italia Serie D</li>
+						<li>All other competitions unchanged</li>
+					</ul>
+				</td>
 			</tr>			
 			
 			<tr>
@@ -346,6 +550,7 @@
 					[2] Birinchi Ligasy<br/>
 					[Cup] Kazakh Cup<br/>
 					[Cup] Kazakh Super Cup<br/>
+					[Cup] Kazakh League Cup<br/>
 				</td>
 				<td>
 					<ul>
@@ -402,7 +607,7 @@
 				<td>-</td>
 				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/lv.png"/> Latvia</td>
 				<td>&nbsp;</td>
-				<td>No Rule File: Latvia is already in the game</td>
+				<td>No Rule File: Latvia already has 2 tiers in the game</td>
 			</tr>			
 	
 			<tr>
@@ -455,60 +660,112 @@
 				<td>&nbsp;</td>
 			</tr>
 
-			<tr class="excluded">
-				<td>-</td>
+			<tr>
+				<td>NED.fmf</td>
 				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/nl.png"/> Netherlands</td>
-				<td>&nbsp;</td>
-				<td>No Rule File: Netherlands is already in the game</td>
+				<td>
+					<span class="unchanged">[1] Eredivisie<br/></span>
+					<span class="changed">[2] Keuken Kampioen Divisie (*)<br/></span>
+					[3] Tweede Divisie<br/>
+					[4] Derde Divisie<br/>
+					&nbsp;&nbsp;[4.1] Groep A<br/>
+					&nbsp;&nbsp;[4.2] Groep B<br/>
+					<span class="changed">[Cup] Dutch Cup (**)<br/></span>
+					<span class="unchanged">[Cup] Super Cup<br/></span>
+				</td>
+				<td>
+					<ul>
+						<li>added Tweede Divisie and Derde Divisie</li>
+						<li>Note: promotion from Tweede Divisie only happens for a B Team in specific circumstances (it must win the league and replace another B team from Keuken Kampioen Divisie which must finish in the bottom 2 spots). Other teams cannot promote.</li>
+						<li>Note: a B Team can relegate from Tweede Divisie into the Reserve Eredivisie if it finishes in the last 2 spots of the league. It is replaced by another B team. Additionally up to 3 regular teams can be relegated (and promoted from Derde Divisie)</li>
+						<li>in the unlikely event that 2 or more B teams are force relegated from Keuken Kampion Divisie, then it can happen that also the champion of tweede divisie (not a B team) promotes</li>
+						<li>(*) Keuken Kampioen Divisie was changed for proper relegation of B Team which can happen in specific circumstances (see above)</li>
+						<li>(**) Dutch Cup extended to start at first preliminary round where Tweede/Derde Divisie starts</li>
+						<li>All other competitions unchanged</li>
+					</ul>
+				</td>
 			</tr>			
 
 			<tr class="excluded">
 				<td>-</td>
 				<td><img class="flag" src=""/> Northern Ireland</td>
 				<td>&nbsp;</td>
-				<td>No Rule File: Northern Ireland is already in the game</td>
+				<td>No Rule File: Northern Ireland already has 3 tiers in the game</td>
 			</tr>			
 
 			<tr class="excluded">
 				<td>-</td>
 				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/no.png"/> Norway</td>
 				<td>&nbsp;</td>
-				<td>No Rule File: Norway is already in the game</td>
+				<td>No Rule File: Norway already has 4 tiers in the game</td>
 			</tr>			
 			
-			<tr class="excluded">
-				<td>-</td>
+			<tr>
+				<td>POL.fmf</td>
 				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/pl.png"/> Poland</td>
-				<td>&nbsp;</td>
-				<td>No Rule File: Poland is already in the game</td>
+				<td>
+					<span class="unchanged">[1] Ekstraklasa<br/></span>
+					<span class="unchanged">[2] I Liga<br/></span>
+					[3] II Liga<br/>
+					[4] III Liga<br/>
+					&nbsp;&nbsp;[4.1] North-East<br/>
+					&nbsp;&nbsp;[4.2] North-West<br/>
+					&nbsp;&nbsp;[4.2] South-East<br/>
+					&nbsp;&nbsp;[4.2] South-West<br/>
+					<span class="changed">[Cup] Polish FA Cup (*)<br/></span>
+					<span class="unchanged">[Cup] Super Cup<br/></span>
+					[Cup] Regional Cups<br/>
+					&nbsp;&nbsp;[Cup.*] 16 regional cups (Voivodeship)
+				</td>
+				<td>
+					<ul>
+						<li>added II Liga and III Liga</li>
+						<li>added 16 Regional Cups for teams in II Liga and lower. The winners qualify for the Polish FA Cup of the following year</li>
+						<li>(*) Polish FA Cup team list changed to get correct qualifiers from regional cups</li>
+						<li>All other competitions unchanged</li>
+					</ul>
+				</td>
 			</tr>
 
 			<tr class="excluded">
 				<td>-</td>
 				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/pt.png"/> Portugal</td>
 				<td>&nbsp;</td>
-				<td>No Rule File: Portugal is already in the game</td>
+				<td>No Rule File: Portugal already has 4 tiers in the game</td>
 			</tr>
 
 			<tr class="excluded">
 				<td>-</td>
 				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/ro.png"/> Romania</td>
 				<td>&nbsp;</td>
-				<td>No Rule File: Romania is already in the game</td>
+				<td>No Rule File: Romania already has 3 tiers in the game</td>
 			</tr>	
 
-			<tr class="excluded">
-				<td>-</td>
+			<tr>
+				<td>RUS.fmf</td>
 				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/ru.png"/> Russia</td>
-				<td>&nbsp;</td>
-				<td>No Rule File: Russia is already in the game</td>
+				<td>
+					<span class="unchanged">[1] Premier League<br/></span>
+					<span class="unchanged">[2] First League<br/></span>
+					[3] Second Russian League A<br/>
+					&nbsp;&nbsp;[3.1] Gold<br/>
+					&nbsp;&nbsp;[3.2] Silver<br/>
+					<span class="unchanged">[Cup] Russian Cup<br/></span>
+					<span class="unchanged">[Cup] Super Cup<br/></span>
+				</td>
+				<td>
+					<ul>
+						<li>added 2nd Russian League A. This is a complex system with Gold and Silver Groups where teams can move up or down mid season and relegation to 2nd League B happens mid-season because the B League is from March to November as opposed to the A League which is from September to May. (This is also why I didn't do B League)</li>
+						<li>All other competitions unchanged</li>
+					</ul>
+				</td>
 			</tr>
 
 			<tr class="excluded">
 				<td>-</td>
 				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/gb-sct.png"/> Scotland</td>
 				<td>&nbsp;</td>
-				<td>No Rule File: Scotland is already in the game</td>
+				<td>No Rule File: Scotland already has 4 tiers in the game</td>
 			</tr>	
 
 			<tr>
@@ -522,95 +779,156 @@
 				<td>&nbsp;</td>
 			</tr>
 			
-			<tr class="excluded">
-				<td>-</td>
+			<tr>
+				<td>SRB.fmf</td>
 				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/rs.png"/> Serbia</td>
-				<td>&nbsp;</td>
-				<td>No Rule File: Serbia is already in the game</td>
+				<td>
+					<span class="unchanged">[1] SuperLiga<br/></span>
+					<span class="unchanged">[2] Prva Liga<br/></span>
+					[3] Srpska Liga<br/>
+					&nbsp;&nbsp;[3.1] Beograd<br/>
+					&nbsp;&nbsp;[3.2] East<br/>
+					&nbsp;&nbsp;[3.3] West<br/>
+					&nbsp;&nbsp;[3.4] Vojvodina<br/>
+					<span class="unchanged">[Cup] Serbian Cup<br/></span>
+					<span class="unchanged">[Cup] Super Cup<br/></span>
+				</td>
+				<td>
+					<ul>
+						<li>added Srpska Liga</li>
+						<li>All other competitions unchanged</li>
+					</ul>
+				</td>
 			</tr>	
 
-			<tr class="excluded">
-				<td>-</td>
+			<tr>
+				<td>SUI.fmf</td>
 				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/ch.png"/> Switzerland</td>
-				<td>&nbsp;</td>
-				<td>No Rule File: Switzerland is already in the game</td>
+				<td>
+					<span class="unchanged">[1] Super League<br/></span>
+					<span class="unchanged">[2] Challenge League<br/></span>
+					[3] Promotion League<br/>
+					[4] 1. Liga<br/>
+					&nbsp;&nbsp;[4.1] Group 1<br/>
+					&nbsp;&nbsp;[4.2] Group 2<br/>
+					&nbsp;&nbsp;[4.3] Group 3<br/>
+					<span class="changed">[Cup] Swiss Cup (*)<br/></span>
+					<span class="unchanged">[Cup] Super Cup<br/></span>
+				</td>
+				<td>
+					<ul>
+						<li>added Promotion League and 1. Liga (3 Groups)</li>
+						<li>(*) refactored Swiss Cup to use correct qualified teams</li>
+						<li>All other competitions unchanged</li>
+					</ul>
+				</td>
 			</tr>	
 
 			<tr class="excluded">
 				<td>-</td>
 				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/sk.png"/> Slovakia</td>
 				<td>&nbsp;</td>
-				<td>No Rule File: Slovakia is already in the game</td>
+				<td>No Rule File: Slovakia already has 2 tiers in the game, lower tier competition and teams are not in the database</td>
 			</tr>	
 
-			<tr class="excluded">
-				<td>-</td>
+			<tr>
+				<td>SVN.fmf</td>
 				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/si.png"/> Slovenia</td>
-				<td>&nbsp;</td>
-				<td>No Rule File: Slovenia is already in the game</td>
+				<td>
+					<span class="unchanged">[1] 1. SNL<br/></span>
+					<span class="unchanged">[2] 2. SNL<br/></span>
+					[3] 3. SNL<br/>
+					&nbsp;&nbsp;[3.1] East<br/>
+					&nbsp;&nbsp;[3.2] West<br/>
+					<span class="unchanged">[Cup] Slovenian Cup<br/></span>
+					<span class="unchanged">[Cup] Super Cup<br/></span>
+				</td>
+				<td>
+					<ul>
+						<li>added 3. SNL</li>
+						<li>All other competitions unchanged</li>
+					</ul>
+				</td>
 			</tr>	
 
 			<tr class="excluded">
 				<td>-</td>
 				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/se.png"/> Sweden</td>
 				<td>&nbsp;</td>
-				<td>No Rule File: Sweden is already in the game</td>
+				<td>No Rule File: Sweden already has 4 tiers in the game</td>
 			</tr>	
 			
-			<tr class="excluded">
-				<td>-</td>
+			<tr>
+				<td>TUR.fmf</td>
 				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/tr.png"/> Turkey</td>
-				<td>&nbsp;</td>
-				<td>No Rule File: Turkey is already in the game</td>
+				<td>
+					<span class="changed">[1] Super League<br/></span>
+					<span class="changed">[2] TFF 1. Lig<br/></span>
+					<span class="changed">[3] TFF 2. Lig<br/></span>
+					<span class="changed">&nbsp;&nbsp;[3.1] Red Group<br/></span>
+					<span class="changed">&nbsp;&nbsp;[3.2] White Group<br/></span>
+					[4] TFF 3. Lig<br/>
+					&nbsp;&nbsp;[4.1] Group 1<br/>
+					&nbsp;&nbsp;[4.2] Group 2<br/>
+					&nbsp;&nbsp;[4.3] Group 3<br/>
+					&nbsp;&nbsp;[4.4] Group 3<br/>
+					<span class="unchanged">[Cup] Turkish Cup<br/></span>
+					<span class="unchanged">[Cup] Super Cup<br/></span>
+				</td>
+				<td>
+					<ul>
+						<li>added TFF 3. Lig (4 Groups)</li>
+						<li>small changes to all other leagues because of changes to the turkish league system</li>
+						<li>Super League transitions from 20 teams to 19 to 18 teams in the first 3 seasons</li>
+						<li>1. Lig transitions from 18 teams to 20 to 19 to 18 teams in the first 4 seasons</li>
+						<li>2. Lig transitions from 38 (2x19) teams to 36 (2x18) to 37 (18+19) to 38 (2x19) teams in the first 4 seasons</li>
+						<li>3. Lig transitions from 60 (4x15) teams in 2023 to 64 (4x16) teams in 2024</li>
+						<li>All other competitions unchanged</li>
+					</ul>
+				</td>			
 			</tr>	
 
-			<tr class="excluded">
-				<td>-</td>
+			<tr>
+				<td>UKR.fmf</td>
 				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/ua.png"/> Ukraine</td>
-				<td>&nbsp;</td>
-				<td>No Rule File: Ukraine is already in the game</td>
+				<td>
+					<span class="unchanged">[1] Premier Liha<br/></span>
+					<span class="unchanged">[2] Persha Liha<br/></span>
+					[3] Druha Liha<br/>
+					<span class="unchanged">[Cup] Ukrainian Cup<br/></span>
+					<span class="unchanged">[Cup] Super Cup<br/></span>
+				</td>
+				<td>
+					<ul>
+						<li>added Druha Liha</li>
+						<li>All other competitions unchanged</li>
+					</ul>
+				</td>			
 			</tr>	
 
 			<tr class="excluded">
 				<td>-</td>
 				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/gb-wls.png"/> Wales</td>
 				<td>&nbsp;</td>
-				<td>No Rule File: Wales is already in the game</td>
+				<td>No Rule File: Wales has already 2 tiers in the game</td>
 			</tr>				
 			
 		</table>
-		
-		<!--
-		<h3>Known Issues in FM24</h3>
-		
-		<table border="1">
-		<tr>
-			<td><a id="Issue1"/>Issue #1 - Continental Cup Schedule Problems</td>
-			<td>In FM24, the Central American Cup uses a host nation from Caribbean Nations incorrectly.
-				This causes teams to "travel" to the cup for the entire group stage (the whole month of August). 
-				Teams participating in this cup will not play any domestic games during that month. This can seriously clog up the domestic schedule.<br/>
-				My advice is to use my CONCACAF continental cups file where I fixed this, and then those teams will play domestic league on saturday and continental cup on wednesday like they should.
-			</td>
-		</tr>
-		<tr>
-			<td><a id="Issue2"/>Issue #2 - Continental cup teams wrong for Panama</td>
-			<td>In FM24, the Central American Cup picks teams from Panama from the 2nd tier instead of the 1st tier (Liga Panamena).<br/>
-				My advice is to use my CONCACAF continental cups file where I fixed this, and then the correct teams from Panama will enter.
-			</td>
-		</tr>
-		<tr>
-			<td><a id="Issue3"/>Issue #3 - Continental cup teams from wrong year</td>
-			<td>In FM24, the Central American Cup picks qualified teams in December. While all the domestic leagues already finish in May/June.
-				This causes teams to participate in the Central American Cup 1 year later.<br/>
-				I advise to use my CONCACAF continental cup file for a better experience, the competition is set up in July and picks teams on that date when (most) competitions have finished.
-			</td>
-		</tr>
-		</table>
-		-->
 
 		<h3>Changelog</h3>
 
 		<table border="1">
+			<tr>
+				<td>v24.4</td>
+				<td>
+					<ul>
+						<li>added lower leagues for: Austria, Belgium, Bulgaria, Croatia, Czech Republic, Germany, Greece, Hungary, Iceland, Israel, Italy, Netherlands, Poland, Russia, Serbia, Switzerland, Slovenia, Turkey and Ukraine</li>
+						<li>Kazachstan (KAZ): added League Cup</li>
+						<li>Armenia (ARM): added 2nd tier</li>
+						<li>Bosnia and Herzegovina (BIH): Fixed qualification to Bosnian Cup - best 8 teams from both 2nd tier leagues qualify. Also added variable relegation.</li>
+					</ul>
+				</td>
+			</tr>
 			<tr>
 				<td>v24.3</td>
 				<td>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Football Manager rule files for AFC v24.8</title>
+		<title>Football Manager rule files for AFC v24.9</title>
 		<style>
 			html * {
 				font-size: 12px;
@@ -38,7 +38,7 @@
 	
 	<body>
 	
-		<h1>Football Manager rule files for AFC v24.8</h1>
+		<h1>Football Manager rule files for AFC v24.9</h1>
 		
 		<p>In this package, you will find rule files for AFC Member Nations.</p>
 		<p>I did my best to use realistic formats for all the leagues that are included. The rule files contain:</p>
@@ -55,7 +55,7 @@
 
 		<h3>License</h3>
 		<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
-			<span property="dct:title">Football Manager rule files for AFC v24.8</span> by <span property="cc:attributionName">MasterIgor</span> is licensed under 
+			<span property="dct:title">Football Manager rule files for AFC v24.9</span> by <span property="cc:attributionName">MasterIgor</span> is licensed under 
 			<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution-NonCommercial-NoDerivatives 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1"></a>
 		</p>
 
@@ -244,6 +244,7 @@
 				<td>
 					<ul>
 						<li>(*) Refactored League 1 and 2 to the 2023 format</li>
+						<li>(*) Liga 2 changes from 4 groups (28 teams) to 3 groups (27 teams) in 2024</li>
 						<li>Other original competitions in FM24 are unchanged</li>
 					</ul>
 				</td>
@@ -493,6 +494,7 @@
 				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/mm.png"/> Myanmar</td>
 				<td>
 					[1] Myanmar National League<br/>
+					[Cup] Myanmar National League Cup<br/>
 				</td>
 				<td>&nbsp;</td>
 			</tr>
@@ -771,7 +773,8 @@
 				<td>
 					[Cup] AFC Champions League Elite<br/>
 					[Cup] AFC Champions League Two<br/>
-					[Cup] AFC Challenge League
+					[Cup] AFC Challenge League<br/>
+					[Cup] South East Asian Club Championship
 				</td>
 				<td>
 					<ul>
@@ -806,6 +809,16 @@
 							<li>KO round is home and away, final is in a central location picked from participating countries</li>
 							<li>uses officially communicated schedule and prize money</li>
 						</ul>
+						<li>Southeast Asian Club Championship (Shopee Cup)</li>
+						<ul>
+							<li>16 teams from 13 nations (Australia does not compete) enter the competition</li>
+							<li>the top 3 nations have 2 slots, the other nations 1 slot. The slots are allocated to the league winners and cup winners</li>
+							<li>the bottom 4 nations start at the preliminary round, the winners advance to the group stage</li>
+							<li>2 groups of 6 teams, the top 2 advance to the semi final</li>
+							<li>KO round is home and away</li>
+							<li>uses officially communicated schedule and prize money</li>
+							<li>this competition does not change coefficients</li>
+						</ul>
 						<li>Coefficients</li>
 						<ul>
 							<li>Slot allocation is based on 5 year coefficients</li>
@@ -814,7 +827,7 @@
 							But there is a working coefficient system in place.
 							For the year 2020 all coefficients are 0 (Covid) and the game sets all coefficients in 2022 to 0. This means that in the early years the coefficients are based on 3 years instead of 5 because 2 years are zeroes. 
 							From my observations, this can cause some movements in the ranking, but they normalize after a couple of years.</li>
-							<li class="warning">(!) The slot allocation page for Asia in the game cannot be changed from the old format to the new format. So you should ignore that page and instead focus on the coefficient ranking page: top 6 nations from West and East will enter ACLE, and so on. Slot allocation is based on real AFC (see above).
+							<li class="warning">(!) The slot allocation page for Asia in the game cannot be changed from the old format to the new format. So you should ignore that page and instead focus on the coefficient ranking page: top 6 nations from West and East will enter ACLE, and so on. Slot allocation is based on real AFC (see above).</li>
 						</ul>
 					</ul>
 				</td>
@@ -825,6 +838,20 @@
 		<h3>Changelog</h3>
 		
 		<table border="1">
+			<tr>
+				<td width="100">v24.9</td>
+				<td>
+					<ul>
+						<li>Continental Cups: National Cup Winners now qualify for 2nd slot of their nation</li>
+						<li>Continental Cups: removed foreigner restrictions for 2024 onwards</li>
+						<li>Continental Cups: added ASEAN Club Championship (Shopee Cup) from 2024 onwards</li>
+						<li>Continental Cups: registration for ACL2 should be fixed</li>
+						<li>Indonesia (IDN): added Liga 2 format for 2024 onwards (transitions from 3 to 4 groups)</li>
+						<li>Indonesia (IDN): updated foreigner rules</li>
+						<li>Myanmar (MYA): added MNL League Cup</li>
+					</ul>
+				</td>
+			</tr>
 			<tr>
 				<td width="100">v24.8</td>
 				<td>
