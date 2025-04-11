@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Football Manager rule files for UEFA v24.5</title>
+		<title>Football Manager rule files for UEFA v24.6</title>
 		<style>
 			html * {
 				font-size: 12px;
@@ -15,6 +15,7 @@
 			}
 			
 			img.flag {
+				width: 64px;
 				vertical-align: middle;
 			}
 
@@ -40,7 +41,7 @@
 	
 	<body>
 	
-		<h1>Football Manager rule files for UEFA v24.5</h1>
+		<h1>Football Manager rule files for UEFA v24.6</h1>
 		
 		<p>In this package, you will find rule files for UEFA Member Nations.</p>
 		<p>I did my best to use realistic formats for all the leagues that are included. The rule files contain:</p>
@@ -57,7 +58,7 @@
 
 		<h3>License</h3>
 		<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
-			<span property="dct:title">Football Manager rule files for UEFA v24.5</span> by <span property="cc:attributionName">MasterIgor</span> is licensed under 
+			<span property="dct:title">Football Manager rule files for UEFA v24.6</span> by <span property="cc:attributionName">MasterIgor</span> is licensed under 
 			<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution-NonCommercial-NoDerivatives 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1"></a>
 		</p>
 
@@ -185,6 +186,7 @@
 						<li>Second Amateur Division VV A and VV B transition from 18 teams in 2023 to 16 teams in 2024 onwards</li>
 						<li>Because the new format is not entirely certain yet, there can be some variations in e.g. number of relegated teams compared to reality</li>
 						<li>(**) Belgian Cup modified to include teams from Third Amateur (5th tier)</li>
+						<li class="Warning">Due to how FM24 works, if you don't select the 4th tier in the game, it can happen that teams from VV will end up in ACFF league (or vice versa). Unfortunately, due to the complex nature of this competition (i.e. variable relegations, league split, B team hell, ...) , it was not possible to avoid this</li>
 					</ul>
 				</td>
 			</tr>
@@ -207,11 +209,21 @@
 				</td>
 			</tr>
 
-			<tr class="excluded">
-				<td>-</td>
+			<tr>
+				<td>BLR.fmf</td>
 				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/by.png"/> Belarus</td>
-				<td>&nbsp;</td>
-				<td>No Rule File: Belarus already has 2 tiers in the game</td>
+				<td>
+					<span class="changed">[1] Vysheyshaya Liha</span><br/>
+					<span class="changed">[2] Pershaya Liha</span><br/>
+					<span class="unchanged">[Cup] Belarus Cup</span><br/>
+					<span class="unchanged">[Cup] Belarus Super Cup</span>
+				</td>
+				<td>
+					<ul>
+						<li>Vysheyshaya Liha transitions from 15 teams in 2023 to 16 in 2024 onwards</li>
+						<li>Pershaya Liha transitions from 17 teams in 2023 to 18 in 2024 onwards</li>
+					</ul>
+				</td>
 			</tr>
 
 			<tr>
@@ -251,12 +263,14 @@
 					&nbsp;&nbsp;[4.4] East<br/>
 					&nbsp;&nbsp;[4.5] South<br/>
 					<span class="unchanged">[Cup] Croatian Football Cup<br/></span>
+					[Cup.X] 21 regional cups<br/>
 					<span class="unchanged">[Cup] Super Cup<br/></span>
 				</td>
 				<td>
 					<ul>
 						<li>2. NL added</li>
 						<li>3. NL added</li>
+						<li>21 regional cups added that also count as qualifiers for the Croatian Cup of the following year</li>
 						<li>All other competitions unchanged</li>
 					</ul>
 				</td>
@@ -341,11 +355,29 @@
 				<td>No Rule File: Finland already has 3 tiers in the game (2nd tier splits in 2nd and 3rd tier in 2024)</td>
 			</tr>
 			
-			<tr class="excluded">
-				<td>-</td>
+			<tr>
+				<td>FRA.fmf</td>
 				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/fr.png"/> France</td>
-				<td>&nbsp;</td>
-				<td>No Rule File: France already has 4 tiers in the game</td>
+				<td>
+					<span class="unchanged">[1] Ligue 1</span><br/>
+					<span class="changed">[2] Ligue 2</span><br/>
+					<span class="changed">[3] Championnat National</span><br/>
+					<span class="changed">[4] Championnat National 2</span><br/>
+					<span class="changed">&nbsp;&nbsp;[4.1] Groupe A</span><br/>
+					<span class="changed">&nbsp;&nbsp;[4.2] Groupe B</span><br/>
+					<span class="changed">&nbsp;&nbsp;[4.3] Groupe C</span><br/>
+					<span class="changed">&nbsp;&nbsp;[4.4] Groupe D (2023 only)</span><br/>
+					<span class="changed">[Cup] French Cup</span><br/>
+					<span class="unchanged">[Cup] French Super Cup</span><br/>
+				</td>
+				<td>
+					<ul>
+						<li>Ligue 2 transitions from 20 teams in 2023 to 18 teams in 2024 onwards</li>
+						<li>National 2 transitions from 4 groups of 14 teams in 2023 to 3 groups of 16 teams in 2024 onwards</li>
+						<li>French Cup takes correct winners from Overseas cup winners - if you use my files from those nations: Guadeloupe, Martinique, French Guiana, Reunion, New Caledonia, Tahiti</li>
+						<li>French Cup uses correct foreigner rules for overseas teams (recommended to use my files for the overseas nations)</li>
+					</ul>
+				</td>
 			</tr>
 			
 			<tr>
@@ -498,7 +530,7 @@
 				</td>
 				<td>
 					<ul>
-						<li>added Liga Alef</li>
+						<li>added Liga Alef. Liga Alef epands from 16 teams per group in 2023 to 17 teams per group from 2024 onwards</li>
 						<li>Note: Access to the Israel FA Website was blocked, so I could not research match rules. I copied foreigner rules etc. from the Liga Leumit. If someone has accurate information, please notify me.</li>
 						<li>Includes Daveincid's fix for expired contracts</li>
 						<li>(*) Israel State Cup extended to start at 5th round where Liga Alef teams enter the cup</li>
@@ -564,7 +596,7 @@
 				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/xk.png"/> Kosovo</td>
 				<td>
 					[1] Kosovar Super League<br/>
-					[2] Kosover First League<br/>
+					[2] Kosovar First League<br/>
 					&nbsp;&nbsp;[2.1] Group A (West)<br/>
 					&nbsp;&nbsp;[2.2] Group B (East)<br/>
 					[Cup] Kosovar Cup<br/>
@@ -603,11 +635,20 @@
 				<td>&nbsp;</td>
 			</tr>
 			
-			<tr class="excluded">
-				<td>-</td>
+			<tr>
+				<td>LVA.fmf</td>
 				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/lv.png"/> Latvia</td>
-				<td>&nbsp;</td>
-				<td>No Rule File: Latvia already has 2 tiers in the game</td>
+				<td>
+					<span class="unchanged">[1] Virslīga</span><br/>
+					[2] Pirmā līga<br/>
+					<span class="unchanged">[Cup] Latvian Cup</span><br/>
+					<span class="unchanged">[Cup] Latvian Super Cup</span><br/>
+				</td>
+				<td>
+					<ul>
+						<li>Latvian Pirma Liga added</li>
+					</ul>
+				</td>
 			</tr>			
 	
 			<tr>
@@ -676,9 +717,10 @@
 				<td>
 					<ul>
 						<li>added Tweede Divisie and Derde Divisie</li>
-						<li>Note: promotion from Tweede Divisie only happens for a B Team in specific circumstances (it must win the league and replace another B team from Keuken Kampioen Divisie which must finish in the bottom 2 spots). Other teams cannot promote.</li>
+						<li>Promotion and relegation between Eerste and Tweede Divisie starts in 2030</li>
+						<li>Note: until 2030, promotion from Tweede Divisie only happens for a B Team in specific circumstances (it must win the league and replace another B team from Keuken Kampioen Divisie which must finish in the bottom 2 spots). Other teams cannot promote.</li>
 						<li>Note: a B Team can relegate from Tweede Divisie into the Reserve Eredivisie if it finishes in the last 2 spots of the league. It is replaced by another B team. Additionally up to 3 regular teams can be relegated (and promoted from Derde Divisie)</li>
-						<li>in the unlikely event that 2 or more B teams are force relegated from Keuken Kampion Divisie, then it can happen that also the champion of tweede divisie (not a B team) promotes</li>
+						<li>until 2030, in the unlikely event that 2 or more B teams are force relegated from Keuken Kampion Divisie, then it can happen that also the champion of tweede divisie (not a B team) promotes</li>
 						<li>(*) Keuken Kampioen Divisie was changed for proper relegation of B Team which can happen in specific circumstances (see above)</li>
 						<li>(**) Dutch Cup extended to start at first preliminary round where Tweede/Derde Divisie starts</li>
 						<li>All other competitions unchanged</li>
@@ -688,16 +730,35 @@
 
 			<tr class="excluded">
 				<td>-</td>
-				<td><img class="flag" src=""/> Northern Ireland</td>
+				<td><img class="flag" src="https://cdn.britannica.com/92/3092-050-3A68D1DE/Flag-of-Northern-Ireland.jpg"/> Northern Ireland</td>
 				<td>&nbsp;</td>
 				<td>No Rule File: Northern Ireland already has 3 tiers in the game</td>
 			</tr>			
 
-			<tr class="excluded">
-				<td>-</td>
+			<tr>
+				<td>NOR.fmf</td>
 				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/no.png"/> Norway</td>
-				<td>&nbsp;</td>
-				<td>No Rule File: Norway already has 4 tiers in the game</td>
+				<td>
+					<span class="unchanged">[1] Eliteserien</span><br/>
+					<span class="unchanged">[2] First Division</span><br/>
+					<span class="unchanged">[3] Second Division</span><br/>
+					<span class="unchanged">&nbsp;&nbsp;[3.1] Group 1</span><br/>
+					<span class="unchanged">&nbsp;&nbsp;[3.2] Group 2</span><br/>
+					<span class="changed">[4] Third Division</span><br/>
+					<span class="changed">&nbsp;&nbsp;[4.1] Group 1</span><br/>
+					<span class="changed">&nbsp;&nbsp;[4.2] Group 2</span><br/>
+					<span class="changed">&nbsp;&nbsp;[4.3] Group 3</span><br/>
+					<span class="changed">&nbsp;&nbsp;[4.4] Group 4</span><br/>
+					<span class="changed">&nbsp;&nbsp;[4.5] Group 5</span><br/>
+					<span class="changed">&nbsp;&nbsp;[4.6] Group 6</span><br/>
+					<span class="unchanged">[Cup] Norwegian Cup</span><br/>
+					<span class="unchanged">[Cup] Norwegian Super Cup</span><br/>
+				</td>
+				<td>
+					<ul>
+						<li>Third Division was enabled (originally was view-only)</li>
+					</ul>
+				</td>
 			</tr>			
 			
 			<tr>
@@ -710,8 +771,8 @@
 					[4] III Liga<br/>
 					&nbsp;&nbsp;[4.1] North-East<br/>
 					&nbsp;&nbsp;[4.2] North-West<br/>
-					&nbsp;&nbsp;[4.2] South-East<br/>
-					&nbsp;&nbsp;[4.2] South-West<br/>
+					&nbsp;&nbsp;[4.3] South-East<br/>
+					&nbsp;&nbsp;[4.4] South-West<br/>
 					<span class="changed">[Cup] Polish FA Cup (*)<br/></span>
 					<span class="unchanged">[Cup] Super Cup<br/></span>
 					[Cup] Regional Cups<br/>
@@ -734,11 +795,32 @@
 				<td>No Rule File: Portugal already has 4 tiers in the game</td>
 			</tr>
 
-			<tr class="excluded">
-				<td>-</td>
+			<tr>
+				<td>ROU.fmf</td>
 				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/ro.png"/> Romania</td>
-				<td>&nbsp;</td>
-				<td>No Rule File: Romania already has 3 tiers in the game</td>
+				<td>
+					<span class="unchanged">[1] Liga I</span><br/>
+					<span class="unchanged">[2] Liga II</span><br/>
+					<span class="changed">[3] Liga III</span><br/>
+					<span class="changed">&nbsp;&nbsp;[3.1] Seria I</span><br/>
+					<span class="changed">&nbsp;&nbsp;[3.2] Seria II</span><br/>
+					<span class="changed">&nbsp;&nbsp;[3.3] Seria III</span><br/>
+					<span class="changed">&nbsp;&nbsp;[3.4] Seria IV</span><br/>
+					<span class="changed">&nbsp;&nbsp;[3.5] Seria V</span><br/>
+					<span class="changed">&nbsp;&nbsp;[3.6] Seria VI</span><br/>
+					<span class="changed">&nbsp;&nbsp;[3.7] Seria VII</span><br/>
+					<span class="changed">&nbsp;&nbsp;[3.8] Seria VIII</span><br/>
+					<span class="changed">&nbsp;&nbsp;[3.9] Seria IX</span><br/>
+					<span class="changed">&nbsp;&nbsp;[3.10] Seria X</span><br/>
+					<span class="unchanged">[Cup] Romanian Cup</span><br/>
+					<span class="unchanged">[Cup] Romanian League Cup</span><br/>
+					<span class="unchanged">[Cup] Romanian Super Cup</span><br/>
+				</td>
+				<td>
+					<ul>
+						<li>made Liga III playable (was view-only)</li>
+					</ul>
+				</td>
 			</tr>	
 
 			<tr>
@@ -814,11 +896,13 @@
 					&nbsp;&nbsp;[4.3] Group 3<br/>
 					<span class="changed">[Cup] Swiss Cup (*)<br/></span>
 					<span class="unchanged">[Cup] Super Cup<br/></span>
+					[Cup] Liechtensteiner Cup<br/>
 				</td>
 				<td>
 					<ul>
 						<li>added Promotion League and 1. Liga (3 Groups)</li>
 						<li>(*) refactored Swiss Cup to use correct qualified teams</li>
+						<li>The winner of the Liechtenstein Cup does not qualify for UEFA Conference Cup - it seems to be hardcoded to always pick FC Vaduz</li>
 						<li>All other competitions unchanged</li>
 					</ul>
 				</td>
@@ -872,7 +956,7 @@
 					&nbsp;&nbsp;[4.2] Group 2<br/>
 					&nbsp;&nbsp;[4.3] Group 3<br/>
 					&nbsp;&nbsp;[4.4] Group 3<br/>
-					<span class="unchanged">[Cup] Turkish Cup<br/></span>
+					<span class="changed">[Cup] Turkish Cup<br/></span>
 					<span class="unchanged">[Cup] Super Cup<br/></span>
 				</td>
 				<td>
@@ -883,6 +967,7 @@
 						<li>1. Lig transitions from 18 teams to 20 to 19 to 18 teams in the first 4 seasons</li>
 						<li>2. Lig transitions from 38 (2x19) teams to 36 (2x18) to 37 (18+19) to 38 (2x19) teams in the first 4 seasons</li>
 						<li>3. Lig transitions from 60 (4x15) teams in 2023 to 64 (4x16) teams in 2024</li>
+						<li>Turkish Cup uses real formats, also from 2024 onwards (group stage before quarter finals)</li>
 						<li>All other competitions unchanged</li>
 					</ul>
 				</td>			
@@ -918,6 +1003,42 @@
 		<h3>Changelog</h3>
 
 		<table border="1">
+			<tr>
+				<td>v24.6</td>
+				<td>
+					<ul>
+						<li>Albania (ALB): Fixed relegation playoff in Kategoria e Dyte, Fixed foreigner rules (Albania joins EU in 2030, allowing EU players as non-foreign)</li>
+						<li>Armenia (ARM): added (fictional) u18 league</li>
+						<li>Austria (AUT): improved variable relegation of Regionalliga</li>
+						<li>Bosnia and Herzegovina (BIH): improved variable relegation in first league. Fixed foreigner rules (joins EU in 2030)</li>
+						<li>Belarus (BLR): added correct formats for 2024 onwards (number of teams change minimally)</li>
+						<li>Croatia (CRO): added 21 regional cups that also count for qualification for Croatian Cup</li>
+						<li>Czech Republic (CZE): improved variable relegation of 3rd league</li>
+						<li>Estonia (EST): fixed foreigner rules (limits non-EU instead of all foreigners)</li>
+						<li>France (FRA): added file, adds new formats for Ligue 2 and National 2 for 2024 onwards. Changes French Cup to use qualifiers from overseas nations that correspond with my other files (Guadeloupe, Martinique, French Guiana, Reunion, Tahiti and New Caledonia)</li>
+						<li>Germany (GER): fixed DFB Pokal (B Teams no longer entering), improved variable relegation of Regionalliga</li>
+						<li>Greece (GRE): corrected super league 2 format for 2024 onwards (north and south groups)</li>
+						<li>Hungary (HUN): refactored Hungarian Cup</li>
+						<li>Israel (ISR): Liga Alef expands to 17 teams per group, Israel State Cup refactored to cover changes from this expansion</li>
+						<li>Kazachstan (KAZ): corrected premier league, added format of Kazachstan Cup for 2024 onwards</li>
+						<li>Lithuania (LTU): corrected foreigner rules (non-EU instead of foreign)</li>
+						<li>Latvia (LVA): added file including Future League (2nd tier)</li>
+						<li>North Macedonia (MKD): fixed foreigner rules (joins EU in 2030)</li>
+						<li>Malta (MLT): added format for 2024: Premier League plays an Opening and Closing Round</li>
+						<li>Montenegro (MNE): fixed foreigner rules (joins EU in 2030)</li>
+						<li>Netherlands (NED): enabled promotion/relegation between Eerste and Tweede Divisie, starting from 2029 season</li>
+						<li>Norway (NOR): made Third Division playable (was view-only)</li>
+						<li>Poland (POL): added format for 2024 onwards for Liga II and Liga III (promotion/relegation playoffs)</li>
+						<li>Romania (ROU): made Third Division playable (was view-only)</li>
+						<li>San Marino (SMR): fixed history and ranking for top league</li>
+						<li>Serbia (SRB): improved variable relegation, fixed foreigner rules (joins EU in 2030)</li>
+						<li>Switzerland (SUI): fixed registration issue with winter transfer, added Liechtenstein Cup</li>
+						<li>Slovenia (SVN): improved variable relegation</li>
+						<li>Turkey (TUR): added 2024 format for Turkish Cup</li>
+						<li>All files: minor refactoring</li>
+					</ul>
+				</td>
+			</tr>
 			<tr>
 				<td>v24.5</td>
 				<td>
