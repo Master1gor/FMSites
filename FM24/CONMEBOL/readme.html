@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Football Manager rule files for CONMEBOL v24.6</title>
+		<title>Football Manager rule files for CONMEBOL v24.7</title>
 		<style>
 			html * {
 				font-size: 12px;
@@ -35,7 +35,7 @@
 	
 	<body>
 	
-		<h1>Football Manager rule files for CONMEBOL v24.6</h1>
+		<h1>Football Manager rule files for CONMEBOL v24.7</h1>
 		
 		<p>In this package, you will find rule files for CONMEBOL Member Nations.</p>
 		<p>I did my best to use realistic formats for all the leagues that are included. The rule files contain:</p>
@@ -52,7 +52,7 @@
 
 		<h3>License</h3>
 		<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
-			<span property="dct:title">Football Manager rule files for CONMEBOL v24.6</span> by <span property="cc:attributionName">MasterIgor</span> is licensed under 
+			<span property="dct:title">Football Manager rule files for CONMEBOL v24.7</span> by <span property="cc:attributionName">MasterIgor</span> is licensed under 
 			<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution-NonCommercial-NoDerivatives 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1"></a>
 		</p>
 
@@ -83,22 +83,23 @@
 				<td>ARG.fmf</td>
 				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/ar.png"/> Argentina</td>
 				<td>
-					<span class="unchanged">[1] Argentina Primera Division</span><br/>
-					<span class="changed">[2] Argentina Segunda Division (*)</span><br/>
+					<span class="changed">[1] Argentina Primera Division</span><br/>
+					<span class="changed">[2] Argentina Segunda Division</span><br/>
 					[3] Argentina 3rd Division<br/>
 					&nbsp;&nbsp;[3.1] Torneo Federal A<br/>
 					&nbsp;&nbsp;[3.2] Metropolitan Zone B<br/>
-					<span class="changed">[Cup] Copa Argentina (**)</span><br/>
+					<span class="changed">[Cup] Copa Argentina</span><br/>
 					<span class="unchanged">[Cup] Supercopa</span><br/>
 					<span class="unchanged">[Cup] Supercopa Internacional</span><br/>
-					<span class="changed">[Cup] Trofeo de Campeones (***)</span><br/>
+					<span class="changed">[Cup] Trofeo de Campeones</span><br/>
 				</td>
 				<td>
 					<ul>
-						<li>3rd tier was added. (in case the number of teams in a sub competition drops below a certain number, which can happen when promotions > relegations from tier 2, then there will be no more promotions until there are again enough teams. But this should not happen often)</li>
-						<li>(*) Segunda Division refactored, will transition from 37 teams in 2023 to 38 teams in 2024</li>
-						<li>(**) Copa Argentina teams were refactored to enable 3rd tier teams to qualify for this tournament instead of being randomly picked (10 from Torneo Federal A and 5 from Metropolitan B)</li>
-						<li>(***)Trofeo de Campeones refactored to real format, and will run every year (in game was only in 2023)</li>
+						<li>3rd tier was added. Torneo Federal A and Metropolitan B vary teams due to regional relegations from Segunda Division. The number of teams are always corrected by promoting more or less teams from the lower divisions</li>
+						<li>Starting in 2025, Argentine Primera Division uses an Apertura and Clausura system. It uses 2 Groups and each team plays the other teams from the group and an interzonal match which is mostly a derby (classico). I have added almost 20 known Classicos and the rest I paired as best as I could (regionally).</li>
+						<li>Segunda Division refactored, will transition from 37 teams in 2023 to 38 teams in 2024</li>
+						<li>Copa Argentina teams were refactored to enable 3rd tier teams to qualify for this tournament instead of being randomly picked (10 from Torneo Federal A and 5 from Metropolitan B)</li>
+						<li>Trofeo de Campeones refactored to real format, and will run every year (in game was only in 2023). From 2025 onwards, it is played between the Winners of the Apertura and Clausura stages</li>
 					</ul>
 				</td>
 			</tr>
@@ -114,19 +115,33 @@
 					<ul>
 						<li>final ranking in 2023 (continental cup qualification and relegation spots) is done by average points gained in the league table and the group stage of the Copa (as in real life)</li>
 						<li>Primera Division transitions from 17 team round robin league in 2023 to 16 team apertura and clausura league from 2024 onwards</li>
-						<li>Copa de la Liga Professional ends in 2023</li>
+						<li>Primera Division returns back to the 2023 format in 2025</li>
+						<li>Copa de la Liga Professional (Copa Bolivia) ends in 2023 and restarts in 2025</li>
+						<li>The 2025 Copa Bolivia is divided in 4 groups and teams play other teams vertical and horizontal across groups and 2 derby matches. Only 5 derbies are known (to me) in Bolivia, so the rest is paired as best as I could</li>
 					</ul>
-				</td>				
+				</td>
 			</tr>
 
-			<tr class="excluded">
-				<td>-</td>
+			<tr>
+				<td>BRA.fmf</td>
 				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/br.png"/> Brazil</td>
 				<td>
+					<span class="unchanged">[1] Serie A</span><br/>
+					<span class="unchanged">[2] Serie B</span><br/>
+					<span class="unchanged">[3] Serie C</span><br/>
+					[4] Serie D<br/>
+					<span class="changed">[Cup] Copa Brasil</span><br/>
+					<span class="changed">[Cup] Copa Verde</span><br/>
+					<span class="changed">[Cup] Copa do Nordest</span><br/>
+					<span class="unchanged">[Cup] Super Cup</span><br/>
+					<span class="changed">[Sec] State Championships</span><br/>
+					<span class="changed">[Sec.X] 27 State Championships</span><br/>
 				</td>
-				<td>No rule file:
+				<td>
 					<ul>
-						<li>Brazil 4th tier is not a real league but more a cup with teams qualifying from the state championships. In order to properly do this, I would need to do also the state leagues (5th tier). I therefore opted not to create this at this time, because the effort is too high.
+						<li>Added Serie D. 4 relegated teams from Serie C + 60 teams that qualify through State Championships. Teams which do not re-qualify through state championships are moved to the lower divisions in the next season (this will probably get you fired ;-)).</li>
+						<li>Refactored all State Championships and updated a lot of formats. They are also no longer faked if you don't select lower tiers. (this can however cost some performance in the game)</li>
+						<li>Refactored Copa Brasil, Copa Verde and Copa do Nordest to use correct teams and minor updates to their formats</li>
 					</ul>
 				</td>
 			</tr>
@@ -139,24 +154,32 @@
 					<span class="unchanged">[2] Primera Division B</span><br/>
 					[3] Segunda Division<br/>
 					[4] Tercera Division A<br/>
-					<span class="changed">[Cup] Copa Chile (*)</span></br>
-					<span class="unchanged">[Cup] Supercopa</span></br>				
+					<span class="changed">[Cup] Copa Chile</span></br>
+					<span class="unchanged">[Cup] Supercopa</span></br>	
 				</td>
 				<td>
 					<ul>
-						<li>(*) refactored Copa Chile to 2023 format (incl. preliminary round for 4th tier teams)</li>
+						<li>Refactored Copa Chile to 2023 format (incl. preliminary round for 4th tier teams)</li>
+						<li>Copa Chile changes in 2025 to group stage with KO round and only 32 teams (from first 2 tiers)</li>
 						<li>All other competitions from FM24 unchanged</li>
 					</ul>
 				</td>
 			</tr>
 
-			<tr class="excluded">
-				<td>-</td>
+			<tr>
+				<td>COL.fmf</td>
 				<td><img class="flag" src="https://flagpedia.net/data/flags/emoji/openmoji/64x64/co.png"/> Colombia</td>
-				<td>&nbsp;</td>
-				<td>No rule file:
+				<td>
+					<span class="unchanged">[1] Primera A</span><br/>
+					<span class="unchanged">[2] Primera B</span><br/>
+					[3] Primera C<br/>
+					<span class="unchanged">[Cup] Copa Colombia</span><br/>
+					<span class="unchanged">[Cup] Supercopa Colombia</span><br/>
+				</td>
+				<td>
 					<ul>
-						<li>3rd tier in Colombia is complex with 166 teams. The effort was too high (and there are no promotions to 2nd tier)</li>
+						<li>added Primera C with 166 teams in 20 groups and 64 team ko round. There is no promotion to Primera B (like in real life). The system is not exactly like in real life, since that is too complex, but it's very similar.</li>
+						<li>All other competitions from FM24 unchanged</li>
 					</ul>
 				</td>
 			</tr>
@@ -170,7 +193,12 @@
 					[Cup] Copa Ecuador<br/>
 					[Cup] Super Copa
 				</td>
-				<td>&nbsp;</td>
+				<td>
+					<ul>
+						<li>Format of Serie A changes in 2025 to league with playoffs</li>
+						<li>Format of Serie B changes in 2025 to league with playoffs</li>
+					</ul>
+				</td>
 			</tr>
 
 			<tr>
@@ -196,10 +224,12 @@
 				<td>
 					<span class="changed">[1] Peru Liga 1 (*)</span><br/>
 					[2] Peru Liga 2<br/>
+					[3] Peru Liga 3<br/>
 				</td>
 				<td>
 					<ul>
-						<li>Peru Liga 2 transitions from 14 teams in 2023 to 18 teams in 2024 onwards</li>
+						<li>Peru Liga 2 transitions from 14 teams in 2023 to 18 teams in 2024 and 16 teams from 2025 onwards</li>
+						<li>Peru Liga 3 starts in 2025. It includes the best 8 teams from the Peru Reserves League of 2024. The Reserves league was changed to include the best reserve teams from Liga 2.</li>
 						<li>(*) Peru Liga 1 refactored playoffs for correct rankings and prize money</li>
 					</ul>
 				</td>
@@ -218,6 +248,7 @@
 				<td>
 					<ul>
 						<li>(*) Segunda Division was refactored to 2023 format (2 direct relegations to Amateur Division)</li>
+						<li>Primera Division Amateur changes from 24 in 2023 to 26 teams in 2024 and opening and closing stages</li>
 						<li>(**) Copa Uruguay refactored to 2023 format</li>
 					</ul>
 				</td>
@@ -230,12 +261,14 @@
 					[1] Primera Division<br/>
 					[2] Segunda Division<br/>
 					[Cup] Copa Venezuela<br/>
+					[Cup] Supercopa Venezuela<br/>
 				</td>
 				<td>
 					<ul>
 						<li>Primera Division transitions to Apertura & Clausura from 2024 onwards</li>
 						<li>Segunda Division uses Apertura & Clausura</li>
 						<li>Copa Venezuela starts in 2024</li>
+						<li>Supercopa Venezuela starts in 2025</li>
 					</ul>
 				</td>
 			</tr>
@@ -245,6 +278,23 @@
 		<h3>Changelog</h3>
 
 		<table border="1">
+			<tr>
+				<td>v24.7</td>
+				<td>
+					<ul>
+						<li>Argentina (ARG): new 2025 formats for Tier 1 and Tier 3. Refactored Tier 3 completely. Updated Trofeo de Campeones for 2025</li>
+						<li>Bolivia (BOL): new format 2025 added for Primera Division and Copa Bolivia (changes back to rules from 2023). Corrected Continental Qualifiers</li>
+						<li>Brazil (BRA): added Serie D and changed/updated formats of Cups and State Championships.</li>
+						<li>Chile (CHL): new format 2025 for Copa Chile (32 teams with group stage)</li>
+						<li>Colombia (COL): added Primera C</li>
+						<li>Ecuador (ECU): new formats for 2025 onwards</li>
+						<li>Paraguay (PAR): only minor changes to rankings</li>
+						<li>Peru (PER): Liga 3 added from 2025 onwards, and new formats for Liga 2</li>
+						<li>Uruguay (URU): added format for Primera Division Amateur for 2024 onwards</li>
+						<li>Venezuela (VEN): corrected Venezuelan Cup format, added Super Cup (starts in 2025)</li>
+					</ul>
+				</td>
+			</tr>
 			<tr>
 				<td>v24.6</td>
 				<td>

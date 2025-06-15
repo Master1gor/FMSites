@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Football Manager rule files for AFC v24.13</title>
+		<title>Football Manager rule files for AFC v24.14</title>
 		<style>
 			html * {
 				font-size: 12px;
@@ -38,7 +38,7 @@
 	
 	<body>
 	
-		<h1>Football Manager rule files for AFC v24.13</h1>
+		<h1>Football Manager rule files for AFC v24.14</h1>
 		
 		<p>In this package, you will find rule files for AFC Member Nations.</p>
 		<p>I did my best to use realistic formats for all the leagues that are included. The rule files contain:</p>
@@ -55,7 +55,7 @@
 
 		<h3>License</h3>
 		<p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
-			<span property="dct:title">Football Manager rule files for AFC v24.13</span> by <span property="cc:attributionName">MasterIgor</span> is licensed under 
+			<span property="dct:title">Football Manager rule files for AFC v24.14</span> by <span property="cc:attributionName">MasterIgor</span> is licensed under 
 			<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution-NonCommercial-NoDerivatives 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1"></a>
 		</p>
 
@@ -877,8 +877,7 @@
 						<ul>
 							<li>Slot allocation is based on 5 year coefficients</li>
 							<li class="warning">(!) AFC basically uses a list for West and East, but this is not possible in the editor. So I had to use a few tricks to achieve the East/West separation.
-							Coefficients are very complex in the editor and their behaviour is not always clear. It refused to take averages so I had to adjust the coefficient system a little to keep it more or less in the same range.
-							But there is a working coefficient system in place.
+							Coefficients are very complex in the editor and their behaviour is not always clear. Coefficients correspond to reality for AFC Elite and AFC 2. But The challenge league would not use coefficients like the other two, so I had to implement a trick to get them in. Therefore those are not exactly like real life but a good approach.
 							For the year 2020 all coefficients are 0 (Covid) and the game sets all coefficients in 2022 to 0. This means that in the early years the coefficients are based on 3 years instead of 5 because 2 years are zeroes. 
 							From my observations, this can cause some movements in the ranking, but they normalize after a couple of years.</li>
 							<li class="warning">(!) The slot allocation page for Asia in the game cannot be changed from the old format to the new format. So you should ignore that page and instead focus on the coefficient ranking page: top 6 nations from West and East will enter ACLE, and so on. Slot allocation is based on real AFC (see above).</li>
@@ -892,6 +891,16 @@
 		<h3>Changelog</h3>
 		
 		<table border="1">
+			<tr>
+				<td width="100">v24.14</td>
+				<td>
+					<ul>
+						<li>Continental Cups (AFC): Improved coefficient system (real life coefficients for AFC Elite and Two, and good approach for ACGL)</li>
+						<li>South Korea (KOR): updated substitution rules to 5 from 9 for K1 League (instead of 5 from 7)</li>
+					</ul>
+				</td>
+			</tr>
+
 			<tr>
 				<td width="100">v24.13</td>
 				<td>
