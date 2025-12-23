@@ -10,8 +10,16 @@
 				font-family: monospace;
 			}
 			
-			tr.excluded {
-				background: #FAA;
+			p.important {
+				background-color: lightgray;
+				color: #C00;
+			}
+
+
+			td.version {
+				border: 1px solid black;
+				background: #AFA;
+				padding: 5px;
 			}
 			
 			img.flag {
@@ -58,6 +66,14 @@
 				background-color: lightgray;
 				color: #C00;
 			}
+			
+			span.version {
+				border: 1px solid green;
+				background: #CFC;
+				color: black;
+				padding: 1px;
+			}
+			
 		</style>
 	</head>
 	
@@ -90,8 +106,8 @@
 
 		<h3>How to install</h3>
 		<p>Copy the .fmf files for the nations you want into "Editor Data" folder. This folder can be different depending on where you got the game or what system you have. I am assuming you know where this folder is. If not, check other sources on where you can locate it for your setup.</p>
-		<p>Also, it is better to have the checkbox "add players to playable teams" checked. Otherwise you may end up with a lot of greyed-out non-database players.
-		</p>
+		<p class="important">Please remove any older files so that you do not have multiple versions for the same country.</p>
+		<p>Also, it is better to have the checkbox "add players to playable teams" checked. Otherwise you may end up with a lot of greyed-out non-database players.</p>
 
 		<h3>Testing</h3>
 		<p>all rules files have been tested by me in the editor and in the actual game (unemployed mode)<br/>
@@ -99,11 +115,11 @@
 
 		<h3>Available rule files:</h3>
 		
-		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/af.png"/> Afghanistan<br/>
+		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/af.png"/> Afghanistan <span class="version">v26.1</span><br/>
 		[1] Afghanistan Champions League
 		</p>
 
-		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/au.png"/> Australia<br/>
+		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/au.png"/> Australia <span class="version">v26.1</span><br/>
 		[1] ISUZU A-League<br/>
 		<span class="added">[2] National Premier leagues (ADDED)</span><br/>
 		<span class="added">&nbsp;&nbsp;[2.1] NPL ACT (ADDED)</span><br/>
@@ -131,7 +147,7 @@
 		</ul>
 		</p>
 		
-		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/bh.png"/> Bahrain<br/>
+		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/bh.png"/> Bahrain <span class="version">v26.1</span><br/>
 		[1] Bahrain Premier League<br/>
 		[2] Bahrain Second Division<br/>
 		[Cup] King's Cup<br/>
@@ -140,26 +156,26 @@
 		[Cup] Super Cup
 		</p>
 
-		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/bd.png"/> Bangladesh<br/>
+		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/bd.png"/> Bangladesh <span class="version">v26.1</span><br/>
 		[1] Bangladeshi Premier League<br/>
 		[2] Bangladeshi Champions League<br/>
 		[Cup] Federation Cup<br/>
 		[Cup] Independence Cup
 		</p>
 		
-		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/bt.png"/> Bhutan<br/>
+		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/bt.png"/> Bhutan <span class="version">v26.1</span><br/>
 		[1] Bhutan Premier League<br/>
 		<ul>
 			<li>The Bhutan Premier League has a qualifier tournament with 6 teams. I have set the schedule so that the qualifiers take place after the league, and the winners remain in the league and the losers relegate.</li>
 		</ul>
 		</p>
 
-		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/bn.png"/> Brunei Darussalam<br/>
+		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/bn.png"/> Brunei Darussalam <span class="version">v26.1</span><br/>
 		[1] Brunei Super League<br/>
 		[Cup] FA Cup
 		</p>
 
-		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/kh.png"/> Cambodia<br/>
+		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/kh.png"/> Cambodia <span class="version">v26.1</span><br/>
 		[1] Cambodian Premier League<br/>
 		[Cup] Hun Sen Cup<br/>
 		[Cup] League cup<br/>
@@ -167,7 +183,7 @@
 		</p>
 
 
-		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/cn.png"/> China<br/>
+		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/cn.png"/> China <span class="version">v26.1</span><br/>
 		[1] Chinese Super League<br/>
 		[2] Chinese First Division<br/>
 		<span class="added">[3] Chinese Second Division (ADDED)</span><br/>
@@ -180,16 +196,16 @@
 		[Yth] Chinese U19 FA Cup<br/>
 		</p>
 
-		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/tw.png"/> Chinese Taipei<br/>
+		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/tw.png"/> Chinese Taipei <span class="version">v26.1</span><br/>
 		[1] Chinese Taipei Premier League<br/>
 		[2] Chinese Taipei Second Division<br/>
 		</p>
 
-		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/gu.png"/> Guam<br/>
+		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/gu.png"/> Guam <span class="version">v26.1</span><br/>
 		[1] G-League
 		</p>
 		
-		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/hk.png"/> Hong Kong<br/>
+		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/hk.png"/> Hong Kong <span class="version">v26.1</span><br/>
 		[1] Hong Kong Premier League<br/>
 		<span class="added">[2] Hong Kong First Division (ADDED)</span><br/>
 		<span class="added">[3] Hong Kong Second Division (ADDED)</span><br/>
@@ -203,7 +219,7 @@
 		</ul>
 		</p>
 
-		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/in.png"/> India<br/>
+		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/in.png"/> India <span class="version">v26.1</span><br/>
 		[1] Indian Super League<br/>
 		[2] I-League<br/>
 		[3] I-League 2<br/>
@@ -218,7 +234,7 @@
 		</ul>
 		</p>
 		
-		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/id.png"/> Indonesia<br/>
+		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/id.png"/> Indonesia <span class="version">v26.2</span><br/>
 		[1] Indonesian Super League<br/>
 		[2] Indonesian Championship<br/>
 		<span class="added">[3] Liga Nusantara(ADDED)</span><br/>
@@ -226,10 +242,11 @@
 			<li>Indonesian Cup was removed since it is no longer played.</li>
 			<li>Format and foreigner rules of Championship was corrected</li>
 			<li>Subsitution Rules changed to "5 from 12"</li>
+			<li><span class="version">v26.2</span> Corrected format of Liga Nusantara: relegation playoffs were added and makes total relegated teams increase from 4 to 6</li>
 		</ul>
 		</p>
 
-		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/ir.png"/> Iran<br/>
+		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/ir.png"/> Iran <span class="version">v26.1</span><br/>
 		[1] Persian Gulf Pro League<br/>
 		[2] Azadegan League<br/>
 		[3] Iranian League 2<br/>
@@ -242,14 +259,14 @@
 		</ul>
 		</p>
 
-		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/iq.png"/> Iraq<br/>
+		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/iq.png"/> Iraq <span class="version">v26.1</span><br/>
 		[1] Iraqi Stars League<br/>
 		[2] Iraqi Premier Division<br/>
 		[Cup] FA Cup<br/>
 		[Cup] Super Cup<br/>
 		</p>
 		
-		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/jp.png"/> Japan<br/>
+		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/jp.png"/> Japan <span class="version">v26.2</span><br/>
 		[1] J League 1<br/>
 		[2] J League 2<br/>
 		[3] J League 3<br/>
@@ -260,13 +277,14 @@
 		[Cup] Super Cup<br/>
 		<ul>
 			<li>JFA Emperor's Cup was modified to take the qualifiers from the 47 prefectural tournaments instead of random teams</li>
-			<li class="important">IMPORTANT! > For optimal experience, please delete the following file, otherwise the Prefectural Qualifiers will not have enough teams and some will never start:<br/>
+			<li class="important">IMPORTANT! > For optimal experience, please remove the following file, otherwise the Prefectural Qualifiers will not have enough teams and some will never start:<br/>
 				[Football Manager 26 Installation Folder]\shared\data\database\db\2600\dbc\permanent\1_japan_removed_clubs.dbc<br/>
 			</li>
+			<li><span class="version">v26.2</span> Corrected foreigner rules to: maximum 5 allowed in match squad</li>
 		</ul>
 		</p>
 
-		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/jo.png"/> Jordan<br/>
+		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/jo.png"/> Jordan <span class="version">v26.1</span><br/>
 		[1] Jordanian Professional League<br/>
 		[2] Jordanian First Division<br/>
 		[Cup] Jordan Cup<br/>
@@ -277,7 +295,7 @@
 		</ul>
 		</p>
 
-		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/kp.png"/> Korea DPR<br/>
+		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/kp.png"/> Korea DPR <span class="version">v26.1</span><br/>
 		[1] DPR Premier Football League<br/>
 		[Cup] Hwaebul Cup<br/>
 		<ul>
@@ -285,7 +303,7 @@
 		</ul>
 		</p>
 
-		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/kr.png"/> Korea Republic<br/>
+		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/kr.png"/> Korea Republic <span class="version">v26.1</span><br/>
 		[1] K1 League<br/>
 		[2] K2 League<br/>
 		<span class="added">[3] K3 League (ADDED)</span><br/>
@@ -300,7 +318,7 @@
 			<li>Promotion between K2 and K3 as well as K4 and K5 starts regularly from 2027 season onwards</li>
 		</ul>
 
-		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/kw.png"/> Kuwait<br/>
+		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/kw.png"/> Kuwait <span class="version">v26.1</span><br/>
 		[1] Kuwait Premier League<br/>
 		[2] Kuwait Division One<br/>
 		[Cup] Amir Cup<br/>
@@ -308,7 +326,7 @@
 		[Cup] Super Cup<br/>
 		</p>
 
-		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/kg.png"/> Kyrgyz Republic<br/>
+		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/kg.png"/> Kyrgyz Republic <span class="version">v26.1</span><br/>
 		[1] Kyrgyzstani Premier League<br/>
 		[2] Kyrgyzstani National League<br/>
 		&nbsp;&nbsp;[2.1] Group A<br/>
@@ -317,7 +335,7 @@
 		[Cup] Super Cup<br/>
 		</p>
 
-		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/la.png"/> Laos<br/>
+		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/la.png"/> Laos <span class="version">v26.1</span><br/>
 		[1] Lao League 1<br/>
 		[Cup] Prime Minister's Cup<br/>
 		<ul>
@@ -325,7 +343,7 @@
 		</ul>
 		</p>
 
-		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/lb.png"/> Lebanon<br/>
+		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/lb.png"/> Lebanon <span class="version">v26.1</span><br/>
 		[1] Lebanese Premier League<br/>
 		[2] Lebanese Second Division<br/>
 		[Cup] FA Cup<br/>
@@ -333,13 +351,13 @@
 		[Cup] Super Cup<br/>
 		</p>
 
-		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/mo.png"/> Macau<br/>
+		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/mo.png"/> Macau <span class="version">v26.1</span><br/>
 		[1] Macanese First Division<br/>
 		[2] Macanese Second Division<br/>
 		[Cup] Macau FA Cup<br/>
 		</p>
 
-		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/my.png"/> Malaysia<br/>
+		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/my.png"/> Malaysia <span class="version">v26.2</span><br/>
 		[1] Malaysian Super League<br/>
 		[2] Malaysian A1 Semi-Pro League<br/>
 		<span class="added">[3] Malaysian A2 Amateur League (ADDED)</span><br/>
@@ -353,27 +371,29 @@
 		[Cup] Charity Cup<br/>
 		<ul>
 			<li>Foreigner rules of Super League corrected</li>
+			<li><span class="version">v26.2</span> Corrected dates of Malaysian Cup</li>
+			<li><span class="version">v26.2</span> Malaysian Cup Round of 16 is now played over 2 legs</li>
 		</ul>
 		</p>
 
-		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/mv.png"/> Maldives<br/>
+		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/mv.png"/> Maldives <span class="version">v26.1</span><br/>
 		[1] Dhivehi Premier League<br/>
 		[Cup] FA Cup<br/>
 		[Cup] Charity Shield<br/>
 		</p>
 
-		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/mn.png"/> Mongolia<br/>
+		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/mn.png"/> Mongolia <span class="version">v26.1</span><br/>
 		[1] Mongolian National Premier League<br/>
 		[Cup] Mongolian Cup<br/>
 		[Cup] Super Cup<br/>
 		</p>
 
-		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/mm.png"/> Myanmar<br/>
+		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/mm.png"/> Myanmar <span class="version">v26.1</span><br/>
 		[1] Myanmar National League<br/>
 		[Cup] Myanmar National League Cup<br/>
 		</p>
 
-		<p><img class="flagnp" src="https://flagpedia.net/data/flags/w580/np.png"/> Nepal<br/>
+		<p><img class="flagnp" src="https://flagpedia.net/data/flags/w580/np.png"/> Nepal <span class="version">v26.1</span><br/>
 		[1] Nepali A-League<br/>
 		[2] Nepali B-League<br/>
 		[Oth] Nepal Super League<br/>
@@ -382,25 +402,25 @@
 		</ul>
 		</p>
 
-		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/mp.png"/> Northern Mariana Islands<br/>
+		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/mp.png"/> Northern Mariana Islands <span class="version">v26.1</span><br/>
 		[1] Northern Mariana Division A<br/>
 		</p>
 		
-		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/om.png"/> Oman<br/>
+		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/om.png"/> Oman <span class="version">v26.1</span><br/>
 		[1] Omani Professional League<br/>
 		[Cup] Sultan Qaboos Cup<br/>
 		[Cup] Omani Professional League Cup<br/>
 		[Cup] Super Cup<br/>
 		</p>
 
-		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/pk.png"/> Pakistan<br/>
+		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/pk.png"/> Pakistan <span class="version">v26.1</span><br/>
 		[1] Pakistani Premier League<br/>
 		<ul>
 			<li>There has been no premier league football in Pakistan since 2021. Rules are based on 2021 season with current 10 teams in the database.</li>
 		</ul>
 		</p>
 
-		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/ps.png"/> Palestine<br/>
+		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/ps.png"/> Palestine <span class="version">v26.1</span><br/>
 		[1] Palestine Premier Leagues<br/>
 		&nbsp;&nbsp;[1.1] West Bank Premier League<br/>
 		&nbsp;&nbsp;[1.2] Gaza Strip Premier League<br/>
@@ -410,20 +430,23 @@
 		</ul>
 		</p>
 		
-		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/ph.png"/> Philippines<br/>
+		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/ph.png"/> Philippines <span class="version">v26.1</span><br/>
 		[1] Philippines Football League<br/>
 		[Cup] Philippines Football League Cup<br/>
 		</p>
 		
-		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/qa.png"/> Qatar<br/>
+		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/qa.png"/> Qatar <span class="version">v26.2</span><br/>
 		[1] Qatar Stars League<br/>
 		[2] Qatar Second Division<br/>
 		[Cup] Amir of Qatar Cup<br/>
 		[Cup] Qatar Cup<br/>
 		[Cup] Qatar Stars Cup<br/>
+		<ul>
+			<li><span class="version">v26.2</span> Foreigner rules changed to: 10 allowed in squad, 6 allowed on the field</li>
+		</ul>
 		</p>
 
-		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/sa.png"/> Saudi Arabia<br/>
+		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/sa.png"/> Saudi Arabia <span class="version">v26.1</span><br/>
 		[1] Saudi Professional League<br/>
 		[2] Saudi First Division<br/>
 		[3] Saudi Second Division<br/>
@@ -438,7 +461,7 @@
 		[Cup] Super Cup<br/>
 		</p>
 
-		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/sg.png"/> Singapore<br/>
+		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/sg.png"/> Singapore <span class="version">v26.1</span><br/>
 		[1] Singaporian Premier League<br/>
 		<span class="added">[2] Football League Division One (ADDED)</span><br/>
 		<span class="added">[3] Football League Division Two (ADDED)</span><br/>
@@ -451,25 +474,25 @@
 		</ul>
 		</p>
 
-		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/lk.png"/> Sri Lanka<br/>
+		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/lk.png"/> Sri Lanka <span class="version">v26.1</span><br/>
 		[1] Sri Lankan Super League
 		</p>
 		
 		
 
-		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/sy.png"/> Syria<br/>
+		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/sy.png"/> Syria <span class="version">v26.1</span><br/>
 		[1] Syrian Premier League<br/>
 		[Cup] Syrian Cup<br/>
 		</p>
 
-		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/tj.png"/> Tajikistan<br/>
+		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/tj.png"/> Tajikistan <span class="version">v26.1</span><br/>
 		[1] Tajikistan High League<br/>
 		[2] Tajikistan First Division<br/>
 		[Cup] Tajikistan Cup<br/>
 		[Cup] Super Cup<br/>
 		</p>
 
-		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/th.png"/> Thailand<br/>
+		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/th.png"/> Thailand <span class="version">v26.1</span><br/>
 		[1] Thai League 1<br/>
 		[2] Thai League 2<br/>
 		[3] Thai League 3<br/>
@@ -485,19 +508,19 @@
 		[Cup] Champions Cup<br/>
 		</p>
 
-		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/tl.png"/> Timor-Leste<br/>
+		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/tl.png"/> Timor-Leste <span class="version">v26.1</span><br/>
 		[1] East Timorese Premier League<br/>
 		[2] East Timorese 2nd Division<br/>
 		[Cup] Taca 12 de Novembro<br/>
 		</p>
 
-		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/tm.png"/> Turkmenistan<br/>
+		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/tm.png"/> Turkmenistan <span class="version">v26.1</span><br/>
 		[1] Turkmenistan High League<br/>
 		[Cup] Turkmenistan Cup<br/>
 		[Cup] Super Cup
 		</p>
 
-		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/ae.png"/> United Arab Emirates<br/>
+		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/ae.png"/> United Arab Emirates <span class="version">v26.1</span><br/>
 		[1] ADNOC Pro League<br/>
 		<span class="added">[2] UAE First Division (ADDED)</span><br/>
 		<span class="added">[3] UAE Second Division (ADDED)</span><br/>
@@ -510,7 +533,7 @@
 		</ul>
 		</p>
 
-		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/uz.png"/> Uzbekistan<br/>
+		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/uz.png"/> Uzbekistan <span class="version">v26.1</span><br/>
 		[1] Uzbekistan Super League<br/>
 		[2] Uzbekistan Pro League<br/>
 		[3] Uzbek Birinchi League<br/>
@@ -521,7 +544,7 @@
 		[Cup] Super Cup<br/>
 		</p>
 
-		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/vn.png"/> Vietnam<br/>
+		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/vn.png"/> Vietnam <span class="version">v26.2</span><br/>
 		[1] V.League 1<br/>
 		[2] V.League 2<br/>
 		[3] Vietnamese Second Division<br/>
@@ -531,17 +554,18 @@
 		[Cup] Super Cup<br/>
 		<ul>
 			<li>V.League 2 changes from 12 to 14 teams after 1 season</li>
+			<li><span class="version">v26.2</span> Corrected bug from SI which gave 6.5 million USD to all teams, to a more realistic (prize money) amount</td>
 		</ul>
 		</p>
 
-		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/ye.png"/> Yemen<br/>
+		<p><img class="flag" src="https://flagpedia.net/data/flags/w580/ye.png"/> Yemen <span class="version">v26.1</span><br/>
 		[1] Yemeni Football League<br/>
 		<ul>
 			<li>There has been no football leagues in Yemen since 2023. Rules are based on 2023 season with the current teams in the database</li>
 		</ul>
 		</p>
 
-		<p><img class="logo" src="https://www.the-afc.com/img/new-logo/AFC_logo_footer.png" /> AFC Continental Competitions<br/>
+		<p><img class="logo" src="https://www.the-afc.com/img/new-logo/AFC_logo_footer.png" /> AFC Continental Competitions <span class="version">v26.1</span><br/>
 		[Cup] AFC Champions League Elite<br/>
 		[Cup] AFC Champions League Two<br/>
 		[Cup] AFC Challenge League<br/>
@@ -567,13 +591,6 @@
 			<li>NOTE 2: in the Champions League Elite, there is group stages (groups A to F) for seeding the teams and scheduling the matches so that teams from the same nation do not play eachoter. Normally this is a hidden stage, but FM26 has a bug (it's not the only one) that hidden stages are not hidden.. so you will have to live with seeing stages that should be hidden.</li>
 		</ul>
 
-			
-		<h3>Changelog</h3>
-		
-		<ul>
-			<li>v26.1 is released</li>
-		</ul>
-		
 	</body>
 	
 </html>
